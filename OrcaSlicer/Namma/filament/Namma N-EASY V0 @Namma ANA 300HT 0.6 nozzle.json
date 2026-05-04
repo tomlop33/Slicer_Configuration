@@ -1,0 +1,20 @@
+{
+  "type": "filament",
+  "name": "Namma N-EASY V0 @Namma ANA 300HT 0.6 nozzle",
+  "inherits": "Namma N-EASY V0 @Namma ANA 300HT",
+  "from": "system",
+  "filament_id": "Namma N-EASY V0 @Namma ANA 300HT 0.6 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.04"
+  ],
+  "compatible_printers": [
+    "Namma ANA 300 HT 0.6 nozzle"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "process",
+  "name": "0.24mm Speed @Namma ANA 600 0.4 nozzle",
+  "inherits": "fdm_process_single_0.24",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma ANA 600 0.4 nozzle"
+  ],
+
+  "default_acceleration": "4000",
+  "initial_layer_acceleration": "1000",
+  "outer_wall_acceleration": "2000",
+  "travel_acceleration": "7000",
+  "inner_wall_acceleration": "5000",
+  "sparse_infill_acceleration": "6000",
+  "internal_solid_infill_acceleration": "6000",
+  "top_surface_acceleration": "1500",
+  
+  "inner_wall_speed": "200",
+  "internal_solid_infill_speed": "250",
+  "outer_wall_speed": "100",
+  "sparse_infill_speed": "250"
+}
+

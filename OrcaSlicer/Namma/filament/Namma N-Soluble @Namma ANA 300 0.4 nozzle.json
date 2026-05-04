@@ -1,0 +1,26 @@
+{
+  "type": "filament",
+  "name": "Namma N-Soluble @Namma ANA 300 0.4 nozzle",
+  "inherits": "Namma N-Soluble @Namma ANA 300",
+  "from": "system",
+  "filament_id": "Namma N-Soluble @Namma ANA 300 0.4 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.03"
+  ],
+  "filament_flow_ratio": [
+    "0.92"
+  ],
+  "compatible_printers": [
+    "Namma ANA 300 0.4 nozzle",
+    "Namma Lucy 300 0.4 nozzle",
+    "Namma ANA 300 0.4 nozzle - Mode Copie",
+    "Namma ANA 300 0.4 nozzle - Mode Miroir"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+    "type": "filament",
+    "name": "Namma N-PETG-ESD @Namma ANA 300HT",
+    "inherits": "Namma N-PETG-ESD @Namma ANA 300",
+    "from": "system",
+    "filament_id": "Namma N-PETG-ESD @Namma ANA 300HT",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Namma"
+    ],
+    "enable_pressure_advance": ["1"],
+    "pressure_advance": ["0.04"],
+    "compatible_printers": [
+        "Namma ANA 300 HT 0.8 nozzle"
+    ]
+}

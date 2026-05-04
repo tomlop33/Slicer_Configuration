@@ -1,0 +1,11 @@
+{
+  "type": "machine_model",
+  "name": "Namma ANA 600",
+  "model_id": "ANA600",
+  "nozzle_diameter": "0.4;0.6;0.8",
+  "family": "ANA",
+  "machine_tech": "FFF",
+  "bed_model": "",
+  "bed_texture": "",
+  "default_materials": "Namma N-ABS @Namma ANA 600 0.4 nozzle;Namma N-PLA @Namma ANA 600 0.4 nozzle"
+}

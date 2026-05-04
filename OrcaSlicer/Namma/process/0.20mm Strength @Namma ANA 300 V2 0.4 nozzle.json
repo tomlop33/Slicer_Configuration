@@ -1,0 +1,19 @@
+{
+  "type": "process",
+  "name": "0.20mm Strength @Namma ANA 300 V2 0.4 nozzle",
+  "inherits": "fdm_process_common",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma ANA 300 V2 0.4 nozzle",
+    "Namma ANA 300 V2 0.4 nozzle - Mode Copie",
+    "Namma ANA 300 V2 0.4 nozzle - Mode Miroir"
+  ],
+  "outer_wall_speed": "60",
+  "inner_wall_speed": "80",
+  "wall_loops": "4",
+  "bottom_shell_layers": "6",
+  "top_shell_layers": "6",
+  "sparse_infill_density": "35%",
+  "sparse_infill_line_width": "0.5"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "process",
+  "name": "0.20mm Standard @Namma Lucy 300 0.4 nozzle",
+  "inherits": "fdm_process_common",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma Lucy 300 0.4 nozzle"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "filament",
+    "name": "Namma N-BVOH @Namma ANA 600 0.6 nozzle",
+    "inherits": "Namma N-BVOH @Namma ANA 600",
+    "from": "system",
+    "filament_id": "Namma N-BVOH @Namma ANA 600 0.6 nozzle",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Namma"
+    ],
+    "enable_pressure_advance": ["1"],
+    "pressure_advance": ["0.04"],
+    "compatible_printers": [
+        "Namma ANA 600 0.6 nozzle"
+    ]
+}
+

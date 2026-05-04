@@ -1,0 +1,30 @@
+{
+  "type": "machine",
+  "name": "Namma ANA 300 V2 0.6 nozzle - Mode Copie",
+  "inherits": "Namma ANA 300 V2 0.6 nozzle",
+  "from": "system",
+  "setting_id": "NMANA30206C",
+  "instantiation": "true",
+  "nozzle_diameter": [
+    "0.6"
+  ],
+  "max_layer_height": [
+    "0.48"
+  ],
+  "min_layer_height": [
+    "0.016"
+  ],
+  "printer_model": "Namma ANA 300 V2",
+  "printer_variant": "0.6",
+  "default_filament_profile": [
+    "Namma N-ABS @Namma ANA 300V2 0.6 nozzle"
+  ],
+  "default_print_profile": "0.24mm Standard @Namma ANA 300 V2 0.6 nozzle",
+  "printable_area": [
+    "0x0",
+    "300x0",
+    "300x300",
+    "0x300"
+  ],
+  "nozzle_type": "brass"
+}

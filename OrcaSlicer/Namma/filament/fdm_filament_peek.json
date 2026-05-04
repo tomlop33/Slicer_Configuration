@@ -1,0 +1,44 @@
+{
+    "type": "filament",
+    "name": "fdm_filament_peek",
+    "inherits": "fdm_filament_common",
+    "filament_id": "GFLA004",
+    "from": "system",
+    "instantiation": "false",
+    "filament_type": [
+        "PEEK"
+    ],
+    "filament_vendor": [
+        "Namma"
+    ],
+    "filament_density": [
+        "1.28"
+    ],
+    "temperature_vitrification": [
+        "200"
+    ],
+    "idle_temperature": [
+        "375"
+    ],
+    "nozzle_temperature_range_low": [
+        "380"
+    ],
+    "nozzle_temperature_range_high": [
+        "420"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "400"
+    ],
+    "nozzle_temperature": [
+        "400"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "150"
+    ],
+    "hot_plate_temp": [
+        "150"
+    ],
+    "additional_cooling_fan_speed": [
+        "70"
+    ]
+}

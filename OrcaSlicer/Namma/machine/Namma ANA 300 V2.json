@@ -1,0 +1,11 @@
+{
+  "type": "machine_model",
+  "name": "Namma ANA 300 V2",
+  "model_id": "ANA300-V2",
+  "nozzle_diameter": "0.4;0.6;0.8",
+  "family": "ANA",
+  "machine_tech": "FFF",
+  "bed_model": "",
+  "bed_texture": "",
+  "default_materials": "Namma N-ABS @Namma ANA 300V2 0.4 nozzle;Namma N-PLA @Namma ANA 300V2 0.4 nozzle"
+}

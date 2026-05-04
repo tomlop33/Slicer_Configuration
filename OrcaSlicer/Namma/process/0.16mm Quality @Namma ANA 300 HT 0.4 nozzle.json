@@ -1,0 +1,10 @@
+{
+  "type": "process",
+  "name": "0.16mm Quality @Namma ANA 300 HT 0.4 nozzle",
+  "inherits": "fdm_process_single_0.16",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma ANA 300 HT 0.4 nozzle"
+  ]
+}

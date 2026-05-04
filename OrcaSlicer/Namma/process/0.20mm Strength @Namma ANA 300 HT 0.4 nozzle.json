@@ -1,0 +1,19 @@
+{
+  "type": "process",
+  "name": "0.20mm Strength @Namma ANA 300 HT 0.4 nozzle",
+  "inherits": "fdm_process_common",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma ANA 300 HT 0.4 nozzle"
+  ],
+
+  "outer_wall_speed": "60",
+  "inner_wall_speed": "80",
+
+  "wall_loops": "4",
+  "bottom_shell_layers": "6",
+  "top_shell_layers": "6",
+  "sparse_infill_density": "35%",
+  "sparse_infill_line_width": "0.5"
+}

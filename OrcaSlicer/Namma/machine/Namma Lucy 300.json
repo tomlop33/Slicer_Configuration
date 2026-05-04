@@ -1,0 +1,11 @@
+{
+  "type": "machine_model",
+  "name": "Namma Lucy 300",
+  "model_id": "LUCY300",
+  "nozzle_diameter": "0.4;0.6;0.8",
+  "family": "LUCY",
+  "machine_tech": "FFF",
+  "bed_model": "",
+  "bed_texture": "",
+  "default_materials": "Namma N-PLA @Namma ANA 300 0.4 nozzle"
+}

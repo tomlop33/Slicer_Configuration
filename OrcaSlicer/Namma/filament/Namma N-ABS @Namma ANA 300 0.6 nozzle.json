@@ -1,0 +1,26 @@
+{
+  "type": "filament",
+  "name": "Namma N-ABS @Namma ANA 300 0.6 nozzle",
+  "inherits": "Namma N-ABS @Namma ANA 300",
+  "from": "system",
+  "filament_id": "Namma N-ABS @Namma ANA 300 0.6 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.02"
+  ],
+  "filament_flow_ratio": [
+    "0.95"
+  ],
+  "compatible_printers": [
+    "Namma ANA 300 0.6 nozzle",
+    "Namma Lucy 300 0.6 nozzle",
+    "Namma ANA 300 0.6 nozzle - Mode Copie",
+    "Namma ANA 300 0.6 nozzle - Mode Miroir"
+  ]
+}

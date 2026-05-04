@@ -1,0 +1,1470 @@
+{
+  "name": "Namma",
+  "version": "01.00.00.00",
+  "force_update": "0",
+  "description": "Namma printer profiles",
+  "machine_model_list": [
+    {
+      "name": "Namma ANA 300",
+      "sub_path": "machine/Namma ANA 300.json"
+    },
+    {
+      "name": "Namma ANA 300 V2",
+      "sub_path": "machine/Namma ANA 300 V2.json"
+    },
+    {
+      "name": "Namma ANA 300 HT",
+      "sub_path": "machine/Namma ANA 300 HT.json"
+    },
+    {
+      "name": "Namma ANA 600",
+      "sub_path": "machine/Namma ANA 600.json"
+    },
+    {
+      "name": "Namma Lucy 300",
+      "sub_path": "machine/Namma Lucy 300.json"
+    }
+  ],
+  "machine_list": [
+    {
+      "name": "fdm_machine_common",
+      "sub_path": "machine/fdm_machine_common.json"
+    },
+    {
+      "name": "fdm_ana_common",
+      "sub_path": "machine/fdm_ana_common.json"
+    },
+    {
+      "name": "fdm_lucy_common",
+      "sub_path": "machine/fdm_lucy_common.json"
+    },
+    {
+      "name": "Namma ANA 300 0.4 nozzle",
+      "sub_path": "machine/Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 0.6 nozzle",
+      "sub_path": "machine/Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 0.8 nozzle",
+      "sub_path": "machine/Namma ANA 300 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.4 nozzle",
+      "sub_path": "machine/Namma ANA 300 V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.6 nozzle",
+      "sub_path": "machine/Namma ANA 300 V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.8 nozzle",
+      "sub_path": "machine/Namma ANA 300 V2 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 HT 0.4 nozzle",
+      "sub_path": "machine/Namma ANA 300 HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 HT 0.6 nozzle",
+      "sub_path": "machine/Namma ANA 300 HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 600 0.4 nozzle",
+      "sub_path": "machine/Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 600 0.6 nozzle",
+      "sub_path": "machine/Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 600 0.8 nozzle",
+      "sub_path": "machine/Namma ANA 600 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma Lucy 300 0.4 nozzle",
+      "sub_path": "machine/Namma Lucy 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma Lucy 300 0.6 nozzle",
+      "sub_path": "machine/Namma Lucy 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma Lucy 300 0.8 nozzle",
+      "sub_path": "machine/Namma Lucy 300 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma ANA 300 0.4 nozzle - Mode Copie",
+      "sub_path": "machine/Namma ANA 300 0.4 nozzle copy.json"
+    },
+    {
+      "name": "Namma ANA 300 0.4 nozzle - Mode Miroir",
+      "sub_path": "machine/Namma ANA 300 0.4 nozzle miror.json"
+    },
+    {
+      "name": "Namma ANA 300 0.6 nozzle - Mode Copie",
+      "sub_path": "machine/Namma ANA 300 0.6 nozzle copy.json"
+    },
+    {
+      "name": "Namma ANA 300 0.6 nozzle - Mode Miroir",
+      "sub_path": "machine/Namma ANA 300 0.6 nozzle miror.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.4 nozzle - Mode Copie",
+      "sub_path": "machine/Namma ANA 300 V2 0.4 nozzle copy.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.4 nozzle - Mode Miroir",
+      "sub_path": "machine/Namma ANA 300 V2 0.4 nozzle miror.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.6 nozzle - Mode Copie",
+      "sub_path": "machine/Namma ANA 300 V2 0.6 nozzle copy.json"
+    },
+    {
+      "name": "Namma ANA 300 V2 0.6 nozzle - Mode Miroir",
+      "sub_path": "machine/Namma ANA 300 V2 0.6 nozzle miror.json"
+    }
+  ],
+  "process_list": [
+    {
+      "name": "fdm_process_common",
+      "sub_path": "process/fdm_process_common.json"
+    },
+    {
+      "name": "fdm_process_single_0.16",
+      "sub_path": "process/fdm_process_single_0.16.json"
+    },
+    {
+      "name": "fdm_process_single_0.18_nozzle_0.6",
+      "sub_path": "process/fdm_process_single_0.18_nozzle_0.6.json"
+    },
+    {
+      "name": "fdm_process_single_0.20",
+      "sub_path": "process/fdm_process_single_0.20.json"
+    },
+    {
+      "name": "fdm_process_single_0.24",
+      "sub_path": "process/fdm_process_single_0.24.json"
+    },
+    {
+      "name": "fdm_process_single_0.24_nozzle_0.6",
+      "sub_path": "process/fdm_process_single_0.24_nozzle_0.6.json"
+    },
+    {
+      "name": "fdm_process_single_0.24_nozzle_0.8",
+      "sub_path": "process/fdm_process_single_0.24_nozzle_0.8.json"
+    },
+    {
+      "name": "fdm_process_single_0.30_nozzle_0.6",
+      "sub_path": "process/fdm_process_single_0.30_nozzle_0.6.json"
+    },
+    {
+      "name": "fdm_process_single_0.32_nozzle_0.8",
+      "sub_path": "process/fdm_process_single_0.32_nozzle_0.8.json"
+    },
+    {
+      "name": "fdm_process_single_0.40_nozzle_1.0",
+      "sub_path": "process/fdm_process_single_0.40_nozzle_1.0.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma ANA 300 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma Lucy 300 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma Lucy 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma ANA 300 HT 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma ANA 300 HT 0.4 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma ANA 300 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma Lucy 300 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma Lucy 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma ANA 300 HT 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma ANA 300 HT 0.4 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma ANA 300 V2 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma ANA 300 V2 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma ANA 300 V2 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma ANA 300 V2 0.4 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma ANA 600 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma ANA 300 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma Lucy 300 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma Lucy 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma ANA 300 HT 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma ANA 300 HT 0.6 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma ANA 300 V2 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma ANA 300 V2 0.6 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma ANA 600 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma ANA 600 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma ANA 300 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma Lucy 300 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma Lucy 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma ANA 300 HT 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma ANA 300 HT 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma ANA 300 V2 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma ANA 300 V2 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma ANA 600 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma ANA 600 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma ANA 300 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma Lucy 300 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma Lucy 300 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma ANA 300 HT 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma ANA 300 HT 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma ANA 300 V2 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma ANA 300 V2 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma ANA 300 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma Lucy 300 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma Lucy 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma ANA 300 HT 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma ANA 300 HT 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma ANA 300 V2 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma ANA 300 V2 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma ANA 600 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma ANA 300 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma Lucy 300 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma Lucy 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma ANA 300 HT 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma ANA 300 HT 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma ANA 300 V2 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma ANA 300 V2 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma ANA 600 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma ANA 300 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma ANA 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma Lucy 300 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma Lucy 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma ANA 300 HT 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma ANA 300 HT 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma ANA 300 V2 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma ANA 300 V2 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma ANA 600 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma ANA 600 0.8 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma ANA 300 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma Lucy 300 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma Lucy 300 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma ANA 300 HT 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma ANA 300 HT 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma ANA 300 V2 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma ANA 300 V2 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma ANA 600 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma ANA 300 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma ANA 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma Lucy 300 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma Lucy 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma ANA 300 HT 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma ANA 300 HT 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma ANA 300 V2 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma ANA 300 V2 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma ANA 600 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma ANA 600 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma ANA 300 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma ANA 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma Lucy 300 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma Lucy 300 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma ANA 300 HT 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma ANA 300 HT 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma ANA 300 V2 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma ANA 300 V2 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma ANA 600 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma ANA 600 0.8 nozzle.json"
+    },
+    {
+      "name": "0.40mm Standard @Namma ANA 600 1.0 nozzle",
+      "sub_path": "process/0.40mm Standard @Namma ANA 600 1.0 nozzle.json"
+    }
+  ],
+  "filament_list": [
+    {
+      "name": "fdm_filament_common",
+      "sub_path": "filament/fdm_filament_common.json"
+    },
+    {
+      "name": "fdm_filament_abs",
+      "sub_path": "filament/fdm_filament_abs.json"
+    },
+    {
+      "name": "fdm_filament_asa",
+      "sub_path": "filament/fdm_filament_asa.json"
+    },
+    {
+      "name": "fdm_filament_bvoh",
+      "sub_path": "filament/fdm_filament_bvoh.json"
+    },
+    {
+      "name": "fdm_filament_pla",
+      "sub_path": "filament/fdm_filament_pla.json"
+    },
+    {
+      "name": "fdm_filament_easy_food",
+      "sub_path": "filament/fdm_filament_easy_food.json"
+    },
+    {
+      "name": "fdm_filament_easy_v0",
+      "sub_path": "filament/fdm_filament_easy_v0.json"
+    },
+    {
+      "name": "fdm_filament_paht_cf",
+      "sub_path": "filament/fdm_filament_paht_cf.json"
+    },
+    {
+      "name": "fdm_filament_pc",
+      "sub_path": "filament/fdm_filament_pc.json"
+    },
+    {
+      "name": "fdm_filament_peek",
+      "sub_path": "filament/fdm_filament_peek.json"
+    },
+    {
+      "name": "fdm_filament_pei",
+      "sub_path": "filament/fdm_filament_pei.json"
+    },
+    {
+      "name": "fdm_filament_petg",
+      "sub_path": "filament/fdm_filament_petg.json"
+    },
+    {
+      "name": "fdm_filament_petg_cf",
+      "sub_path": "filament/fdm_filament_petg_cf.json"
+    },
+    {
+      "name": "fdm_filament_petg_esd",
+      "sub_path": "filament/fdm_filament_petg_esd.json"
+    },
+    {
+      "name": "fdm_filament_petg_gf",
+      "sub_path": "filament/fdm_filament_petg_gf.json"
+    },
+    {
+      "name": "fdm_filament_petg_gf_uv",
+      "sub_path": "filament/fdm_filament_petg_gf_uv.json"
+    },
+    {
+      "name": "fdm_filament_plx",
+      "sub_path": "filament/fdm_filament_plx.json"
+    },
+    {
+      "name": "fdm_filament_ppa",
+      "sub_path": "filament/fdm_filament_ppa.json"
+    },
+    {
+      "name": "fdm_filament_pps",
+      "sub_path": "filament/fdm_filament_pps.json"
+    },
+    {
+      "name": "fdm_filament_pva",
+      "sub_path": "filament/fdm_filament_pva.json"
+    },
+    {
+      "name": "fdm_filament_soluble",
+      "sub_path": "filament/fdm_filament_soluble.json"
+    },
+    {
+      "name": "fdm_filament_tpu",
+      "sub_path": "filament/fdm_filament_tpu.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 600",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 600",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 600",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 600",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 600",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 600",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 600",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 600",
+      "sub_path": "filament/Namma N-PC @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PEEK @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PEEK @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PEI @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PEI @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 600",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 600",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 600",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 600",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 600",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 600",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 600",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 600",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-BVOH @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-BVOH @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY FOOD @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY FOOD @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-EASY V0 @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-EASY V0 @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PEEK @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PEEK @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PEEK @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PEEK @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PEI @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PEI @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PEI @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PEI @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 600",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 600",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 600",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300HT",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300HT.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300V2",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300V2.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 600",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 600.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PVA @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PVA @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-Soluble @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-Soluble @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-ESD @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-ESD @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300HT 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300HT 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300HT 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300HT 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300V2 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300V2 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 300V2 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 300V2 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 600 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 600 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF UV @Namma ANA 600 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 600 0.6 nozzle.json"
+    }
+  ]
+}

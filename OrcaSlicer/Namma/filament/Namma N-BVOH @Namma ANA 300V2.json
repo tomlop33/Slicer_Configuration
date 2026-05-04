@@ -1,0 +1,16 @@
+{
+    "type": "filament",
+    "name": "Namma N-BVOH @Namma ANA 300V2",
+    "inherits": "fdm_filament_bvoh",
+    "from": "system",
+    "filament_id": "Namma N-BVOH @Namma ANA 300V2",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Namma"
+    ],
+    "enable_pressure_advance": ["1"],
+    "pressure_advance": ["0.035"],
+    "compatible_printers": [
+        "Namma ANA 300 V2 0.8 nozzle"
+    ]
+}

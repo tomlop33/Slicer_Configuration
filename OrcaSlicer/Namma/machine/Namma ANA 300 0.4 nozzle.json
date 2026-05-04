@@ -1,0 +1,70 @@
+{
+  "type": "machine",
+  "name": "Namma ANA 300 0.4 nozzle",
+  "inherits": "fdm_ana_common",
+  "from": "system",
+  "setting_id": "NMANA30004",
+  "instantiation": "true",
+  "nozzle_diameter": [
+    "0.4",
+    "0.4"
+  ],
+  "machine_max_acceleration_extruding": [
+    "1500",
+    "1500"
+  ],
+  "machine_max_acceleration_retracting": [
+    "1500",
+    "1500"
+  ],
+  "machine_max_acceleration_travel": [
+    "1500",
+    "1500"
+  ],
+  "machine_max_acceleration_x": [
+    "1500",
+    "1500"
+  ],
+  "machine_max_acceleration_y": [
+    "1500",
+    "1500"
+  ],
+  "machine_max_jerk_x": [
+    "9",
+    "9"
+  ],
+  "machine_max_jerk_y": [
+    "9",
+    "9"
+  ],
+  "machine_max_jerk_z": [
+    "3.33",
+    "3.33"
+  ],
+  "machine_max_speed_x": [
+    "150",
+    "150"
+  ],
+  "machine_max_speed_y": [
+    "150",
+    "150"
+  ],
+  "machine_max_speed_z": [
+    "10",
+    "10"
+  ],
+  "printer_model": "Namma ANA 300",
+  "printer_variant": "0.4",
+  "default_filament_profile": [
+    "Namma N-ABS @Namma ANA 300 0.4 nozzle",
+    "Namma N-PLA @Namma ANA 300 0.4 nozzle"
+  ],
+  "default_print_profile": "0.20mm Standard @Namma ANA 300 0.4 nozzle",
+  "printable_area": [
+    "0x0",
+    "300x0",
+    "300x300",
+    "0x300"
+  ],
+  "nozzle_type": "brass"
+}

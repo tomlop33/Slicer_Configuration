@@ -1,0 +1,16 @@
+{
+    "type": "filament",
+    "name": "Namma N-ASA @Namma ANA 300",
+    "inherits": "fdm_filament_asa",
+    "from": "system",
+    "filament_id": "Namma N-ASA @Namma ANA 300",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Namma"
+    ],
+    "enable_pressure_advance": ["1"],
+    "pressure_advance": ["0.05"],
+    "compatible_printers": [
+        "Namma ANA 300 0.8 nozzle"
+    ]
+}

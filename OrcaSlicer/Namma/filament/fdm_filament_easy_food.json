@@ -1,0 +1,22 @@
+{
+    "type": "filament",
+    "name": "fdm_filament_easy_food",
+    "inherits": "fdm_filament_pla",
+    "filament_id": "GFLA016",
+    "from": "system",
+    "instantiation": "false",
+
+    "filament_type": ["PLA"],
+    "filament_vendor": ["Namma"],
+    "filament_density": ["1.325"],
+    "filament_flow_ratio": ["0.98"],
+    "temperature_vitrification": ["67"],
+    "idle_temperature": ["195"],
+    "nozzle_temperature_range_low": ["200"],
+    "nozzle_temperature_range_high": ["230"],
+
+    "nozzle_temperature_initial_layer": ["215"],
+    "nozzle_temperature": ["215"],
+    "hot_plate_temp_initial_layer": ["55"],
+    "hot_plate_temp": ["55"]
+}
