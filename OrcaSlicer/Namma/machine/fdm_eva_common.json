@@ -1,0 +1,150 @@
+{
+    "type": "machine",
+    "name": "fdm_eva_common",
+    "from": "system",
+    "instantiation": "false",
+    "gcode_flavor": "reprapfirmware",
+    "machine_start_gcode": ";set global.FileName = \"{input_filename}\"\n;M98 P\"0:/macros/Machine/Logs/InitLogTemps.g\"\n\nM220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\n{if is_extruder_used[0] == true && is_extruder_used[1] == true} \nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n{elsif is_extruder_used[0] == true && is_extruder_used[1] == false} \nG10 P0 S{nozzle_temperature[0]}\n{elsif is_extruder_used[0] == false && is_extruder_used[1] == true} \nG10 P1 S{nozzle_temperature[1]}\n{endif}\n\nM98 P\"0:/sys/start_print_ANA.g\" T[current_extruder] X{first_layer_print_min[0]} A{first_layer_print_max[0]} Y{first_layer_print_min[1]} B{first_layer_print_max[1]}",
+    "machine_end_gcode": "",
+    "emit_machine_limits_to_gcode": "0",
+    "extruder_colour": [
+        "#018001"
+    ],
+    "extruder_offset": [
+        "0x0",
+        "0x0"
+    ],
+    "machine_max_acceleration_e": [
+        "6000",
+        "6000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "7000",
+        "7000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "7000",
+        "7000"
+    ],
+    "machine_max_acceleration_travel": [
+        "7000",
+        "7000"
+    ],
+    "machine_max_acceleration_x": [
+        "7000",
+        "7000"
+    ],
+    "machine_max_acceleration_y": [
+        "7000",
+        "7000"
+    ],
+    "machine_max_acceleration_z": [
+        "500",
+        "500"
+    ],
+    "machine_max_jerk_e": [
+        "9",
+        "9"
+    ],
+    "machine_max_jerk_x": [
+        "9",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "9",
+        "9"
+    ],
+    "machine_max_jerk_z": [
+        "1",
+        "1"
+    ],
+    "machine_max_junction_deviation": [
+        "0",
+        "0"
+    ],
+    "machine_max_speed_e": [
+        "60",
+        "60"
+    ],
+    "machine_max_speed_x": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "10",
+        "10"
+    ],
+    "machine_min_extruding_rate": [
+        "0",
+        "0"
+    ],
+    "machine_min_travel_rate": [
+        "0",
+        "0"
+    ],
+    "max_layer_height": [
+        "0.3"
+    ],
+    "min_layer_height": [
+        "0.08"
+    ],
+    "printable_height": "300",
+    "extruder_clearance_radius": "65",
+    "extruder_clearance_height_to_rod": "36",
+    "extruder_clearance_height_to_lid": "140",
+    "nozzle_diameter": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.2",
+        "2.5"
+    ],
+    "printer_settings_id": "",
+    "printer_technology": "FFF",
+    "printer_variant": "0.4",
+    "retraction_minimum_travel": [
+        "1"
+    ],
+    "retract_before_wipe": [
+        "70%"
+    ],
+    "retract_when_changing_layer": [
+        "1"
+    ],
+    "retraction_length": [
+        "0.8"
+    ],
+    "retract_length_toolchange": [
+        "2"
+    ],
+    "z_hop": [
+        "0.4"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retraction_speed": [
+        "30"
+    ],
+    "deretraction_speed": [
+        "30"
+    ],
+    "silent_mode": "0",
+    "single_extruder_multi_material": "0",
+    "machine_tool_change_time": "20",
+    "change_filament_gcode": "T{next_extruder}\nG92 E0",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\nG92 E0",
+    "machine_pause_gcode": "M400 U1\n",
+    "wipe": [
+        "1"
+    ],
+    "z_hop_types": "Normal Lift"
+}

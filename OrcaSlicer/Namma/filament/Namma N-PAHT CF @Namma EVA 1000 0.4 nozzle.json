@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-PAHT CF @Namma EVA 1000 0.4 nozzle",
+  "inherits": "fdm_filament_paht_cf",
+  "from": "system",
+  "filament_id": "Namma N-PAHT CF @Namma EVA 1000 0.4 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.04"
+  ],
+  "filament_flow_ratio": [
+    "0.96"
+  ],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF05 - 0.4 nozzle"
+  ]
+}
