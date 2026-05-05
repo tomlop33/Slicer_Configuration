@@ -1,0 +1,11 @@
+{
+  "type": "process",
+  "name": "0.96mm Speed @Namma EVA 1000 1.2 nozzle",
+  "inherits": "fdm_process_common_2_85",
+  "from": "system",
+  "instantiation": "true",
+  "layer_height": ["0.96"],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF09 - 1.2 nozzle"
+  ]
+}

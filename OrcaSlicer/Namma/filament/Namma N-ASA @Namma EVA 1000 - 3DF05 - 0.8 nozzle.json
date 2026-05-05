@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+  "inherits": "fdm_filament_asa",
+  "from": "system",
+  "filament_id": "Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.055"
+  ],
+  "filament_flow_ratio": [
+    "1"
+  ],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF05 - 0.8 nozzle"
+  ]
+}

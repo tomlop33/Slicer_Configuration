@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-TPU @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+  "inherits": "fdm_filament_tpu",
+  "from": "system",
+  "filament_id": "Namma N-TPU @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.02"
+  ],
+  "filament_flow_ratio": [
+    "0.95"
+  ],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF09 - 2.5 nozzle"
+  ]
+}

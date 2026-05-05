@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-ABS @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+  "inherits": "fdm_filament_abs",
+  "from": "system",
+  "filament_id": "Namma N-ABS @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.02"
+  ],
+  "filament_flow_ratio": [
+    "0.95"
+  ],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF09 - 1.2 nozzle"
+  ]
+}
