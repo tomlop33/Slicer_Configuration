@@ -1,0 +1,20 @@
+{
+  "type": "filament",
+  "name": "Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+  "inherits": "fdm_filament_ppa",
+  "from": "system",
+  "filament_id": "Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0.04"
+  ],
+  "compatible_printers": [
+    "Namma EVA 500 - 3DF05 - 0.4 nozzle"
+  ]
+}

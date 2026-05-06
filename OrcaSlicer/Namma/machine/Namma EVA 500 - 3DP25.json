@@ -1,0 +1,11 @@
+{
+  "type": "machine_model",
+  "name": "Namma EVA 500 - 3DP25",
+  "model_id": "EVA10003DP25",
+  "nozzle_diameter": "3.0",
+  "family": "EVA",
+  "machine_tech": "FFF",
+  "bed_model": "",
+  "bed_texture": "",
+  "default_materials": "Namma N-ABS @Namma EVA 500 - 3DP25 - 3.0 nozzle"
+}

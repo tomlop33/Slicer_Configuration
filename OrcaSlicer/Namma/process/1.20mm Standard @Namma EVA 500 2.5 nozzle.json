@@ -1,0 +1,11 @@
+{
+  "type": "process",
+  "name": "1.20mm Standard @Namma EVA 500 2.5 nozzle",
+  "inherits": "fdm_process_common_2",
+  "from": "system",
+  "instantiation": "true",
+  "layer_height": ["1.20"],
+  "compatible_printers": [
+    "Namma EVA 500 - 3DF09 - 2.5 nozzle"
+  ]
+}
