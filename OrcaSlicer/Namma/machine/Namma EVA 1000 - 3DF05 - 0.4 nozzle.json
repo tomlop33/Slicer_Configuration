@@ -56,8 +56,8 @@
   "printer_model": "Namma EVA 1000 - 3DF05",
   "printer_variant": "0.4",
   "default_filament_profile": [
-    "Namma N-ABS @Namma ANA 300 0.4 nozzle",
-    "Namma N-PLA @Namma ANA 300 0.4 nozzle"
+    "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+    "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.4 nozzle"
   ],
   "default_print_profile": "0.20mm Standard @Namma EVA 1000 0.4 nozzle",
   "printable_area": [
