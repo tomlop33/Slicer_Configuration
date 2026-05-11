@@ -213,6 +213,10 @@
       "sub_path": "process/fdm_process_common_2.json"
     },
     {
+      "name": "fdm_process_common_lucy_ana",
+      "sub_path": "process/fdm_process_common_lucy_ana.json"
+    },
+    {
       "name": "fdm_process_single_0.16",
       "sub_path": "process/fdm_process_single_0.16.json"
     },

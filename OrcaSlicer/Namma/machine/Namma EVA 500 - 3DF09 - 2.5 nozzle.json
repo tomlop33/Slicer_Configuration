@@ -8,50 +8,6 @@
   "nozzle_diameter": ["2.5"],
   "max_layer_height": ["2.0"],
   "min_layer_height": ["0.024"],
-  "machine_max_acceleration_extruding": [
-    "1500",
-    "1500"
-  ],
-  "machine_max_acceleration_retracting": [
-    "1500",
-    "1500"
-  ],
-  "machine_max_acceleration_travel": [
-    "1500",
-    "1500"
-  ],
-  "machine_max_acceleration_x": [
-    "1500",
-    "1500"
-  ],
-  "machine_max_acceleration_y": [
-    "1500",
-    "1500"
-  ],
-  "machine_max_jerk_x": [
-    "9",
-    "9"
-  ],
-  "machine_max_jerk_y": [
-    "9",
-    "9"
-  ],
-  "machine_max_jerk_z": [
-    "3.33",
-    "3.33"
-  ],
-  "machine_max_speed_x": [
-    "150",
-    "150"
-  ],
-  "machine_max_speed_y": [
-    "150",
-    "150"
-  ],
-  "machine_max_speed_z": [
-    "10",
-    "10"
-  ],
   "printer_model": "Namma EVA 500 - 3DF09",
   "printer_variant": "2.5",
   "default_filament_profile": [
@@ -59,6 +15,7 @@
     "Namma N-PLA @Namma EVA 500 - 3DF09 - 2.5 nozzle"
   ],
   "default_print_profile": "1.20mm Standard @Namma EVA 500 2.5 nozzle",
-  "printable_area": ["0x0", "300x0", "300x300", "0x300"],
+  "printable_area": ["0x0", "500x0", "500x500", "0x500"],
+  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\nG10 P0 S{nozzle_temperature[0]}\n\nM98 P\"0:/sys/start_print.g\" T[current_extruder] X{first_layer_print_min[0]} A{first_layer_print_max[0]} Y{first_layer_print_min[1]} B{first_layer_print_max[1]}\n\nM116 S10",
   "nozzle_type": "brass"
 }

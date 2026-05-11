@@ -12,7 +12,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.02"
+    "0"
   ],
   "filament_flow_ratio": [
     "0.95"
@@ -20,4 +20,6 @@
   "compatible_printers": [
     "Namma EVA 500 - 3DF09 - 1.2 nozzle"
   ]
+,
+  "filament_max_volumetric_speed": ["75"]
 }

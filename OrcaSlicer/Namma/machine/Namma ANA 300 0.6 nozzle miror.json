@@ -8,8 +8,8 @@
   "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n\nM98 P\"0:/sys/start_print_ANA.g\" T3",
   "printable_area": [
         "0x0",
-        "110x0",
-        "110x300",
+        "100x0",
+        "100x300",
         "0x300"
     ],
   "nozzle_diameter": [

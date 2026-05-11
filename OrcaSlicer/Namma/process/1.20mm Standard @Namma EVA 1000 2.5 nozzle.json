@@ -5,6 +5,7 @@
   "from": "system",
   "instantiation": "true",
   "layer_height": ["1.20"],
+  "initial_layer_print_height": "1.2",
   "compatible_printers": [
     "Namma EVA 1000 - 3DF09 - 2.5 nozzle"
   ]
