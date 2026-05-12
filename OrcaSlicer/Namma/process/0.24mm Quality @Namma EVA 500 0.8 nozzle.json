@@ -1,0 +1,12 @@
+{
+  "type": "process",
+  "name": "0.24mm Quality @Namma EVA 500 0.8 nozzle",
+  "inherits": "fdm_process_single_0.24_nozzle_0.8",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma EVA 500 - 3DF05 - 0.8 nozzle"
+  ]
+}
+
+

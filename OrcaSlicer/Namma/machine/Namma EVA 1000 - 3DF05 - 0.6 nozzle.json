@@ -1,0 +1,32 @@
+{
+  "type": "machine",
+  "name": "Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+  "inherits": "fdm_eva_common",
+  "from": "system",
+  "setting_id": "NMEVA10003DF0506",
+  "instantiation": "true",
+  "nozzle_diameter": [
+    "0.6",
+    "0.6"
+  ],
+  "max_layer_height": [
+    "0.48"
+  ],
+  "min_layer_height": [
+    "0.016"
+  ],
+  "printer_model": "Namma EVA 1000 - 3DF05",
+  "printer_variant": "0.6",
+  "default_filament_profile": [
+    "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+    "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.6 nozzle"
+  ],
+  "default_print_profile": "0.24mm Standard @Namma EVA 1000 0.6 nozzle",
+  "printable_area": [
+    "0x0",
+    "1000x0",
+    "1000x500",
+    "0x500"
+  ],
+  "nozzle_type": "brass"
+}

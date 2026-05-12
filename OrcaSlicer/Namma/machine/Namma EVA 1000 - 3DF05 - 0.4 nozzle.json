@@ -1,0 +1,26 @@
+{
+  "type": "machine",
+  "name": "Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+  "inherits": "fdm_eva_common",
+  "from": "system",
+  "setting_id": "NMEVA10003DF0504",
+  "instantiation": "true",
+  "nozzle_diameter": [
+    "0.4",
+    "0.4"
+  ],
+  "printer_model": "Namma EVA 1000 - 3DF05",
+  "printer_variant": "0.4",
+  "default_filament_profile": [
+    "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+    "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.4 nozzle"
+  ],
+  "default_print_profile": "0.20mm Standard @Namma EVA 1000 0.4 nozzle",
+  "printable_area": [
+    "0x0",
+    "1000x0",
+    "1000x500",
+    "0x500"
+  ],
+  "nozzle_type": "brass"
+}

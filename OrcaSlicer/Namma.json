@@ -23,6 +23,30 @@
     {
       "name": "Namma Lucy 300",
       "sub_path": "machine/Namma Lucy 300.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF05",
+      "sub_path": "machine/Namma EVA 1000 - 3DF05.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF09",
+      "sub_path": "machine/Namma EVA 1000 - 3DF09.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DP25",
+      "sub_path": "machine/Namma EVA 1000 - 3DP25.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF05",
+      "sub_path": "machine/Namma EVA 500 - 3DF05.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF09",
+      "sub_path": "machine/Namma EVA 500 - 3DF09.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DP25",
+      "sub_path": "machine/Namma EVA 500 - 3DP25.json"
     }
   ],
   "machine_list": [
@@ -37,6 +61,10 @@
     {
       "name": "fdm_lucy_common",
       "sub_path": "machine/fdm_lucy_common.json"
+    },
+    {
+      "name": "fdm_eva_common",
+      "sub_path": "machine/fdm_eva_common.json"
     },
     {
       "name": "Namma ANA 300 0.4 nozzle",
@@ -125,12 +153,68 @@
     {
       "name": "Namma ANA 300 V2 0.6 nozzle - Mode Miroir",
       "sub_path": "machine/Namma ANA 300 V2 0.6 nozzle miror.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "machine/Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "machine/Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
     }
   ],
   "process_list": [
     {
       "name": "fdm_process_common",
       "sub_path": "process/fdm_process_common.json"
+    },
+    {
+      "name": "fdm_process_common_2",
+      "sub_path": "process/fdm_process_common_2.json"
+    },
+    {
+      "name": "fdm_process_common_lucy_ana",
+      "sub_path": "process/fdm_process_common_lucy_ana.json"
     },
     {
       "name": "fdm_process_single_0.16",
@@ -391,6 +475,134 @@
     {
       "name": "0.40mm Standard @Namma ANA 600 1.0 nozzle",
       "sub_path": "process/0.40mm Standard @Namma ANA 600 1.0 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma EVA 1000 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma EVA 1000 0.4 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma EVA 1000 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma EVA 1000 0.6 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma EVA 1000 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma EVA 1000 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma EVA 1000 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma EVA 1000 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma EVA 1000 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma EVA 1000 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma EVA 1000 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma EVA 1000 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma EVA 1000 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma EVA 1000 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma EVA 1000 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma EVA 1000 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma EVA 1000 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma EVA 1000 0.6 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma EVA 1000 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma EVA 1000 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma EVA 1000 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma EVA 1000 0.8 nozzle.json"
+    },
+    {
+      "name": "0.60mm Standard @Namma EVA 1000 1.2 nozzle",
+      "sub_path": "process/0.60mm Standard @Namma EVA 1000 1.2 nozzle.json"
+    },
+    {
+      "name": "1.20mm Standard @Namma EVA 1000 2.5 nozzle",
+      "sub_path": "process/1.20mm Standard @Namma EVA 1000 2.5 nozzle.json"
+    },
+    {
+      "name": "0.96mm Speed @Namma EVA 1000 1.2 nozzle",
+      "sub_path": "process/0.96mm Speed @Namma EVA 1000 1.2 nozzle.json"
+    },
+    {
+      "name": "2.00mm Speed @Namma EVA 1000 2.5 nozzle",
+      "sub_path": "process/2.00mm Speed @Namma EVA 1000 2.5 nozzle.json"
+    },
+    {
+      "name": "2.40mm Standard @Namma EVA 1000 3.0 nozzle",
+      "sub_path": "process/2.40mm Standard @Namma EVA 1000 3.0 nozzle.json"
+    },
+    {
+      "name": "0.16mm Quality @Namma EVA 500 0.4 nozzle",
+      "sub_path": "process/0.16mm Quality @Namma EVA 500 0.4 nozzle.json"
+    },
+    {
+      "name": "0.18mm Quality @Namma EVA 500 0.6 nozzle",
+      "sub_path": "process/0.18mm Quality @Namma EVA 500 0.6 nozzle.json"
+    },
+    {
+      "name": "0.20mm Standard @Namma EVA 500 0.4 nozzle",
+      "sub_path": "process/0.20mm Standard @Namma EVA 500 0.4 nozzle.json"
+    },
+    {
+      "name": "0.20mm Strength @Namma EVA 500 0.4 nozzle",
+      "sub_path": "process/0.20mm Strength @Namma EVA 500 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Quality @Namma EVA 500 0.8 nozzle",
+      "sub_path": "process/0.24mm Quality @Namma EVA 500 0.8 nozzle.json"
+    },
+    {
+      "name": "0.24mm Speed @Namma EVA 500 0.4 nozzle",
+      "sub_path": "process/0.24mm Speed @Namma EVA 500 0.4 nozzle.json"
+    },
+    {
+      "name": "0.24mm Standard @Namma EVA 500 0.6 nozzle",
+      "sub_path": "process/0.24mm Standard @Namma EVA 500 0.6 nozzle.json"
+    },
+    {
+      "name": "0.24mm Strength @Namma EVA 500 0.6 nozzle",
+      "sub_path": "process/0.24mm Strength @Namma EVA 500 0.6 nozzle.json"
+    },
+    {
+      "name": "0.30mm Speed @Namma EVA 500 0.6 nozzle",
+      "sub_path": "process/0.30mm Speed @Namma EVA 500 0.6 nozzle.json"
+    },
+    {
+      "name": "0.32mm Standard @Namma EVA 500 0.8 nozzle",
+      "sub_path": "process/0.32mm Standard @Namma EVA 500 0.8 nozzle.json"
+    },
+    {
+      "name": "0.32mm Strength @Namma EVA 500 0.8 nozzle",
+      "sub_path": "process/0.32mm Strength @Namma EVA 500 0.8 nozzle.json"
+    },
+    {
+      "name": "0.60mm Standard @Namma EVA 500 1.2 nozzle",
+      "sub_path": "process/0.60mm Standard @Namma EVA 500 1.2 nozzle.json"
+    },
+    {
+      "name": "0.96mm Speed @Namma EVA 500 1.2 nozzle",
+      "sub_path": "process/0.96mm Speed @Namma EVA 500 1.2 nozzle.json"
+    },
+    {
+      "name": "1.20mm Standard @Namma EVA 500 2.5 nozzle",
+      "sub_path": "process/1.20mm Standard @Namma EVA 500 2.5 nozzle.json"
+    },
+    {
+      "name": "2.00mm Speed @Namma EVA 500 2.5 nozzle",
+      "sub_path": "process/2.00mm Speed @Namma EVA 500 2.5 nozzle.json"
+    },
+    {
+      "name": "2.40mm Standard @Namma EVA 500 3.0 nozzle",
+      "sub_path": "process/2.40mm Standard @Namma EVA 500 3.0 nozzle.json"
     }
   ],
   "filament_list": [
@@ -1465,6 +1677,630 @@
     {
       "name": "Namma N-PETG-GF UV @Namma ANA 600 0.6 nozzle",
       "sub_path": "filament/Namma N-PETG-GF UV @Namma ANA 600 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ABS @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-ABS-INDUS @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ABS-INDUS @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-ASA @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-ASA @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PAHT CF @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PAHT CF @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PC @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PC @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-CF @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG-CF @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PETG-GF @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PETG-GF @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLA @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PLA @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PLX @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PLX @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPA CF @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PPA CF @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-PPS CF @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-PPS CF @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DF05 - 0.4 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DF05 - 0.4 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DF05 - 0.6 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DF05 - 0.6 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DF05 - 0.8 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DF05 - 0.8 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DF09 - 1.2 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DF09 - 2.5 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DF09 - 2.5 nozzle.json"
+    },
+    {
+      "name": "Namma N-TPU @Namma EVA 500 - 3DP25 - 3.0 nozzle",
+      "sub_path": "filament/Namma N-TPU @Namma EVA 500 - 3DP25 - 3.0 nozzle.json"
     }
   ]
 }

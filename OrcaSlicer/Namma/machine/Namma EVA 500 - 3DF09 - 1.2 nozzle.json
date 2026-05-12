@@ -1,0 +1,21 @@
+{
+  "type": "machine",
+  "name": "Namma EVA 500 - 3DF09 - 1.2 nozzle",
+  "inherits": "fdm_eva_common",
+  "from": "system",
+  "setting_id": "NMEVA10003DF0912",
+  "instantiation": "true",
+  "nozzle_diameter": ["1.2"],
+  "max_layer_height": ["0.96"],
+  "min_layer_height": ["0.024"],
+  "printer_model": "Namma EVA 500 - 3DF09",
+  "printer_variant": "1.2",
+  "default_filament_profile": [
+    "Namma N-ABS @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+    "Namma N-PLA @Namma EVA 500 - 3DF09 - 1.2 nozzle"
+  ],
+  "default_print_profile": "0.60mm Standard @Namma EVA 500 1.2 nozzle",
+  "printable_area": ["0x0", "500x0", "500x500", "0x500"],
+  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\nG10 P0 S{nozzle_temperature[0]}\n\nM98 P\"0:/sys/start_print.g\" T[current_extruder] X{first_layer_print_min[0]} A{first_layer_print_max[0]} Y{first_layer_print_min[1]} B{first_layer_print_max[1]}\n\nM116 S10",
+  "nozzle_type": "brass"
+}

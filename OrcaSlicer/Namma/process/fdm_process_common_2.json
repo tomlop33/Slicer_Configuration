@@ -1,0 +1,39 @@
+{
+    "type": "process",
+    "name": "fdm_process_common_2",
+    "from": "system",
+    "instantiation": "false",
+    "inherits": "fdm_process_common",
+
+    "top_surface_line_width": "120%",
+    "support_line_width": "120%",
+    "sparse_infill_line_width": "120%",
+    "skeleton_infill_line_width": "100%",
+    "outer_wall_line_width": "120%",
+    "line_width": "120%",
+    "initial_layer_line_width": "150%",
+    "inner_wall_line_width": "120%",
+    "internal_solid_infill_line_width": "120%",
+    "skin_infill_line_width": "100%",
+
+    "top_surface_speed": "60",
+    "support_interface_speed": "60",
+    "sparse_infill_speed": "80",
+    "small_perimeter_speed": "50%",
+    "skirt_speed": "50",
+    "internal_bridge_speed": "100%",
+    "initial_layer_speed": "50",
+    "initial_layer_travel_speed": "100%",
+    "initial_layer_infill_speed": "60",
+    "gap_infill_speed": "50",
+    "bridge_speed": "30",
+    "inner_wall_speed": "75",
+    "internal_solid_infill_speed": "75",
+    "support_speed": "60",
+
+    "travel_speed": "150",
+
+    "default_acceleration": "0"
+
+
+}

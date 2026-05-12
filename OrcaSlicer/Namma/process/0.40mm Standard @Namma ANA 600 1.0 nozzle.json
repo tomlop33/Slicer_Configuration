@@ -1,6 +1,6 @@
 {
   "type": "process",
-  "name": "0.40mm Standard @Namma ANA 600",
+  "name": "0.40mm Standard @Namma ANA 600 1.0 nozzle",
   "inherits": "fdm_process_single_0.40_nozzle_1.0",
   "from": "system",
   "instantiation": "true",

@@ -1,0 +1,10 @@
+{
+  "type": "process",
+  "name": "0.20mm Standard @Namma EVA 1000 0.4 nozzle",
+  "inherits": "fdm_process_common",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DF05 - 0.4 nozzle"
+  ]
+}

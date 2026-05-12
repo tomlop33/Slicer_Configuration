@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-PETG @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+  "inherits": "fdm_filament_petg",
+  "from": "system",
+  "filament_id": "Namma N-PETG @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0"
+  ],
+  "filament_max_volumetric_speed": [
+    "75"
+  ],
+  "compatible_printers": [
+    "Namma EVA 1000 - 3DP25 - 3.0 nozzle"
+  ]
+}

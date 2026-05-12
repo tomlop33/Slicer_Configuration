@@ -1,0 +1,23 @@
+{
+  "type": "filament",
+  "name": "Namma N-PPA CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+  "inherits": "fdm_filament_ppa",
+  "from": "system",
+  "filament_id": "Namma N-PPA CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
+  "instantiation": "true",
+  "filament_vendor": [
+    "Namma"
+  ],
+  "enable_pressure_advance": [
+    "1"
+  ],
+  "pressure_advance": [
+    "0"
+  ],
+  "filament_max_volumetric_speed": [
+    "75"
+  ],
+  "compatible_printers": [
+    "Namma EVA 500 - 3DF09 - 1.2 nozzle"
+  ]
+}
