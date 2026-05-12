@@ -22,5 +22,6 @@
     "600x600",
     "0x600"
   ],
+  "printable_height": "600",
   "nozzle_type": "brass"
 }

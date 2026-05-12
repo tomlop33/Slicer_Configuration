@@ -14,9 +14,10 @@
   "pressure_advance": [
     "0"
   ],
+  "filament_max_volumetric_speed": [
+    "75"
+  ],
   "compatible_printers": [
     "Namma EVA 1000 - 3DF09 - 1.2 nozzle"
   ]
-,"filament_max_volumetric_speed": ["75"]
-  "filament_max_volumetric_speed": ["100"]
 }

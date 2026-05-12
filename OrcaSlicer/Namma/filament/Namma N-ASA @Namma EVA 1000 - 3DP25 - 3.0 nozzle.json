@@ -17,9 +17,10 @@
   "filament_flow_ratio": [
     "1"
   ],
+  "filament_max_volumetric_speed": [
+    "75"
+  ],
   "compatible_printers": [
     "Namma EVA 1000 - 3DP25 - 3.0 nozzle"
   ]
-,"filament_max_volumetric_speed": ["75"]
-  "filament_max_volumetric_speed": ["100"]
 }
