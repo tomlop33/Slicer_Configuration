@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "filament",
   "name": "Namma N-PPA CF @Namma EVA 500 - 3DF09 - 1.2 nozzle",
   "inherits": "fdm_filament_ppa",
@@ -19,5 +19,7 @@
   ],
   "compatible_printers": [
     "Namma EVA 500 - 3DF09 - 1.2 nozzle"
-  ]
+  ],
+  "filament_diameter": ["2.85"],
+  "filament_wipe_distance": ["2"]
 }

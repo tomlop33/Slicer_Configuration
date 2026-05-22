@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "filament",
   "name": "Namma N-PPS CF @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
   "inherits": "fdm_filament_pps",
@@ -19,5 +19,7 @@
   ],
   "compatible_printers": [
     "Namma EVA 1000 - 3DF09 - 2.5 nozzle"
-  ]
+  ],
+  "filament_diameter": ["2.85"],
+  "filament_wipe_distance": ["2"]
 }

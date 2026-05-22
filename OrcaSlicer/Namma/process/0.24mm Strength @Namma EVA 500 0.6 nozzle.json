@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "process",
   "name": "0.24mm Strength @Namma EVA 500 0.6 nozzle",
   "inherits": "fdm_process_single_0.24_nozzle_0.6",

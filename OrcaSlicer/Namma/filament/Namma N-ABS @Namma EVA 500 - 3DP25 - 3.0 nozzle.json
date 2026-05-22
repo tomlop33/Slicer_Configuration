@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "filament",
   "name": "Namma N-ABS @Namma EVA 500 - 3DP25 - 3.0 nozzle",
   "inherits": "fdm_filament_abs",
@@ -22,5 +22,7 @@
   ],
   "compatible_printers": [
     "Namma EVA 500 - 3DP25 - 3.0 nozzle"
-  ]
+  ],
+  "filament_diameter": ["2.85"],
+  "filament_wipe_distance": ["2"]
 }

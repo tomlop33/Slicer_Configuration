@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "filament",
   "name": "Namma N-PLX @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
   "inherits": "fdm_filament_plx",
@@ -22,5 +22,7 @@
   ],
   "compatible_printers": [
     "Namma EVA 1000 - 3DP25 - 3.0 nozzle"
-  ]
+  ],
+  "filament_diameter": ["2.85"],
+  "filament_wipe_distance": ["2"]
 }
