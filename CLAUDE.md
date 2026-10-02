@@ -92,7 +92,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 ## Filaments (`filament/`)
 
 - **Nom** : `Namma N-<MATIÈRE> @Namma <Modèle>[ <buse> nozzle]`
-  - matières : `N-PLA`, `N-PLX`, `N-ABS`, `N-ABS-INDUS`, `N-ASA`, `N-PETG`, `N-PETG-CF`, `N-PETG-GF`, `N-PETG-GF UV`, `N-PETG-ESD`, `N-PC`, `N-TPU`, `N-PAHT CF`, `N-PPA CF`, `N-PPS CF`, `N-PEEK`, `N-PEI`, `N-BVOH`, `N-PVA`, `N-Soluble`, `N-EASY FOOD`, `N-EASY V0`.
+  - matières : `N-PLA`, `N-PLX`, `N-ABS`, `N-ABS-INDUS`, `N-ASA`, `N-PETG`, `N-PETG-CF`, `N-PETG-GF`, `N-PETG-GF UV`, `N-PETG-ESD`, `N-PC`, `N-TPU`, `N-PAHT CF`, `N-PPA CF`, `N-PPS CF`, `N-PEEK`, `N-PEI`, `N-BVOH`, `N-PVA`, `N-Soluble 90`, `N-Soluble 111`, `N-Soluble 150`, `N-EASY FOOD`, `N-EASY V0`.
   - ⚠️ Côté filament, les modèles s'écrivent **collés** : `ANA 300V2` et `ANA 300HT`, alors que les machines utilisent `ANA 300 V2` et `ANA 300 HT`. Conserver cette convention pour rester cohérent avec l'existant. Le lien réel se fait par `compatible_printers`.
   - EVA : nom complet avec la tête (`@Namma EVA 500 - 3DF09 - 1.2 nozzle`).
 - **Hiérarchie** :
@@ -103,6 +103,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
            └─ Namma N-X @Namma <Modèle> <buse> nozzle   (flow, PA, compatible_printers)
   ```
   Les filaments EVA héritent directement de `fdm_filament_<matière>`.
+  Les solubles ont un niveau de plus : `fdm_filament_soluble` (propriétés communes, soluble et support) → `fdm_filament_soluble_<90|111|150>` (buse, ventilation, plateau, chambre) → profils `Namma N-Soluble <90|111|150> @...`.
   Pour l'ANA 300 (partagée avec la G) et le Granulé, le profil « modèle » est une base masquée (`instantiation: "false"`) : chaque buse, 0.8 comprise, a son propre profil `... <buse> nozzle`. Les autres gammes utilisent encore le profil « modèle » comme profil 0.8.
 - `fdm_filament_<matière>` : `filament_vendor: ["Namma"]`, `filament_type`, `filament_id` (`GFLAxxx`), températures, `filament_max_volumetric_speed`, etc.
 - Profil final : `filament_id` = `name`, `filament_vendor: ["Namma"]`, puis les surcharges spécifiques (`pressure_advance`, `enable_pressure_advance`, `filament_flow_ratio`, `filament_max_volumetric_speed`, `filament_diameter` pour l'EVA) et `compatible_printers`.
