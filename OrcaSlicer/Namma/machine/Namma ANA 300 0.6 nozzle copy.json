@@ -5,7 +5,7 @@
   "from": "system",
   "setting_id": "NMANA30006C",
   "instantiation": "true",
-  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n\nM98 P\"0:/sys/start_print_ANA.g\" T2",
+  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n\nM98 P\"0:/sys/start_print_ANA.g\" T2 X{first_layer_print_min[0]} Y{first_layer_print_min[1]}",
   "printable_area": ["0x0", "145x0", "145x300", "0x300"],
   "nozzle_diameter": ["0.6"],
   "max_layer_height": ["0.48"],

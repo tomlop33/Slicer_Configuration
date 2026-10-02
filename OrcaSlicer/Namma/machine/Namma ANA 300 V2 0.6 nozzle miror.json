@@ -12,7 +12,7 @@
   "printer_variant": "0.6",
   "default_filament_profile": ["Namma N-ABS @Namma ANA 300V2 0.6 nozzle"],
   "default_print_profile": "0.24mm Standard @Namma ANA 300 V2 0.6 nozzle",
-  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n\nM98 P\"0:/sys/start_print_ANA.g\" T3",
+  "machine_start_gcode": "M220 S100\nG92 E0\nM140 S[first_layer_bed_temperature] ; set bed temp\n\nG10 P0 S{nozzle_temperature[0]}\nG10 P1 S{nozzle_temperature[1]}\n\nM98 P\"0:/sys/start_print_ANA.g\" T3 X{first_layer_print_min[0]} Y{first_layer_print_min[1]}",
   "printable_area": ["0x0", "100x0", "100x300", "0x300"],
   "nozzle_type": "brass"
 }
