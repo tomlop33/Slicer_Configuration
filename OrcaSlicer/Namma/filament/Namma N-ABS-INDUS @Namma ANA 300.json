@@ -4,13 +4,14 @@
     "inherits": "fdm_filament_abs",
     "from": "system",
     "filament_id": "Namma N-ABS-INDUS @Namma ANA 300",
-    "instantiation": "true",
+    "instantiation": "false",
     "filament_vendor": [
         "Namma"
     ],
     "enable_pressure_advance": ["1"],
     "pressure_advance": ["0.055"],
     "compatible_printers": [
-        "Namma ANA 300 0.8 nozzle"
+        "Namma ANA 300 0.8 nozzle",
+        "Namma ANA 300G 0.8 nozzle"
     ]
 }

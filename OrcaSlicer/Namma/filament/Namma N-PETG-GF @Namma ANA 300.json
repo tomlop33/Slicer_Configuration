@@ -4,7 +4,7 @@
     "inherits": "fdm_filament_petg_gf",
     "from": "system",
     "filament_id": "Namma N-PETG-GF @Namma ANA 300",
-    "instantiation": "true",
+    "instantiation": "false",
     "filament_vendor": [
         "Namma"
     ],
@@ -14,6 +14,7 @@
     "0.93"
     ],
     "compatible_printers": [
-        "Namma ANA 300 0.8 nozzle"
+        "Namma ANA 300 0.8 nozzle",
+        "Namma ANA 300G 0.8 nozzle"
     ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "process",
+  "name": "0.16mm Quality @Namma ANA 300G 0.4 nozzle",
+  "inherits": "fdm_process_single_0.16",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": [
+    "Namma ANA 300G 0.4 nozzle"
+  ],
+  "gap_infill_speed": "80",
+  "initial_layer_infill_speed": "60",
+  "outer_wall_speed": "60",
+  "sparse_infill_speed": "100",
+  "support_speed": "80",
+  "top_surface_speed": "85"
+}
