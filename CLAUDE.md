@@ -33,7 +33,7 @@ OrcaSlicer/
    - Les paramètres par extrudeur ou par filament sont des **tableaux** (`["0.95"]`). Pour les machines à 2 extrudeurs (ANA), il faut 2 valeurs (`["1500", "1500"]`).
    - `"nil"` signifie « hériter de la valeur machine » (champs `filament_retract_*`, `filament_wipe`, …).
 6. **Ne surcharger que les clés qui diffèrent du parent** : les profils finaux restent courts. Les valeurs communes vont dans le `fdm_*` parent.
-7. Encodage UTF-8. Il y a un mélange de fichiers avec et sans BOM, ce qu'OrcaSlicer tolère. Pour les nouveaux fichiers, utiliser l'UTF-8 sans BOM. Indentation : 2 espaces (les `fdm_*_common` historiques utilisent 4 espaces ; conserver le style du fichier modifié).
+7. **Format : une ligne par variable.** Les tableaux de valeurs tiennent sur la ligne de leur clé (`"nozzle_diameter": ["0.4", "0.4"],`). Dans `Namma.json`, chaque entrée tient sur une ligne (`{ "name": "...", "sub_path": "..." },`). Indentation 2 espaces, UTF-8 **sans BOM**, pas de lignes vides. Fins de ligne : LF dans le dépôt (Git les convertit en CRLF sur Windows via `core.autocrlf`).
 8. JSON strict : pas de virgule finale, pas de commentaires. Valider le JSON avant chaque commit.
 
 ## Machines (`machine/`)

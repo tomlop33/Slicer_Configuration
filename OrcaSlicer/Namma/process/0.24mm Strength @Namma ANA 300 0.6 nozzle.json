@@ -4,11 +4,7 @@
   "inherits": "fdm_process_single_0.24_nozzle_0.6",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma ANA 300 0.6 nozzle",
-    "Namma ANA 300 0.6 nozzle - Mode Copie",
-    "Namma ANA 300 0.6 nozzle - Mode Miroir"
-  ],
+  "compatible_printers": ["Namma ANA 300 0.6 nozzle", "Namma ANA 300 0.6 nozzle - Mode Copie", "Namma ANA 300 0.6 nozzle - Mode Miroir"],
   "outer_wall_speed": "60",
   "inner_wall_speed": "80",
   "wall_loops": "4",

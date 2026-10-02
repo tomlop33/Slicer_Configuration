@@ -1,12 +1,10 @@
-﻿{
+{
   "type": "process",
   "name": "0.20mm Strength @Namma EVA 1000 0.4 nozzle",
   "inherits": "fdm_process_common",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma EVA 1000 - 3DF05 - 0.4 nozzle"
-  ],
+  "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.4 nozzle"],
   "outer_wall_speed": "60",
   "inner_wall_speed": "80",
   "wall_loops": "4",

@@ -4,10 +4,7 @@
   "inherits": "fdm_process_single_0.24",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma ANA 300 HT 0.4 nozzle"
-  ],
-
+  "compatible_printers": ["Namma ANA 300 HT 0.4 nozzle"],
   "default_acceleration": "4000",
   "initial_layer_acceleration": "1000",
   "outer_wall_acceleration": "2000",
@@ -16,7 +13,6 @@
   "sparse_infill_acceleration": "5000",
   "internal_solid_infill_acceleration": "5000",
   "top_surface_acceleration": "1500",
-  
   "inner_wall_speed": "200",
   "internal_solid_infill_speed": "250",
   "outer_wall_speed": "100",

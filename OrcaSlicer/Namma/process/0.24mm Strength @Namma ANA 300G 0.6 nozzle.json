@@ -4,9 +4,7 @@
   "inherits": "fdm_process_single_0.24_nozzle_0.6",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma ANA 300G 0.6 nozzle"
-  ],
+  "compatible_printers": ["Namma ANA 300G 0.6 nozzle"],
   "outer_wall_speed": "60",
   "inner_wall_speed": "80",
   "wall_loops": "4",

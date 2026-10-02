@@ -1,9 +1,8 @@
 {
-    "type": "process",
-    "name": "fdm_process_common",
-    "from": "system",
-    "instantiation": "false",
-    
+  "type": "process",
+  "name": "fdm_process_common",
+  "from": "system",
+  "instantiation": "false",
   "accel_to_decel_enable": "1",
   "accel_to_decel_factor": "50%",
   "align_infill_direction_to_model": "0",
@@ -174,12 +173,8 @@
   "prime_tower_skip_points": "1",
   "prime_tower_width": "30",
   "prime_volume": "100",
-  "print_extruder_id": [
-      "1"
-  ],
-  "print_extruder_variant": [
-      "Direct Drive Standard"
-  ],
+  "print_extruder_id": ["1"],
+  "print_extruder_variant": ["Direct Drive Standard"],
   "print_flow_ratio": "1",
   "print_order": "default",
   "print_sequence": "by layer",
@@ -224,18 +219,7 @@
   "slow_down_layers": "0",
   "slowdown_for_curled_perimeters": "1",
   "small_area_infill_flow_compensation": "0",
-  "small_area_infill_flow_compensation_model": [
-      "0,0",
-      "\n0.2,0.4444",
-      "\n0.4,0.6145",
-      "\n0.6,0.7059",
-      "\n0.8,0.7619",
-      "\n1.5,0.8571",
-      "\n2,0.8889",
-      "\n3,0.9231",
-      "\n5,0.9520",
-      "\n10,1"
-  ],
+  "small_area_infill_flow_compensation_model": ["0,0", "\n0.2,0.4444", "\n0.4,0.6145", "\n0.6,0.7059", "\n0.8,0.7619", "\n1.5,0.8571", "\n2,0.8889", "\n3,0.9231", "\n5,0.9520", "\n10,1"],
   "small_perimeter_speed": "50%",
   "small_perimeter_threshold": "0",
   "solid_infill_direction": "45",
@@ -345,18 +329,7 @@
   "wipe_tower_rib_width": "8",
   "wipe_tower_rotation_angle": "0",
   "wipe_tower_wall_type": "rib",
-  "wiping_volumes_extruders": [
-      "70",
-      "70",
-      "70",
-      "70",
-      "70",
-      "70",
-      "70",
-      "70",
-      "70",
-      "70"
-  ],
+  "wiping_volumes_extruders": ["70", "70", "70", "70", "70", "70", "70", "70", "70", "70"],
   "xy_contour_compensation": "0",
   "xy_hole_compensation": "0"
 }

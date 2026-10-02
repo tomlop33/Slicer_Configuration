@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "process",
   "name": "0.96mm Speed @Namma EVA 500 1.2 nozzle",
   "inherits": "fdm_process_common_2",
@@ -6,10 +6,7 @@
   "instantiation": "true",
   "layer_height": ["0.96"],
   "initial_layer_print_height": "0.96",
-  "compatible_printers": [
-    "Namma EVA 500 - 3DF09 - 1.2 nozzle"
-  ],
-
+  "compatible_printers": ["Namma EVA 500 - 3DF09 - 1.2 nozzle"],
   "top_surface_speed": "90",
   "support_interface_speed": "60",
   "sparse_infill_speed": "100",
@@ -24,6 +21,5 @@
   "inner_wall_speed": "80",
   "internal_solid_infill_speed": "100",
   "support_speed": "60",
-
   "travel_speed": "150"
 }

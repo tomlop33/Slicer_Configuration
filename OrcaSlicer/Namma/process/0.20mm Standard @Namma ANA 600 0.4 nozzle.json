@@ -4,7 +4,5 @@
   "inherits": "fdm_process_common",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma ANA 600 0.4 nozzle"
-  ]
+  "compatible_printers": ["Namma ANA 600 0.4 nozzle"]
 }

@@ -1,13 +1,10 @@
-﻿{
+{
   "type": "process",
   "name": "0.32mm Standard @Namma EVA 1000 0.8 nozzle",
   "inherits": "fdm_process_single_0.32_nozzle_0.8",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma EVA 1000 - 3DF05 - 0.8 nozzle"
-  ],
-
+  "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.8 nozzle"],
   "top_surface_speed": "90",
   "support_interface_speed": "60",
   "sparse_infill_speed": "100",
@@ -22,8 +19,5 @@
   "inner_wall_speed": "80",
   "internal_solid_infill_speed": "100",
   "support_speed": "60",
-
   "travel_speed": "150"
 }
-
-

@@ -4,7 +4,5 @@
   "inherits": "fdm_process_single_0.24",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": [
-    "Namma ANA 300G 0.4 nozzle"
-  ]
+  "compatible_printers": ["Namma ANA 300G 0.4 nozzle"]
 }

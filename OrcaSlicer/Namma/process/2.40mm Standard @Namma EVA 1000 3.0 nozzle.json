@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "process",
   "name": "2.40mm Standard @Namma EVA 1000 3.0 nozzle",
   "inherits": "fdm_process_common_2",
@@ -6,10 +6,7 @@
   "instantiation": "true",
   "layer_height": ["2.40"],
   "initial_layer_print_height": "2.4",
-  "compatible_printers": [
-    "Namma EVA 1000 - 3DP25 - 3.0 nozzle"
-  ],
-
+  "compatible_printers": ["Namma EVA 1000 - 3DP25 - 3.0 nozzle"],
   "top_surface_speed": "90",
   "support_interface_speed": "60",
   "sparse_infill_speed": "100",
@@ -24,6 +21,5 @@
   "inner_wall_speed": "80",
   "internal_solid_infill_speed": "100",
   "support_speed": "60",
-
   "travel_speed": "150"
 }
