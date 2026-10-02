@@ -56,6 +56,7 @@ fdm_eva_common   ─┘        └─> variantes "- Mode Copie" / "- Mode Miroir
 
 ### `machine_model`
 Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (liste séparée par `;`, ex. `"0.4;0.6;0.8"`), `family` (`ANA` / `Lucy` / `EVA`), `machine_tech: "FFF"`, `bed_model`, `bed_texture` et `default_materials` (noms de filaments séparés par `;`).
+- **`default_materials` doit contenir les `default_filament_profile` de toutes les buses du modèle.** OrcaSlicer ne coche dans la liste des filaments visibles que les filaments listés ici. Un profil par défaut non visible est remplacé par `Generic PLA` / `Generic ABS @System`.
 
 ### Variante machine (buse)
 - Champs obligatoires : `inherits` (le `fdm_<gamme>_common`), `setting_id`, `printer_model` (= nom du `machine_model`), `printer_variant` (= diamètre de buse), `nozzle_diameter`, `printable_area`, `default_filament_profile`, `default_print_profile`, `nozzle_type`.
@@ -106,6 +107,8 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 - `fdm_filament_<matière>` : `filament_vendor: ["Namma"]`, `filament_type`, `filament_id` (`GFLAxxx`), températures, `filament_max_volumetric_speed`, etc.
 - Profil final : `filament_id` = `name`, `filament_vendor: ["Namma"]`, puis les surcharges spécifiques (`pressure_advance`, `enable_pressure_advance`, `filament_flow_ratio`, `filament_max_volumetric_speed`, `filament_diameter` pour l'EVA) et `compatible_printers`.
 - Un filament ANA 300 0.4 est aussi déclaré compatible avec `Namma Lucy 300 0.4 nozzle` et avec les modes Copie/Miroir. Penser à ces variantes lors d'un ajout.
+- **Couleurs** : chaque `fdm_filament_<matière>` a sa propre `default_filament_colour`. N-ABS-INDUS a la sienne (`#B71C1C`), posée sur ses profils qui héritent de `fdm_filament_abs`, et le Granulé aussi (`#FF6D00`). Une nouvelle matière doit avoir une couleur distincte des autres. OrcaSlicer n'applique cette couleur que quand on choisit le filament à la main. Sinon, il reprend la couleur mémorisée pour l'imprimante, ou `#26A69A` par défaut.
+- Machines à 2 têtes (ANA via `fdm_ana_common`, EVA 3DF05) : `extruder_colour` vaut `["#018001", "#FF6D00"]`.
 - Pour une nouvelle matière : créer `fdm_filament_<matière>.json`, puis un fichier par modèle et par buse, puis les entrées dans `filament_list` de `Namma.json`. Mettre à jour `Namma_Resume.md`.
 
 ## Ajouter une machine — checklist
@@ -122,6 +125,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 ## Release
 
 - Zipper `Namma.json` + `Namma/` sous `OrcaSlicer/Namma <JJ_MM_AAAA>[_vN].zip`. Ce zip est ensuite importé dans OrcaSlicer.
+- Vignettes : l'image de la barre latérale d'OrcaSlicer (`Sidebar::update_printer_thumbnail`) est cherchée **uniquement** dans `<dossier d'installation OrcaSlicer>/resources/profiles/Namma/<printer_model>_cover.png`, pas dans `%APPDATA%\OrcaSlicer\system\Namma\`. Pour un nouveau modèle, il faut copier le `_cover.png` dans ce dossier `resources`, sinon une icône générique s'affiche.
 - Incrémenter `version` dans `Namma.json` (format `01.00.00.00`) quand le bundle change. Mettre `force_update` à `"1"` pour forcer la mise à jour chez les utilisateurs.
 
 ## Git

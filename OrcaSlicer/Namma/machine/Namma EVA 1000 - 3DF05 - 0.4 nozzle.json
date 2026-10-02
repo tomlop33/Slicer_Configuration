@@ -6,6 +6,7 @@
   "setting_id": "NMEVA10003DF0504",
   "instantiation": "true",
   "nozzle_diameter": ["0.4", "0.4"],
+  "extruder_colour": ["#018001", "#FF6D00"],
   "printer_model": "Namma EVA 1000 - 3DF05",
   "printer_variant": "0.4",
   "default_filament_profile": ["Namma N-ABS @Namma EVA 1000 - 3DF05 - 0.4 nozzle", "Namma N-PLA @Namma EVA 1000 - 3DF05 - 0.4 nozzle"],

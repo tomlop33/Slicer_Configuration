@@ -5,6 +5,7 @@
   "filament_id": "GFLA0020",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#424242"],
   "filament_type": ["PETG"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.29"],

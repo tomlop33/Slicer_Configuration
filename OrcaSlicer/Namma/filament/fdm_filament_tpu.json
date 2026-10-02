@@ -5,6 +5,7 @@
   "filament_id": "GFLA011",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#8E24AA"],
   "filament_type": ["TPU"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.15"],

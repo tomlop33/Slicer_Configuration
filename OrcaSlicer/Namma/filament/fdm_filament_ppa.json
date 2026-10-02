@@ -5,6 +5,7 @@
   "filament_id": "GFLA008",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#5C6BC0"],
   "filament_type": ["PPA-CF"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.17"],

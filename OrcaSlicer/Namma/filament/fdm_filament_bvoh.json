@@ -5,6 +5,7 @@
   "filament_id": "GFLA013",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#F9A825"],
   "filament_type": ["BVOH"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.12"],

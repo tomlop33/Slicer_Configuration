@@ -6,6 +6,7 @@
   "setting_id": "NMEVA10003DF0508",
   "instantiation": "true",
   "nozzle_diameter": ["0.8", "0.8"],
+  "extruder_colour": ["#018001", "#FF6D00"],
   "max_layer_height": ["0.64"],
   "min_layer_height": ["0.024"],
   "printer_model": "Namma EVA 500 - 3DF05",

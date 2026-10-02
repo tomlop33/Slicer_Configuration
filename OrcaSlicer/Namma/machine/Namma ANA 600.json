@@ -7,5 +7,5 @@
   "machine_tech": "FFF",
   "bed_model": "",
   "bed_texture": "",
-  "default_materials": "Namma N-ABS @Namma ANA 600 0.4 nozzle;Namma N-PLA @Namma ANA 600 0.4 nozzle"
+  "default_materials": "Namma N-ABS @Namma ANA 600 0.4 nozzle;Namma N-PLA @Namma ANA 600 0.4 nozzle;Namma N-ABS @Namma ANA 600 0.6 nozzle;Namma N-PLA @Namma ANA 600 0.6 nozzle;Namma N-ABS @Namma ANA 600;Namma N-PLA @Namma ANA 600"
 }

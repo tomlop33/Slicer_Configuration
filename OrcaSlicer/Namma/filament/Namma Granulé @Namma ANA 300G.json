@@ -5,6 +5,7 @@
   "from": "system",
   "filament_id": "Namma Granulé @Namma ANA 300G",
   "instantiation": "false",
+  "default_filament_colour": ["#FF6D00"],
   "filament_vendor": ["Namma"],
   "filament_flow_ratio": ["0.7"],
   "filament_max_volumetric_speed": ["15"],

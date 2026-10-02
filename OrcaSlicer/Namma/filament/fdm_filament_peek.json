@@ -5,6 +5,7 @@
   "filament_id": "GFLA004",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#A1887F"],
   "filament_type": ["PEEK"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.28"],

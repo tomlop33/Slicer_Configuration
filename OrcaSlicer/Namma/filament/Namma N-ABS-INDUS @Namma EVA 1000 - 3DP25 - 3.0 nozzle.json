@@ -5,6 +5,7 @@
   "from": "system",
   "filament_id": "Namma N-ABS-INDUS @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
   "instantiation": "true",
+  "default_filament_colour": ["#B71C1C"],
   "filament_vendor": ["Namma"],
   "enable_pressure_advance": ["1"],
   "pressure_advance": ["0"],

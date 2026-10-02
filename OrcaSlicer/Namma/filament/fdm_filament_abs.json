@@ -5,6 +5,7 @@
   "filament_id": "GFLA014",
   "from": "system",
   "instantiation": "false",
+  "default_filament_colour": ["#E53935"],
   "filament_type": ["ABS"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.04"],
