@@ -21,6 +21,7 @@
   "pressure_advance": ["0.035"],
   "activate_chamber_temp_control": ["0"],
   "chamber_temperature": ["0"],
+  "chamber_minimal_temperature": ["0"],
   "nozzle_temperature_initial_layer": ["260"],
   "nozzle_temperature": ["260"],
   "hot_plate_temp_initial_layer": ["80"],
