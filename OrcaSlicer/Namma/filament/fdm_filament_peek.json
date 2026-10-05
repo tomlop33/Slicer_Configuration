@@ -20,5 +20,8 @@
   "nozzle_temperature": ["400"],
   "hot_plate_temp_initial_layer": ["150"],
   "hot_plate_temp": ["150"],
+  "fan_min_speed": ["10"],
+  "fan_max_speed": ["40"],
+  "slow_down_min_speed": ["5"],
   "additional_cooling_fan_speed": ["70"]
 }

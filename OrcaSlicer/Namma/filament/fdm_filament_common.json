@@ -21,6 +21,7 @@
   "circle_compensation_speed": ["200"],
   "during_print_exhaust_fan_speed": ["70"],
   "diameter_limit": ["50"],
+  "dont_slow_down_outer_wall": ["1"],
   "eng_plate_temp": ["60"],
   "eng_plate_temp_initial_layer": ["60"],
   "fan_cooling_layer_time": ["60"],

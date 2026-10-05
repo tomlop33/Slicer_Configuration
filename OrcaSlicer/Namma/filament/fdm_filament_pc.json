@@ -34,7 +34,6 @@
   "slow_down_layer_time": ["8"],
   "reduce_fan_stop_start_freq": ["0"],
   "slow_down_for_layer_cooling": ["1"],
-  "dont_slow_down_outer_wall": ["1"],
   "slow_down_min_speed": ["10"],
   "enable_overhang_bridge_fan": ["0"],
   "overhang_fan_threshold": ["0%"],
