@@ -2,10 +2,10 @@
   "type": "machine_model",
   "name": "Namma ANA 300 HT",
   "model_id": "ANA300 HT",
-  "nozzle_diameter": "0.4;0.6",
+  "nozzle_diameter": "0.4;0.6;0.8",
   "family": "ANA",
   "machine_tech": "FFF",
   "bed_model": "",
   "bed_texture": "",
-  "default_materials": "Namma N-ABS @Namma ANA 300HT 0.4 nozzle;Namma N-PLA @Namma ANA 300HT 0.4 nozzle;Namma N-ABS @Namma ANA 300HT 0.6 nozzle;Namma N-PLA @Namma ANA 300HT 0.6 nozzle"
+  "default_materials": "Namma N-ABS @Namma ANA 300HT 0.4 nozzle;Namma N-ASA @Namma ANA 300HT 0.4 nozzle;Namma N-ABS @Namma ANA 300HT 0.6 nozzle;Namma N-ASA @Namma ANA 300HT 0.6 nozzle;Namma N-ABS @Namma ANA 300HT;Namma N-ASA @Namma ANA 300HT"
 }

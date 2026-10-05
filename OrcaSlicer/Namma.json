@@ -30,6 +30,7 @@
     { "name": "Namma ANA 300 V2 0.8 nozzle", "sub_path": "machine/Namma ANA 300 V2 0.8 nozzle.json" },
     { "name": "Namma ANA 300 HT 0.4 nozzle", "sub_path": "machine/Namma ANA 300 HT 0.4 nozzle.json" },
     { "name": "Namma ANA 300 HT 0.6 nozzle", "sub_path": "machine/Namma ANA 300 HT 0.6 nozzle.json" },
+    { "name": "Namma ANA 300 HT 0.8 nozzle", "sub_path": "machine/Namma ANA 300 HT 0.8 nozzle.json" },
     { "name": "Namma ANA 600 0.4 nozzle", "sub_path": "machine/Namma ANA 600 0.4 nozzle.json" },
     { "name": "Namma ANA 600 0.6 nozzle", "sub_path": "machine/Namma ANA 600 0.6 nozzle.json" },
     { "name": "Namma ANA 600 0.8 nozzle", "sub_path": "machine/Namma ANA 600 0.8 nozzle.json" },

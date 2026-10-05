@@ -12,7 +12,7 @@
 ### Gamme ANA
 - Namma ANA 300 — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
 - Namma ANA 300 V2 — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
-- Namma ANA 300 HT — 300×300×300 mm — buses 0.4 / 0.6
+- Namma ANA 300 HT — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
 - Namma ANA 300G — 300×300×300 mm — buses 0.4 / 0.6 / 0.8 — tête 2 granulés (filament « Namma Granulé »)
 - Namma ANA 600 — 600×600×600 mm — buses 0.4 / 0.6 / 0.8 / 1.0
 
