@@ -8,6 +8,7 @@
   "default_filament_colour": ["#00ACC1"],
   "filament_type": ["PLA"],
   "filament_vendor": ["Namma"],
+  "filament_max_volumetric_speed": ["20"],
   "filament_density": ["1.325"],
   "filament_flow_ratio": ["0.98"],
   "temperature_vitrification": ["67"],

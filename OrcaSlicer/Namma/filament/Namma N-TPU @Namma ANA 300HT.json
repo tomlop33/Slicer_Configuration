@@ -6,6 +6,7 @@
   "filament_id": "Namma N-TPU @Namma ANA 300HT",
   "instantiation": "true",
   "filament_vendor": ["Namma"],
+  "filament_max_volumetric_speed": ["5"],
   "enable_pressure_advance": ["1"],
   "pressure_advance": ["0.04"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"]

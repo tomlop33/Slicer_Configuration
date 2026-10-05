@@ -8,6 +8,7 @@
   "default_filament_colour": ["#A1887F"],
   "filament_type": ["PEEK"],
   "filament_vendor": ["Namma"],
+  "filament_max_volumetric_speed": ["10"],
   "filament_density": ["1.28"],
   "temperature_vitrification": ["200"],
   "activate_chamber_temp_control": ["0"],

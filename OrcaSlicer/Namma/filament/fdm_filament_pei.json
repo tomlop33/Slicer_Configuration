@@ -8,6 +8,7 @@
   "default_filament_colour": ["#FFB300"],
   "filament_type": ["PEI"],
   "filament_vendor": ["Namma"],
+  "filament_max_volumetric_speed": ["10"],
   "filament_density": ["1.28"],
   "temperature_vitrification": ["181"],
   "activate_chamber_temp_control": ["0"],

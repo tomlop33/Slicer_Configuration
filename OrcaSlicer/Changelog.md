@@ -63,6 +63,16 @@
 - **BVOH, PVA, Soluble** : « Matériau soluble » et « Filament de support » sont cochés.
 - **PEEK, PEI** : ventilation de 10 à 40 %, vitesse d'impression minimale 5 mm/s.
 - **Tous les filaments** : « Don't slow down outer walls » est activé.
+- **Max volumetric speed (ANA / Lucy)**, adapté à la Mosquito, à l'extrudeur LGX Pro et à une buse en acier trempé :
+
+  | Matières | Débit |
+  |---|---|
+  | PLA, PLX, ABS, ABS-INDUS, ASA, PETG, PETG-CF / GF / GF UV / ESD, EASY FOOD, EASY V0 | 20 mm³/s |
+  | PC, PAHT CF, PPA CF, PPS CF, PEEK, PEI | 10 mm³/s |
+  | PVA, BVOH, Soluble 90 / 111 / 150 | 15 mm³/s |
+  | TPU | 3 / 4 / 5 mm³/s en buse 0.4 / 0.6 / 0.8 |
+
+  La valeur par défaut de `fdm_filament_common` passe de 5 à 20 mm³/s. Les EVA 3DF05 héritent des mêmes valeurs, sauf le TPU qui reste à 3.5. Les EVA grosses buses gardent 75.
 
 #### Machines / G-code
 - **Start G-code ANA et Lucy** : le paramètre `C` (température minimale de chambre) est passé à `start_print_ANA.g` / `start_print_Lucy.g`. Sur les ANA, c'est le maximum des têtes **réellement utilisées** dans l'impression.
