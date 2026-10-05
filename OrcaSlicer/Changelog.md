@@ -44,6 +44,21 @@
 - **Remplissage** : motif par défaut **Cubic** au lieu de Grid, et `minimum_sparse_infill_area` à 70 mm².
 - **Épaisseur minimale du dessus et du fond** : 1 mm (Quality / Standard / Speed) et 1.5 mm (Strength).
 - **Ponts** : `bridge_flow` et `internal_bridge_flow` à 1.35 sur tous les profils.
+- **Supports activés par défaut** :
+
+  | Réglage | Valeur |
+  |---|---|
+  | Type | Tree (auto) |
+  | Style | Tree Hybrid |
+  | Angle seuil | 40° |
+  | Densité première couche | 100 % |
+  | Parois de support | 1 |
+  | Espacement du motif de base | 4 mm |
+  | Interface | Rectilinear interlaced, espacement 0.25 mm |
+  | Expansion | 2 mm |
+  | Distance XY à l'objet | 0.5 mm |
+  | Écart en première couche | 0.4 mm |
+
 - **Tour de purge** : Prime volume à 40 mm³ au lieu de 100, Extra flow for purging à 150 % au lieu de 100 %.
 
 #### Filaments
