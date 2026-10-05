@@ -14,6 +14,5 @@
   "outer_wall_speed": ["200"],
   "sparse_infill_speed": ["270"],
   "top_shell_layers": "5",
-  "top_color_penetration_layers": "5",
-  "top_shell_thickness": "1.0"
+  "top_color_penetration_layers": "5"
 }

@@ -9,6 +9,8 @@
   "inner_wall_speed": "80",
   "wall_loops": "4",
   "bottom_shell_layers": "6",
+  "bottom_shell_thickness": "1.5",
+  "top_shell_thickness": "1.5",
   "top_shell_layers": "6",
   "sparse_infill_density": "35%"
 }
