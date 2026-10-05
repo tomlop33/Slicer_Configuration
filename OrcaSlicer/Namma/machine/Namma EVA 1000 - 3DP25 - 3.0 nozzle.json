@@ -7,7 +7,6 @@
   "instantiation": "true",
   "nozzle_diameter": ["3.0"],
   "max_layer_height": ["2.4"],
-  "min_layer_height": ["0.024"],
   "printer_model": "Namma EVA 1000 - 3DP25",
   "printer_variant": "3.0",
   "default_filament_profile": ["Namma N-ABS @Namma EVA 1000 - 3DP25 - 3.0 nozzle", "Namma N-PLA @Namma EVA 1000 - 3DP25 - 3.0 nozzle"],

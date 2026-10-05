@@ -75,6 +75,7 @@
   La valeur par défaut de `fdm_filament_common` passe de 5 à 20 mm³/s. Les EVA 3DF05 héritent des mêmes valeurs, sauf le TPU qui reste à 3.5. Les EVA grosses buses gardent 75.
 
 #### Machines / G-code
+- **Limites de hauteur de couche** : le minimum est à 0.08 mm sur toutes les machines. Il était à 0.016 ou 0.024 mm sur les buses autres que 0.4, ce qui n'est pas imprimable. Le maximum en buse 0.4 passe de 0.30 à 0.32 mm. Les autres buses restent à 80 % de leur diamètre.
 - **Start G-code ANA et Lucy** : le paramètre `C` (température minimale de chambre) est passé à `start_print_ANA.g` / `start_print_Lucy.g`. Sur les ANA, c'est le maximum des têtes **réellement utilisées** dans l'impression.
 - **Modes Copie / Miroir (ANA 300, ANA 300 V2)** : `X` / `Y` (coin minimum de la première couche) sont passés à la macro pour la ligne de purge.
 - **End G-code EVA** : extinction du plateau et de la chauffe de chambre en fin d'impression.

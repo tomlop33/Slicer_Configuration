@@ -7,7 +7,6 @@
   "instantiation": "true",
   "nozzle_diameter": ["0.8", "0.8"],
   "max_layer_height": ["0.64"],
-  "min_layer_height": ["0.024"],
   "printer_model": "Namma ANA 300 V2",
   "printer_variant": "0.8",
   "default_filament_profile": ["Namma N-ABS @Namma ANA 300V2", "Namma N-PLA @Namma ANA 300V2"],
