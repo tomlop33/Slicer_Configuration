@@ -8,6 +8,7 @@ Profils OrcaSlicer des imprimantes 3D **Namma** (gammes ANA, Lucy, EVA).
 - `OrcaSlicer/Namma.json` : index du bundle vendor. `OrcaSlicer/Namma/` : tous les profils.
 - `OrcaSlicer/Namma <JJ_MM_AAAA>[_vN].zip` : bundle livrable (contient `Namma.json` + `Namma/`), à régénérer à partir des fichiers à chaque release.
 - `OrcaSlicer/Namma_Resume.md` : liste des machines et des filaments pour les utilisateurs.
+- `OrcaSlicer/Changelog.md` : journal des changements, avec une section datée par livraison (Nouveautés / Modifications / Corrections / Installation). Le compléter à chaque série de changements.
 
 ## Arborescence OrcaSlicer
 
@@ -85,7 +86,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
   - `fdm_process_common_lucy_ana`
   - `fdm_process_single_<couche>[_nozzle_<buse>]` : intermédiaires par couche/buse (ex. `fdm_process_single_0.24_nozzle_0.6`)
   - le profil final hérite de l'intermédiaire adapté (ou directement d'un common).
-- **Largeurs de ligne** : elles sont définies **uniquement** dans `fdm_process_common`, en % du diamètre de buse : Default 112.5 %, First layer 125 %, Outer/Inner `0` (= Default), Top surface 80 %, Sparse infill 125 %, Internal solid infill 120 %, Support 100 %, Bridge 100 %. Ne pas les redéfinir dans les intermédiaires ni dans les profils finaux.
+- **Largeurs de ligne** : elles sont définies **uniquement** dans `fdm_process_common`, en % du diamètre de buse : Default 112.5 %, First layer 125 %, Outer wall `0` (= Default), Inner wall 125 %, Top surface 80 %, Sparse infill 125 %, Internal solid infill 120 %, Support 100 %, Bridge 100 %. Ne pas les redéfinir dans les intermédiaires ni dans les profils finaux.
   - **Exception** : OrcaSlicer refuse une largeur ≤ hauteur de couche (« Too small line width »). Au découpage, il refuse aussi une ligne qui devient plus étroite que la couche quand il resserre l'écartement (`Flow::with_spacing()`). Les profils EVA dont la couche vaut 80 % de la buse (`0.96mm Speed` 1.2, `2.00mm Speed` 2.5, `2.40mm Standard` 3.0, EVA 500 et 1000) surchargent donc `top_surface_line_width` à `100%`. Toute largeur doit rester ≥ 1.25 × la hauteur de couche.
 - `compatible_printers` : liste **exacte** des noms de machines (variantes buse, plus Mode Copie/Miroir le cas échéant).
 - Le profil référencé par `default_print_profile` d'une machine doit exister.
