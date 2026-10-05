@@ -12,7 +12,7 @@
 - **Namma ANA 600 1.0 nozzle** : elle est désormais déclarée et chargée. Elle hérite de `fdm_ana_common` (2 têtes, G-code ANA), comme les autres ANA 600.
 
 #### Filaments
-- **Namma Granulé** (ANA 300G, buses 0.4 / 0.6 / 0.8), sur base PETG : flow 0.7, débit max 15 mm³/s, pressure advance 0.04. C'est le filament par défaut de la tête 2.
+- **Namma Granulé** (ANA 300G, buses 0.4 / 0.6 / 0.8), sur base PETG : flow 0.7, débit max 15 mm³/s, pressure advance 0.04, buse 240 °C (plage recommandée 190 à 275 °C), retrait XY 100 % (aucune compensation). C'est le filament par défaut de la tête 2.
 - **Namma N-Soluble 90 / 111 / 150**, en remplacement de N-Soluble :
 
   | Profil | Buse | Ventilation | Plateau | Chambre |
@@ -44,6 +44,7 @@
 - **Remplissage** : motif par défaut **Cubic** au lieu de Grid, et `minimum_sparse_infill_area` à 70 mm².
 - **Épaisseur minimale du dessus et du fond** : 1 mm (Quality / Standard / Speed) et 1.5 mm (Strength).
 - **Ponts** : `bridge_flow` et `internal_bridge_flow` à 1.35 sur tous les profils.
+- **Tour de purge** : Prime volume à 40 mm³ au lieu de 100, Extra flow for purging à 150 % au lieu de 100 %.
 
 #### Filaments
 - **Température de chambre** (`chamber_minimal_temperature` = `chamber_temperature`), limitée à 65 °C, ou 90 °C sur l'ANA 300 HT :
