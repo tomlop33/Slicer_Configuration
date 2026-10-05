@@ -10,6 +10,5 @@
   "wall_loops": "4",
   "bottom_shell_layers": "6",
   "top_shell_layers": "6",
-  "sparse_infill_density": "35%",
-  "sparse_infill_line_width": "1.0"
+  "sparse_infill_density": "35%"
 }

@@ -85,6 +85,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
   - `fdm_process_common_lucy_ana`
   - `fdm_process_single_<couche>[_nozzle_<buse>]` : intermédiaires par couche/buse (ex. `fdm_process_single_0.24_nozzle_0.6`)
   - le profil final hérite de l'intermédiaire adapté (ou directement d'un common).
+- **Largeurs de ligne** : elles sont définies **uniquement** dans `fdm_process_common`, en % du diamètre de buse : Default 112.5 %, First layer 125 %, Outer/Inner `0` (= Default), Top surface 80 %, Sparse infill 125 %, Internal solid infill 120 %, Support 100 %, Bridge 100 %. Ne pas les redéfinir dans les intermédiaires ni dans les profils finaux.
 - `compatible_printers` : liste **exacte** des noms de machines (variantes buse, plus Mode Copie/Miroir le cas échéant).
 - Le profil référencé par `default_print_profile` d'une machine doit exister.
 - Pour une nouvelle machine, créer la série complète des process pour chaque buse (même jeu que les modèles équivalents).
