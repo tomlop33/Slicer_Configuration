@@ -5,6 +5,5 @@
   "from": "system",
   "filament_id": "Namma Granulé @Namma ANA 300G 0.4 nozzle",
   "instantiation": "true",
-  "filament_vendor": ["Namma"],
   "compatible_printers": ["Namma ANA 300G 0.4 nozzle"]
 }

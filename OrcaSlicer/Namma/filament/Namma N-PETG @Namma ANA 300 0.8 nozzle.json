@@ -5,6 +5,5 @@
   "from": "system",
   "filament_id": "Namma N-PETG @Namma ANA 300 0.8 nozzle",
   "instantiation": "true",
-  "filament_vendor": ["Namma"],
   "compatible_printers": ["Namma ANA 300 0.8 nozzle", "Namma Lucy 300 0.8 nozzle", "Namma ANA 300G 0.8 nozzle"]
 }

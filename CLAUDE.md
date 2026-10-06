@@ -34,7 +34,7 @@ OrcaSlicer/
 5. Valeurs : **toujours des chaînes** (`"0.4"`, `"1"`, `"50%"`), y compris les nombres et les booléens (`"0"`/`"1"`).
    - Les paramètres par extrudeur ou par filament sont des **tableaux** (`["0.95"]`). Pour les machines à 2 extrudeurs (ANA), il faut 2 valeurs (`["1500", "1500"]`).
    - `"nil"` signifie « hériter de la valeur machine » (champs `filament_retract_*`, `filament_wipe`, …).
-6. **Ne surcharger que les clés qui diffèrent du parent** : les profils finaux restent courts. Les valeurs communes vont dans le `fdm_*` parent.
+6. **Ne surcharger que les clés qui diffèrent du parent** : les profils finaux restent courts. Une valeur identique chez tous les enfants d'une base va dans cette base. `filament_vendor` et `enable_pressure_advance` sont définis dans les bases `fdm_filament_*`, il ne faut pas les recopier. Vérifier après chaque série de modifications qu'aucune clé ne répète la valeur héritée.
 7. **Format : une ligne par variable.** Les tableaux de valeurs tiennent sur la ligne de leur clé (`"nozzle_diameter": ["0.4", "0.4"],`). Dans `Namma.json`, chaque entrée tient sur une ligne (`{ "name": "...", "sub_path": "..." },`). Indentation 2 espaces, UTF-8 **sans BOM**, pas de lignes vides. Fins de ligne : LF dans le dépôt (Git les convertit en CRLF sur Windows via `core.autocrlf`).
 8. JSON strict : pas de virgule finale, pas de commentaires. Valider le JSON avant chaque commit.
 
@@ -111,7 +111,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
   Les solubles ont un niveau de plus : `fdm_filament_soluble` (propriétés communes, soluble et support) → `fdm_filament_soluble_<90|111|150>` (buse, ventilation, plateau, chambre) → profils `Namma N-Soluble <90|111|150> @...`.
   Pour l'ANA 300 (partagée avec la G) et le Granulé, le profil « modèle » est une base masquée (`instantiation: "false"`) : chaque buse, 0.8 comprise, a son propre profil `... <buse> nozzle`. Les autres gammes utilisent encore le profil « modèle » comme profil 0.8.
 - `fdm_filament_<matière>` : `filament_vendor: ["Namma"]`, `filament_type`, `filament_id` (`GFLAxxx`), températures, `filament_max_volumetric_speed`, etc.
-- Profil final : `filament_id` = `name`, `filament_vendor: ["Namma"]`, puis les surcharges spécifiques (`pressure_advance`, `enable_pressure_advance`, `filament_flow_ratio`, `filament_max_volumetric_speed`, `filament_diameter` pour l'EVA) et `compatible_printers`.
+- Profil final : `filament_id` = `name`, puis **uniquement** les surcharges qui diffèrent du parent (`pressure_advance`, `enable_pressure_advance`, `filament_flow_ratio`, `filament_max_volumetric_speed`, `filament_diameter` pour l'EVA) et `compatible_printers`.
 - Un filament ANA 300 0.4 est aussi déclaré compatible avec `Namma Lucy 300 0.4 nozzle` et avec les modes Copie/Miroir. Penser à ces variantes lors d'un ajout.
 - **Couleurs** : chaque `fdm_filament_<matière>` a sa propre `default_filament_colour`. N-ABS-INDUS a la sienne (`#B71C1C`), posée sur ses profils qui héritent de `fdm_filament_abs`, et le Granulé aussi (`#FF6D00`). Une nouvelle matière doit avoir une couleur distincte des autres. OrcaSlicer n'applique cette couleur que quand on choisit le filament à la main. Sinon, il reprend la couleur mémorisée pour l'imprimante, ou `#26A69A` par défaut.
 - Machines à 2 têtes (ANA via `fdm_ana_common`, EVA 3DF05) : `extruder_colour` vaut `["#018001", "#FF6D00"]`.

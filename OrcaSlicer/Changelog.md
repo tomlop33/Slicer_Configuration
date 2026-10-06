@@ -113,6 +113,7 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Lucy 300 0.8** : elle n'avait aucun filament compatible. Elle partage maintenant les filaments ANA 300 0.8.
 - **EVA 0.96 / 2.00 / 2.40 mm** : correction des erreurs de découpage « Too small line width » et `Flow::with_spacing()`, avec le dessus à 100 %.
 - **Clé invalide** `chamber_minimal_temperatures` dans `fdm_filament_common` : remplacée par les clés correctes.
+- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique.
 - **Formatage** : tous les JSON passent à une ligne par paramètre, en UTF-8 sans BOM. Le contenu est inchangé.
 
 ### Installation / à savoir

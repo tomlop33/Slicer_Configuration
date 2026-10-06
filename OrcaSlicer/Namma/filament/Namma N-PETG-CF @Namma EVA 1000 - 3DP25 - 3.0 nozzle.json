@@ -5,11 +5,8 @@
   "from": "system",
   "filament_id": "Namma N-PETG-CF @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
   "instantiation": "true",
-  "filament_vendor": ["Namma"],
-  "enable_pressure_advance": ["1"],
   "pressure_advance": ["0"],
   "filament_max_volumetric_speed": ["75"],
   "compatible_printers": ["Namma EVA 1000 - 3DP25 - 3.0 nozzle"],
-  "filament_diameter": ["2.85"],
-  "filament_wipe_distance": ["2"]
+  "filament_diameter": ["2.85"]
 }

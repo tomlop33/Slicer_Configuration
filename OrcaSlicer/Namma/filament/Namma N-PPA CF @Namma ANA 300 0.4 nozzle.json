@@ -5,8 +5,6 @@
   "from": "system",
   "filament_id": "Namma N-PPA CF @Namma ANA 300 0.4 nozzle",
   "instantiation": "true",
-  "filament_vendor": ["Namma"],
-  "enable_pressure_advance": ["1"],
   "pressure_advance": ["0.04"],
   "compatible_printers": ["Namma ANA 300 0.4 nozzle", "Namma ANA 300G 0.4 nozzle", "Namma Lucy 300 0.4 nozzle", "Namma ANA 300 0.4 nozzle - Mode Copie", "Namma ANA 300 0.4 nozzle - Mode Miroir"]
 }
