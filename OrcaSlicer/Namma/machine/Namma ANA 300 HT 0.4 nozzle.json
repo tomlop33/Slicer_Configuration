@@ -5,6 +5,7 @@
   "from": "system",
   "setting_id": "NMANA300HT04",
   "instantiation": "true",
+  "nozzle_diameter": ["0.4", "0.4"],
   "machine_max_acceleration_extruding": ["5000", "5000"],
   "machine_max_acceleration_retracting": ["5000", "5000"],
   "machine_max_acceleration_travel": ["5000", "5000"],

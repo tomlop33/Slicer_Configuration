@@ -5,6 +5,7 @@
   "from": "system",
   "setting_id": "NMEVA5003DF0504",
   "instantiation": "true",
+  "nozzle_diameter": ["0.4", "0.4"],
   "extruder_colour": ["#018001", "#FF6D00"],
   "printer_model": "Namma EVA 500 - 3DF05",
   "printer_variant": "0.4",

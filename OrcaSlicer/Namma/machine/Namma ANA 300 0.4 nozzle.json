@@ -5,6 +5,7 @@
   "from": "system",
   "setting_id": "NMANA30004",
   "instantiation": "true",
+  "nozzle_diameter": ["0.4", "0.4"],
   "machine_max_acceleration_extruding": ["1500", "1500"],
   "machine_max_acceleration_retracting": ["1500", "1500"],
   "machine_max_acceleration_travel": ["1500", "1500"],

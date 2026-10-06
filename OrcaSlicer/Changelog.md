@@ -113,12 +113,12 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Lucy 300 0.8** : elle n'avait aucun filament compatible. Elle partage maintenant les filaments ANA 300 0.8.
 - **EVA 0.96 / 2.00 / 2.40 mm** : correction des erreurs de découpage « Too small line width » et `Flow::with_spacing()`, avec le dessus à 100 %.
 - **Clé invalide** `chamber_minimal_temperatures` dans `fdm_filament_common` : remplacée par les clés correctes.
-- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique.
+- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique. `nozzle_diameter` est conservé dans chaque variante de buse : l'écran de sélection des imprimantes d'OrcaSlicer le lit sans suivre l'héritage.
 - **Formatage** : tous les JSON passent à une ligne par paramètre, en UTF-8 sans BOM. Le contenu est inchangé.
 
 ### Installation / à savoir
-- **Mise à jour** : la version du bundle passe à `01.01.00.00`. Importer le nouveau zip, ou recopier `Namma.json` et `Namma/` dans `%APPDATA%\OrcaSlicer\system\` avec OrcaSlicer fermé.
+- **Installation / mise à jour** (version `01.01.00.00`) : OrcaSlicer fermé, dézipper le bundle et copier `Namma.json` et le dossier `Namma/` dans `C:\Program Files\OrcaSlicer\resources\profiles\` (droits administrateur, remplacer les fichiers existants). Au démarrage suivant, OrcaSlicer installe automatiquement la nouvelle version. Ensuite, *Aide → Assistant de configuration* pour cocher les machines, buses et filaments voulus.
 - **Points en attente de tests** (pression d'avance, flow ratio…) : voir `A_tester.md`.
-- **Vignettes** : OrcaSlicer ne lit l'image de la barre latérale que dans `<installation OrcaSlicer>\resources\profiles\Namma\`. Il faut y copier les `*_cover.png`, avec les droits administrateur.
+- **Vignettes** : elles sont fournies dans le dossier `Namma/` et s'installent avec lui.
 - **Première sélection d'une machine** : OrcaSlicer peut proposer *Generic PLA* sur la tête 1. Choisir le filament Namma une fois ; il est ensuite mémorisé.
 - **Granulé** : OrcaSlicer ne peut pas réserver un filament à une seule tête. Sur l'ANA 300G, il faut choisir Granulé sur la tête 2.

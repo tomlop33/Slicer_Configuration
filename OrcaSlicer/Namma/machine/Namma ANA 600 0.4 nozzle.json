@@ -5,6 +5,7 @@
   "from": "system",
   "setting_id": "NMANA60004",
   "instantiation": "true",
+  "nozzle_diameter": ["0.4", "0.4"],
   "printer_model": "Namma ANA 600",
   "printer_variant": "0.4",
   "default_filament_profile": ["Namma N-ABS @Namma ANA 600 0.4 nozzle", "Namma N-PLA @Namma ANA 600 0.4 nozzle"],

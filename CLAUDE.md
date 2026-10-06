@@ -35,6 +35,7 @@ OrcaSlicer/
    - Les paramètres par extrudeur ou par filament sont des **tableaux** (`["0.95"]`). Pour les machines à 2 extrudeurs (ANA), il faut 2 valeurs (`["1500", "1500"]`).
    - `"nil"` signifie « hériter de la valeur machine » (champs `filament_retract_*`, `filament_wipe`, …).
 6. **Ne surcharger que les clés qui diffèrent du parent** : les profils finaux restent courts. Une valeur identique chez tous les enfants d'une base va dans cette base. `filament_vendor` et `enable_pressure_advance` sont définis dans les bases `fdm_filament_*`, il ne faut pas les recopier. Vérifier après chaque série de modifications qu'aucune clé ne répète la valeur héritée.
+   - ⚠️ **Exceptions, à toujours écrire dans le fichier même si la valeur est identique au parent.** L'écran de sélection des imprimantes d'OrcaSlicer (`GuideFrame::LoadProfileFamily`) lit ces clés **sans suivre l'héritage** : `nozzle_diameter`, `printer_model`, `printer_variant` et `instantiation` dans chaque variante machine ; `instantiation` et `compatible_printers` dans chaque profil filament. S'il en manque une, l'écran de sélection des imprimantes plante (« type must be string, but is null »). Le 06/10/2026, `nozzle_diameter` retiré des buses 0.4 a provoqué ce plantage.
 7. **Format : une ligne par variable.** Les tableaux de valeurs tiennent sur la ligne de leur clé (`"nozzle_diameter": ["0.4", "0.4"],`). Dans `Namma.json`, chaque entrée tient sur une ligne (`{ "name": "...", "sub_path": "..." },`). Indentation 2 espaces, UTF-8 **sans BOM**, pas de lignes vides. Fins de ligne : LF dans le dépôt (Git les convertit en CRLF sur Windows via `core.autocrlf`).
 8. JSON strict : pas de virgule finale, pas de commentaires. Valider le JSON avant chaque commit.
 
@@ -130,10 +131,21 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 
 ## Release
 
-- Zipper `Namma.json` + `Namma/` sous `OrcaSlicer/Namma <JJ_MM_AAAA>[_vN].zip`. Ce zip est ensuite importé dans OrcaSlicer.
-- Vignettes : l'image de la barre latérale d'OrcaSlicer (`Sidebar::update_printer_thumbnail`) est cherchée **uniquement** dans `<dossier d'installation OrcaSlicer>/resources/profiles/Namma/<printer_model>_cover.png`, pas dans `%APPDATA%\OrcaSlicer\system\Namma\`. Pour un nouveau modèle, il faut copier le `_cover.png` dans ce dossier `resources`, sinon une icône générique s'affiche.
-- Incrémenter `version` dans `Namma.json` (format `01.00.00.00`) quand le bundle change. Mettre `force_update` à `"1"` pour forcer la mise à jour chez les utilisateurs.
+- **Toujours incrémenter `version` dans `Namma.json`** (format `01.01.00.00`) quand le bundle change. C'est ce qui déclenche la mise à jour chez les clients (méthode A).
+- Zip du bundle : `OrcaSlicer/Namma <JJ_MM_AAAA>[_vN].zip`, contenant `Namma.json` + `Namma/`. Ne le générer **que sur demande explicite**.
 
+### Installation chez les clients — méthode A (`resources`)
+
+- Copier `Namma.json` **et** le dossier `Namma/` (vignettes comprises) dans `<dossier d'installation OrcaSlicer>\resources\profiles\`, par exemple `C:\Program Files\OrcaSlicer\resources\profiles\`. Il faut les droits administrateur, et OrcaSlicer doit être fermé.
+- Au démarrage, si la version de `resources\profiles\Namma.json` **diffère** de celle installée dans `%APPDATA%\OrcaSlicer\system`, OrcaSlicer recopie le bundle de `resources` vers `system`. Les vignettes ne sont pas recopiées : elles restent lues dans `resources`.
+- Une mise à jour **sans changement de version** n'est donc pas prise en compte : `system` garde l'ancienne copie.
+
+### Poste de développement — méthode B (`system`)
+
+- Les profils sont copiés directement dans `%APPDATA%\OrcaSlicer\system\` (`Namma.json` + `Namma/`), avec OrcaSlicer fermé. Pas besoin des droits administrateur, ce qui permet de tester chaque modification tout de suite.
+- `resources\profiles\Namma\` ne contient que les `*_cover.png`. **Jamais de `Namma.json` ni de profils dans `resources` sur ce poste** : OrcaSlicer réinstallerait au démarrage la version de `resources` par-dessus celle de `system` dès que les versions diffèrent.
+- Vignettes : l'image de la barre latérale (`Sidebar::update_printer_thumbnail`) est lue **uniquement** dans `resources\profiles\Namma\<printer_model>_cover.png`. Pour un nouveau modèle, copier son `_cover.png` dans ce dossier, sinon une icône générique s'affiche.
+- ⚠️ Incident du 06/10/2026 : un bundle 01.00.00.00 resté dans `resources` a écrasé à moitié l'installation 01.01.00.00 de `system`. OrcaSlicer a ensuite retiré 328 filaments de la liste visible de `OrcaSlicer.conf`.
 ## Git
 
 - Branche principale `main`. Les évolutions passent par des branches (ex. `EVA-500/1000`, `Test`) puis une PR.
