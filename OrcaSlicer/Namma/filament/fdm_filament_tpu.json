@@ -9,7 +9,7 @@
   "filament_type": ["TPU"],
   "filament_vendor": ["Namma"],
   "filament_density": ["1.15"],
-  "temperature_vitrification": [""],
+  "temperature_vitrification": ["60"],
   "activate_chamber_temp_control": ["0"],
   "chamber_temperature": ["0"],
   "chamber_minimal_temperature": ["0"],

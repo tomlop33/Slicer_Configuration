@@ -1,6 +1,8 @@
 # Changelog — Profils Namma OrcaSlicer
 
-## 05/10/2026 (modifications du 02/10 au 05/10/2026)
+## 06/10/2026 — version 01.01.00.00 (modifications du 02/10 au 06/10/2026)
+
+Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 
 > Profils testés avec OrcaSlicer **2.4.2**. Le paramètre `chamber_minimal_temperature` utilisé dans le start G-code nécessite **OrcaSlicer 2.4.1 minimum**.
 
@@ -100,6 +102,13 @@
   - `default_materials` des modèles couvre maintenant toutes les buses. Les profils par défaut sont ainsi cochés à la configuration et ne sont plus remplacés par Generic PLA / ABS.
 
 ### Corrections
+- **Identifiants uniques** : nouveaux `setting_id` pour l'ANA 300 0.8 (`NMANA30008`), l'ANA 300 HT 0.4 / 0.6 (`NMANA300HT04/06`) et les EVA 500 (`NMEVA500…`). Nouveaux `model_id` des EVA 500 (`EVA500…`), qui étaient partagés avec les EVA 1000.
+- **Buse en acier trempé** (`hardened_steel`) déclarée sur toutes les machines, au lieu du laiton.
+- **Températures de ramollissement** : TPU à 60 °C (la valeur était vide), N-Soluble 90 / 111 / 150 à 90 / 111 / 150 °C (au lieu de 203).
+- **N-PPS CF** : plage de buse recommandée jusqu'à 350 °C (elle s'arrêtait à 320 alors que la buse est à 330), et type renommé `PPS-CF`.
+- **N-ASA** : ventilation de 15 à 50 % alignée sur l'ABS (elle était à 0 %).
+- **Nettoyage** : suppression de 4 bases jamais utilisées (`fdm_process_common_lucy_ana`, `fdm_process_single_0.20`, `fdm_process_single_0.40_nozzle_0.8`, `fdm_machine_common`).
+- **Bases machine** : `nozzle_diameter` contient une valeur par extrudeur (ANA / EVA : 2, Lucy : 1). Avant, il contenait la liste des buses, ce qui décrivait une machine à 3 ou 5 têtes.
 - **ANA 600 1.0** : `nozzle_diameter` était mal formé (`"1.0,1.0"`), le filament par défaut `Generic PLA @System` était inexistant, et il manquait la hauteur de couche max (0.8) et le profil process par défaut.
 - **Lucy 300 0.8** : elle n'avait aucun filament compatible. Elle partage maintenant les filaments ANA 300 0.8.
 - **EVA 0.96 / 2.00 / 2.40 mm** : correction des erreurs de découpage « Too small line width » et `Flow::with_spacing()`, avec le dessus à 100 %.
@@ -107,6 +116,8 @@
 - **Formatage** : tous les JSON passent à une ligne par paramètre, en UTF-8 sans BOM. Le contenu est inchangé.
 
 ### Installation / à savoir
+- **Mise à jour** : la version du bundle passe à `01.01.00.00`. Importer le nouveau zip, ou recopier `Namma.json` et `Namma/` dans `%APPDATA%\OrcaSlicer\system\` avec OrcaSlicer fermé.
+- **Points en attente de tests** (pression d'avance, flow ratio…) : voir `A_tester.md`.
 - **Vignettes** : OrcaSlicer ne lit l'image de la barre latérale que dans `<installation OrcaSlicer>\resources\profiles\Namma\`. Il faut y copier les `*_cover.png`, avec les droits administrateur.
 - **Première sélection d'une machine** : OrcaSlicer peut proposer *Generic PLA* sur la tête 1. Choisir le filament Namma une fois ; il est ensuite mémorisé.
 - **Granulé** : OrcaSlicer ne peut pas réserver un filament à une seule tête. Sur l'ANA 300G, il faut choisir Granulé sur la tête 2.

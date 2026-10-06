@@ -1,7 +1,7 @@
 {
   "type": "machine_model",
   "name": "Namma EVA 500 - 3DF09",
-  "model_id": "EVA10003DF09",
+  "model_id": "EVA5003DF09",
   "nozzle_diameter": "1.2;2.5",
   "family": "EVA",
   "machine_tech": "FFF",

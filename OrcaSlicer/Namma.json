@@ -1,6 +1,6 @@
 {
   "name": "Namma",
-  "version": "01.00.00.00",
+  "version": "01.01.00.00",
   "force_update": "0",
   "description": "Namma printer profiles",
   "machine_model_list": [
@@ -18,7 +18,6 @@
     { "name": "Namma EVA 500 - 3DP25", "sub_path": "machine/Namma EVA 500 - 3DP25.json" }
   ],
   "machine_list": [
-    { "name": "fdm_machine_common", "sub_path": "machine/fdm_machine_common.json" },
     { "name": "fdm_ana_common", "sub_path": "machine/fdm_ana_common.json" },
     { "name": "fdm_lucy_common", "sub_path": "machine/fdm_lucy_common.json" },
     { "name": "fdm_eva_common", "sub_path": "machine/fdm_eva_common.json" },
@@ -65,10 +64,8 @@
   "process_list": [
     { "name": "fdm_process_common", "sub_path": "process/fdm_process_common.json" },
     { "name": "fdm_process_common_2", "sub_path": "process/fdm_process_common_2.json" },
-    { "name": "fdm_process_common_lucy_ana", "sub_path": "process/fdm_process_common_lucy_ana.json" },
     { "name": "fdm_process_single_0.16", "sub_path": "process/fdm_process_single_0.16.json" },
     { "name": "fdm_process_single_0.18_nozzle_0.6", "sub_path": "process/fdm_process_single_0.18_nozzle_0.6.json" },
-    { "name": "fdm_process_single_0.20", "sub_path": "process/fdm_process_single_0.20.json" },
     { "name": "fdm_process_single_0.24", "sub_path": "process/fdm_process_single_0.24.json" },
     { "name": "fdm_process_single_0.24_nozzle_0.6", "sub_path": "process/fdm_process_single_0.24_nozzle_0.6.json" },
     { "name": "fdm_process_single_0.24_nozzle_0.8", "sub_path": "process/fdm_process_single_0.24_nozzle_0.8.json" },

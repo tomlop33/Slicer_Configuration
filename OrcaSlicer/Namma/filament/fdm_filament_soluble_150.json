@@ -5,6 +5,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#FF8A65"],
+  "temperature_vitrification": ["150"],
   "chamber_temperature": ["65"],
   "chamber_minimal_temperature": ["65"],
   "nozzle_temperature_range_low": ["275"],

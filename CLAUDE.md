@@ -8,6 +8,7 @@ Profils OrcaSlicer des imprimantes 3D **Namma** (gammes ANA, Lucy, EVA).
 - `OrcaSlicer/Namma.json` : index du bundle vendor. `OrcaSlicer/Namma/` : tous les profils.
 - `OrcaSlicer/Namma <JJ_MM_AAAA>[_vN].zip` : bundle livrable (contient `Namma.json` + `Namma/`), à régénérer à partir des fichiers à chaque release.
 - `OrcaSlicer/Namma_Resume.md` : liste des machines et des filaments pour les utilisateurs.
+- `OrcaSlicer/A_tester.md` : incohérences connues en attente de tests (pression d'avance, flow ratio…). Le mettre à jour après chaque calibration.
 - `OrcaSlicer/Changelog.md` : journal des changements, avec une section datée par livraison (Nouveautés / Modifications / Corrections / Installation). Le compléter à chaque série de changements.
 
 ## Arborescence OrcaSlicer
@@ -39,9 +40,10 @@ OrcaSlicer/
 
 ## Machines (`machine/`)
 
+**Cinématiques** : l'ANA 300, l'ANA 300G, la Lucy 300 et les EVA sont à **vis à billes** (accélérations faibles, profils Speed proches des Standard). L'ANA 300 HT, l'ANA 300 V2 et l'ANA 600 sont à **courroie** (rapides). Toutes les machines ont une buse en **acier trempé** (`nozzle_type: hardened_steel`).
+
 ### Hiérarchie
 ```
-fdm_machine_common
 fdm_ana_common   ─┐
 fdm_lucy_common  ─┼─> "<Modèle> <buse> nozzle" (type machine, instantiation true)
 fdm_eva_common   ─┘        └─> variantes "- Mode Copie" / "- Mode Miroir" (ANA 300, ANA 300 V2)
@@ -63,12 +65,13 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 - Champs obligatoires : `inherits` (le `fdm_<gamme>_common`), `setting_id`, `printer_model` (= nom du `machine_model`), `printer_variant` (= diamètre de buse), `nozzle_diameter`, `printable_area`, `default_filament_profile`, `default_print_profile`, `nozzle_type`.
 - **`setting_id`** : `NM` + gamme + modèle + buse sur 2 chiffres + suffixe éventuel.
   - `NMANA30004` (ANA 300, buse 0.4), `NMANA30204` (ANA 300 V2), `NMANA60010` (ANA 600, buse 1.0), `NMLUCY30008`
-  - `NMEVA10003DF0912` (EVA, tête 3DF09, buse 1.2), `NMEVA10003DP2530`
+  - `NMEVA10003DF0912` (EVA 1000, tête 3DF09, buse 1.2), `NMEVA5003DF0912` (EVA 500), `NMANA300HT04` (ANA 300 HT), `NMANA300G04` (ANA 300G)
   - suffixe `C` = Mode Copie, `M` = Mode Miroir.
-  - Le `setting_id` doit être **unique** (voir anomalies).
+  - Le `setting_id` doit être **unique**, comme le `model_id` des machine_model (`EVA10003DF05` / `EVA5003DF05`…).
 - `printable_area` : 4 coins `"XxY"` (ex. `["0x0","300x0","300x300","0x300"]`). En Mode Copie/Miroir, la largeur est réduite à environ la moitié (`145`).
 - Firmware : **RepRapFirmware** (`gcode_flavor: "reprapfirmware"`). Le G-code (start/end/pause/changement de couche/changement de filament) se définit dans les `fdm_*_common`. Seuls les modes Copie/Miroir surchargent `machine_start_gcode`.
   - Le start G-code appelle les macros de la carte : `M98 P"0:/sys/start_print_ANA.g" T[current_extruder]` (ANA), `start_print.g` (EVA/Lucy). Le Mode Copie passe `T2` et le Mode Miroir `T3`.
+  - Les bases ont un `nozzle_diameter` d'**une valeur par extrudeur** : OrcaSlicer en déduit le nombre de têtes (ANA et EVA `["0.4", "0.4"]`, Lucy `["0.4"]`). Chaque variante le redéfinit avec son diamètre (1 valeur en mode Copie/Miroir et sur les EVA 3DF09/3DP25).
   - Les températures sont réglées par `G10 P<outil> S{nozzle_temperature[i]}`, sous condition `is_extruder_used[i]`.
   - Placeholders OrcaSlicer : `[var]` et `{expr}`. Dans le JSON, échapper `"` en `\"` et les retours à la ligne en `\n`.
 - **ANA 300G** : la tête 1 utilise du filament et la tête 2 des granulés. Il n'y a pas de mode Copie/Miroir. Le profil `Namma Granulé @Namma ANA 300G[ <buse> nozzle]` (base `fdm_filament_petg`) est le 2ᵉ élément de `default_filament_profile`. OrcaSlicer ne peut pas restreindre un filament à un seul extrudeur : les filaments ANA 300 restent sélectionnables sur les deux têtes.
@@ -83,7 +86,6 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 - **Hiérarchie** :
   - `fdm_process_common` : base générale
   - `fdm_process_common_2` : base EVA grosses buses
-  - `fdm_process_common_lucy_ana`
   - `fdm_process_single_<couche>[_nozzle_<buse>]` : intermédiaires par couche/buse (ex. `fdm_process_single_0.24_nozzle_0.6`)
   - le profil final hérite de l'intermédiaire adapté (ou directement d'un common).
 - **Largeurs de ligne** : elles sont définies **uniquement** dans `fdm_process_common`, en % du diamètre de buse : Default 112.5 %, First layer 125 %, Outer wall `0` (= Default), Inner wall 125 %, Top surface 80 %, Sparse infill 125 %, Internal solid infill 120 %, Support 100 %, Bridge 100 %. Ne pas les redéfinir dans les intermédiaires ni dans les profils finaux.
@@ -139,9 +141,5 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 
 ## Anomalies connues (à corriger ou à ne pas reproduire)
 
-- `setting_id` en double :
-  - `Namma ANA 300 0.8 nozzle` = `NMANA30006` (devrait être `NMANA30008`)
-  - `ANA 300 HT 0.4/0.6` = `NMANA30004/06` (identiques à l'ANA 300)
-  - EVA 500 et EVA 1000 partagent tous leurs `setting_id` (`NMEVA1000…`) et leurs `model_id` (`EVA1000…`).
-- `default_materials` des machine_model EVA pointent vers des filaments ANA 300.
-- Non déclaré dans `Namma.json` : `process/fdm_process_single_0.40_nozzle_0.8.json`.- Faute de frappe historique `miror` dans les noms de fichiers. Ne pas renommer sans mettre à jour l'index.
+- Faute de frappe historique `miror` dans les noms de fichiers. Ne pas renommer sans mettre à jour l'index.
+- Pression d'avance et flow ratio non calibrés de façon cohérente : voir `OrcaSlicer/A_tester.md`.
