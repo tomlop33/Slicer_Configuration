@@ -1,5 +1,15 @@
 # Changelog — Profils Namma OrcaSlicer
 
+## 09/10/2026 — version 01.01.01.00
+
+Bundle : `Namma 09_10_2026.zip` (`Namma.json` + `Namma/`). Il remplace `Namma 06_10_2026.zip`.
+
+### Corrections
+- **Plantage de l'écran de sélection des imprimantes** (« type must be string, but is null ») : `nozzle_diameter` est rétabli dans les 8 variantes buse 0.4 (ANA 300, ANA 300 V2, ANA 300 HT, ANA 300G, ANA 600, Lucy 300, EVA 500 / 1000 - 3DF05). L'allègement du 06/10 l'avait retiré, alors qu'OrcaSlicer lit cette clé sans suivre l'héritage.
+
+### Installation / à savoir
+- **Mise à jour** (version `01.01.01.00`) : même procédure que pour la version 01.01.00.00 (voir ci-dessous). Le changement de version déclenche la réinstallation automatique au démarrage, y compris pour les postes qui ont déjà installé le bundle du 06/10.
+
 ## 06/10/2026 — version 01.01.00.00 (modifications du 02/10 au 06/10/2026)
 
 Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
@@ -113,7 +123,7 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Lucy 300 0.8** : elle n'avait aucun filament compatible. Elle partage maintenant les filaments ANA 300 0.8.
 - **EVA 0.96 / 2.00 / 2.40 mm** : correction des erreurs de découpage « Too small line width » et `Flow::with_spacing()`, avec le dessus à 100 %.
 - **Clé invalide** `chamber_minimal_temperatures` dans `fdm_filament_common` : remplacée par les clés correctes.
-- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique. `nozzle_diameter` est conservé dans chaque variante de buse : l'écran de sélection des imprimantes d'OrcaSlicer le lit sans suivre l'héritage.
+- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique.
 - **Formatage** : tous les JSON passent à une ligne par paramètre, en UTF-8 sans BOM. Le contenu est inchangé.
 
 ### Installation / à savoir
