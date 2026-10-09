@@ -1,0 +1,124 @@
+# Changelog — Profils Namma OrcaSlicer
+
+## 06/10/2026 — version 01.01.00.00 (modifications du 02/10 au 06/10/2026)
+
+Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
+
+> Profils testés avec OrcaSlicer **2.4.2**. Le paramètre `chamber_minimal_temperature` utilisé dans le start G-code nécessite **OrcaSlicer 2.4.1 minimum**.
+
+### Nouveautés
+
+#### Machines
+- **Namma ANA 300G** (buses 0.4 / 0.6 / 0.8) : la tête 1 utilise du filament, la tête 2 des granulés. Elle reprend la base de l'ANA 300, sans mode Copie / Miroir. La vignette est fournie.
+- **Namma ANA 300 HT 0.8 nozzle** : les 3 profils process (0.24 Quality, 0.32 Standard, 0.32 Strength) et les 24 filaments HT qui la ciblaient deviennent utilisables.
+- **Namma ANA 600 1.0 nozzle** : elle est désormais déclarée et chargée. Elle hérite de `fdm_ana_common` (2 têtes, G-code ANA), comme les autres ANA 600.
+
+#### Filaments
+- **Namma Granulé** (ANA 300G, buses 0.4 / 0.6 / 0.8), sur base PETG : flow 0.7, débit max 15 mm³/s, pressure advance 0.04, buse 240 °C (plage recommandée 190 à 275 °C), retrait XY 100 % (aucune compensation). C'est le filament par défaut de la tête 2.
+- **Namma N-Soluble 90 / 111 / 150**, en remplacement de N-Soluble :
+
+  | Profil | Buse | Ventilation | Plateau | Chambre |
+  |---|---|---|---|---|
+  | N-Soluble 90 | 230 °C | 80 % | 70 °C | — |
+  | N-Soluble 111 | 240 °C | 40 % | 95 °C | 60 °C |
+  | N-Soluble 150 | 285 °C | 10 % | 110 °C | 65 °C (90 °C sur ANA 300 HT) |
+
+- **Profils 0.8 nozzle dédiés** pour les 20 matières de l'ANA 300, partagés avec l'ANA 300G 0.8 et la Lucy 300 0.8.
+- **Une couleur par matière** (`default_filament_colour`), appliquée quand on choisit un filament. Les deux têtes des machines IDEX ont aussi des couleurs d'extrudeur différentes.
+
+### Modifications
+
+#### Process (toutes machines)
+- **Jupe et bordure** : `skirt_loops` à 0, `brim_type` à `no_brim`.
+- **Largeurs de ligne en % de la buse**, définies une seule fois dans `fdm_process_common` :
+
+  | Ligne | Largeur |
+  |---|---|
+  | Default | 112.5 % |
+  | First layer | 125 % |
+  | Outer wall | = Default |
+  | **Inner wall** | **125 %** |
+  | Top surface | 80 % (100 % pour les EVA 0.96 / 2.00 / 2.40 mm) |
+  | Sparse infill | 125 % |
+  | Internal solid infill | 120 % |
+  | Support / Bridge | 100 % |
+
+- **Remplissage** : motif par défaut **Cubic** au lieu de Grid, et `minimum_sparse_infill_area` à 70 mm².
+- **Épaisseur minimale du dessus et du fond** : 1 mm (Quality / Standard / Speed) et 1.5 mm (Strength).
+- **Ponts** : `bridge_flow` et `internal_bridge_flow` à 1.35 sur tous les profils.
+- **Supports activés par défaut** :
+
+  | Réglage | Valeur |
+  |---|---|
+  | Type | Tree (auto) |
+  | Style | Tree Hybrid |
+  | Angle seuil | 40° |
+  | Densité première couche | 100 % |
+  | Parois de support | 1 |
+  | Espacement du motif de base | 4 mm |
+  | Interface | Rectilinear interlaced, espacement 0.25 mm |
+  | Expansion | 2 mm |
+  | Distance XY à l'objet | 0.5 mm |
+  | Écart en première couche | 0.4 mm |
+
+- **Tour de purge** : Prime volume à 40 mm³ au lieu de 100, Extra flow for purging à 150 % au lieu de 100 %.
+
+#### Filaments
+- **Température de chambre** (`chamber_minimal_temperature` = `chamber_temperature`), limitée à 65 °C, ou 90 °C sur l'ANA 300 HT :
+
+  | Matière | Autres machines | ANA 300 HT |
+  |---|---|---|
+  | ABS, ABS-INDUS, ASA | 65 °C | 65 °C |
+  | PC | 65 °C | 80 °C |
+  | PPA CF | 65 °C | 80 °C |
+  | PPS CF | 65 °C | 90 °C |
+  | PAHT CF | 60 °C | 60 °C |
+  | PEEK, PEI | — | 90 °C |
+  | Autres matières | 0 | 0 |
+
+  `activate_chamber_temp_control` est à 0 : la chambre est gérée par la macro de démarrage, sans `M191` d'OrcaSlicer.
+- **BVOH, PVA, Soluble** : « Matériau soluble » et « Filament de support » sont cochés.
+- **PEEK, PEI** : ventilation de 10 à 40 %, vitesse d'impression minimale 5 mm/s.
+- **Tous les filaments** : « Don't slow down outer walls » est activé.
+- **Max volumetric speed (ANA / Lucy)**, adapté à la Mosquito, à l'extrudeur LGX Pro et à une buse en acier trempé :
+
+  | Matières | Débit |
+  |---|---|
+  | PLA, PLX, ABS, ABS-INDUS, ASA, PETG, PETG-CF / GF / GF UV / ESD, EASY FOOD, EASY V0 | 20 mm³/s |
+  | PC, PAHT CF, PPA CF, PPS CF, PEEK, PEI | 10 mm³/s |
+  | PVA, BVOH, Soluble 90 / 111 / 150 | 15 mm³/s |
+  | TPU | 3 / 4 / 5 mm³/s en buse 0.4 / 0.6 / 0.8 |
+
+  La valeur par défaut de `fdm_filament_common` passe de 5 à 20 mm³/s. Les EVA 3DF05 héritent des mêmes valeurs, sauf le TPU qui reste à 3.5. Les EVA grosses buses gardent 75.
+
+#### Machines / G-code
+- **Limites de hauteur de couche** : le minimum est à 0.08 mm sur toutes les machines. Il était à 0.016 ou 0.024 mm sur les buses autres que 0.4, ce qui n'est pas imprimable. Le maximum en buse 0.4 passe de 0.30 à 0.32 mm. Les autres buses restent à 80 % de leur diamètre.
+- **Start G-code ANA et Lucy** : le paramètre `C` (température minimale de chambre) est passé à `start_print_ANA.g` / `start_print_Lucy.g`. Sur les ANA, c'est le maximum des têtes **réellement utilisées** dans l'impression.
+- **Modes Copie / Miroir (ANA 300, ANA 300 V2)** : `X` / `Y` (coin minimum de la première couche) sont passés à la macro pour la ligne de purge.
+- **End G-code EVA** : extinction du plateau et de la chauffe de chambre en fin d'impression.
+- **Filaments par défaut** :
+  - ANA 300 HT : N-ABS + **N-ASA** ;
+  - ANA 300G : N-ABS + Granulé ;
+  - `default_materials` des modèles couvre maintenant toutes les buses. Les profils par défaut sont ainsi cochés à la configuration et ne sont plus remplacés par Generic PLA / ABS.
+
+### Corrections
+- **Identifiants uniques** : nouveaux `setting_id` pour l'ANA 300 0.8 (`NMANA30008`), l'ANA 300 HT 0.4 / 0.6 (`NMANA300HT04/06`) et les EVA 500 (`NMEVA500…`). Nouveaux `model_id` des EVA 500 (`EVA500…`), qui étaient partagés avec les EVA 1000.
+- **Buse en acier trempé** (`hardened_steel`) déclarée sur toutes les machines, au lieu du laiton.
+- **Températures de ramollissement** : TPU à 60 °C (la valeur était vide), N-Soluble 90 / 111 / 150 à 90 / 111 / 150 °C (au lieu de 203).
+- **N-PPS CF** : plage de buse recommandée jusqu'à 350 °C (elle s'arrêtait à 320 alors que la buse est à 330), et type renommé `PPS-CF`.
+- **N-ASA** : ventilation de 15 à 50 % alignée sur l'ABS (elle était à 0 %).
+- **Nettoyage** : suppression de 4 bases jamais utilisées (`fdm_process_common_lucy_ana`, `fdm_process_single_0.20`, `fdm_process_single_0.40_nozzle_0.8`, `fdm_machine_common`).
+- **Bases machine** : `nozzle_diameter` contient une valeur par extrudeur (ANA / EVA : 2, Lucy : 1). Avant, il contenait la liste des buses, ce qui décrivait une machine à 3 ou 5 têtes.
+- **ANA 600 1.0** : `nozzle_diameter` était mal formé (`"1.0,1.0"`), le filament par défaut `Generic PLA @System` était inexistant, et il manquait la hauteur de couche max (0.8) et le profil process par défaut.
+- **Lucy 300 0.8** : elle n'avait aucun filament compatible. Elle partage maintenant les filaments ANA 300 0.8.
+- **EVA 0.96 / 2.00 / 2.40 mm** : correction des erreurs de découpage « Too small line width » et `Flow::with_spacing()`, avec le dessus à 100 %.
+- **Clé invalide** `chamber_minimal_temperatures` dans `fdm_filament_common` : remplacée par les clés correctes.
+- **Allègement des profils** : 1 564 lignes qui répétaient la valeur héritée sont supprimées (`filament_vendor`, `enable_pressure_advance`, vitesses…). 23 valeurs communes à tous les enfants d'une base sont remontées dans la base. Le total passe de 9 856 à 8 144 lignes (-17 %), et la configuration effective des 567 profils sélectionnables est strictement identique. `nozzle_diameter` est conservé dans chaque variante de buse : l'écran de sélection des imprimantes d'OrcaSlicer le lit sans suivre l'héritage.
+- **Formatage** : tous les JSON passent à une ligne par paramètre, en UTF-8 sans BOM. Le contenu est inchangé.
+
+### Installation / à savoir
+- **Installation / mise à jour** (version `01.01.00.00`) : OrcaSlicer fermé, dézipper le bundle et copier `Namma.json` et le dossier `Namma/` dans `C:\Program Files\OrcaSlicer\resources\profiles\` (droits administrateur, remplacer les fichiers existants). Au démarrage suivant, OrcaSlicer installe automatiquement la nouvelle version. Ensuite, *Aide → Assistant de configuration* pour cocher les machines, buses et filaments voulus.
+- **Points en attente de tests** (pression d'avance, flow ratio…) : voir `A_tester.md`.
+- **Vignettes** : elles sont fournies dans le dossier `Namma/` et s'installent avec lui.
+- **Première sélection d'une machine** : OrcaSlicer peut proposer *Generic PLA* sur la tête 1. Choisir le filament Namma une fois ; il est ensuite mémorisé.
+- **Granulé** : OrcaSlicer ne peut pas réserver un filament à une seule tête. Sur l'ANA 300G, il faut choisir Granulé sur la tête 2.

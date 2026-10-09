@@ -12,7 +12,8 @@
 ### Gamme ANA
 - Namma ANA 300 — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
 - Namma ANA 300 V2 — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
-- Namma ANA 300 HT — 300×300×300 mm — buses 0.4 / 0.6
+- Namma ANA 300 HT — 300×300×300 mm — buses 0.4 / 0.6 / 0.8
+- Namma ANA 300G — 300×300×300 mm — buses 0.4 / 0.6 / 0.8 — tête 2 granulés (filament « Namma Granulé »)
 - Namma ANA 600 — 600×600×600 mm — buses 0.4 / 0.6 / 0.8 / 1.0
 
 ### Gamme Lucy
@@ -49,6 +50,9 @@
 - Namma N-PEI
 - Namma N-BVOH
 - Namma N-PVA
-- Namma N-Soluble
+- Namma N-Soluble 90 (buse 230 °C, plateau 70 °C, ventilation 80 %)
+- Namma N-Soluble 111 (buse 240 °C, plateau 95 °C, ventilation 40 %, chambre 60 °C)
+- Namma N-Soluble 150 (buse 285 °C, plateau 110 °C, ventilation 10 %, chambre 65 °C / 90 °C sur ANA 300 HT)
 - Namma N-EASY FOOD
 - Namma N-EASY V0
+- Namma Granulé (ANA 300G uniquement, tête granulés)

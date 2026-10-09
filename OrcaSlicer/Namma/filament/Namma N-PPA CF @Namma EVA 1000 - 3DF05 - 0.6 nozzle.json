@@ -5,16 +5,6 @@
   "from": "system",
   "filament_id": "Namma N-PPA CF @Namma EVA 1000 - 3DF05 - 0.6 nozzle",
   "instantiation": "true",
-  "filament_vendor": [
-    "Namma"
-  ],
-  "enable_pressure_advance": [
-    "1"
-  ],
-  "pressure_advance": [
-    "0.035"
-  ],
-  "compatible_printers": [
-    "Namma EVA 1000 - 3DF05 - 0.6 nozzle"
-  ]
+  "pressure_advance": ["0.035"],
+  "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.6 nozzle"]
 }

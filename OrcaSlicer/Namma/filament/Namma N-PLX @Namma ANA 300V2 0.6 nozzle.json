@@ -5,18 +5,5 @@
   "from": "system",
   "filament_id": "Namma N-PLX @Namma ANA 300V2 0.6 nozzle",
   "instantiation": "true",
-  "filament_vendor": [
-    "Namma"
-  ],
-  "enable_pressure_advance": [
-    "1"
-  ],
-  "pressure_advance": [
-    "0.04"
-  ],
-  "compatible_printers": [
-    "Namma ANA 300 V2 0.6 nozzle",
-    "Namma ANA 300 V2 0.6 nozzle - Mode Copie",
-    "Namma ANA 300 V2 0.6 nozzle - Mode Miroir"
-  ]
+  "compatible_printers": ["Namma ANA 300 V2 0.6 nozzle", "Namma ANA 300 V2 0.6 nozzle - Mode Copie", "Namma ANA 300 V2 0.6 nozzle - Mode Miroir"]
 }

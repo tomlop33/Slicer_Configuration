@@ -1,0 +1,9 @@
+{
+  "type": "filament",
+  "name": "Namma Granulé @Namma ANA 300G 0.4 nozzle",
+  "inherits": "Namma Granulé @Namma ANA 300G",
+  "from": "system",
+  "filament_id": "Namma Granulé @Namma ANA 300G 0.4 nozzle",
+  "instantiation": "true",
+  "compatible_printers": ["Namma ANA 300G 0.4 nozzle"]
+}

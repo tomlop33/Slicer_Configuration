@@ -1,0 +1,10 @@
+{
+  "type": "filament",
+  "name": "Namma N-Soluble 90 @Namma ANA 300",
+  "inherits": "fdm_filament_soluble_90",
+  "from": "system",
+  "filament_id": "Namma N-Soluble 90 @Namma ANA 300",
+  "instantiation": "false",
+  "pressure_advance": ["0.055"],
+  "compatible_printers": ["Namma ANA 300 0.8 nozzle", "Namma ANA 300G 0.8 nozzle"]
+}

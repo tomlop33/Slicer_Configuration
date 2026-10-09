@@ -1,0 +1,10 @@
+{
+  "type": "filament",
+  "name": "Namma N-Soluble 111 @Namma ANA 600 0.6 nozzle",
+  "inherits": "Namma N-Soluble 111 @Namma ANA 600",
+  "from": "system",
+  "filament_id": "Namma N-Soluble 111 @Namma ANA 600 0.6 nozzle",
+  "instantiation": "true",
+  "pressure_advance": ["0.04"],
+  "compatible_printers": ["Namma ANA 600 0.6 nozzle"]
+}

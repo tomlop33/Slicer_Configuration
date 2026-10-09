@@ -1,0 +1,9 @@
+{
+  "type": "filament",
+  "name": "Namma N-PETG-GF @Namma ANA 300 0.8 nozzle",
+  "inherits": "Namma N-PETG-GF @Namma ANA 300",
+  "from": "system",
+  "filament_id": "Namma N-PETG-GF @Namma ANA 300 0.8 nozzle",
+  "instantiation": "true",
+  "compatible_printers": ["Namma ANA 300 0.8 nozzle", "Namma Lucy 300 0.8 nozzle", "Namma ANA 300G 0.8 nozzle"]
+}

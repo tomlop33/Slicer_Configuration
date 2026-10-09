@@ -1,0 +1,9 @@
+{
+  "type": "filament",
+  "name": "Namma N-Soluble 150 @Namma ANA 300HT 0.4 nozzle",
+  "inherits": "Namma N-Soluble 150 @Namma ANA 300HT",
+  "from": "system",
+  "filament_id": "Namma N-Soluble 150 @Namma ANA 300HT 0.4 nozzle",
+  "instantiation": "true",
+  "compatible_printers": ["Namma ANA 300 HT 0.4 nozzle"]
+}
