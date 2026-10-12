@@ -5,16 +5,6 @@ Ce dépôt contient les profils **OrcaSlicer** des imprimantes 3D **Namma** (gam
 > Les profils sont testés avec **OrcaSlicer 2.4.2**. Il faut au minimum la version **2.4.1**.
 > Ils remplacent les anciens profils **Namma Slicer**, qui ne sont plus maintenus.
 
-## Contenu
-
-Tout se trouve dans le dossier `OrcaSlicer/` :
-
-| Fichier | Rôle |
-|---|---|
-| `Namma <JJ_MM_AAAA>.zip` | Bundle de profils, aussi publié sur la page [Releases](https://github.com/tomlop33/Slicer_Configuration/releases). |
-| [Namma_Resume.md](OrcaSlicer/Namma_Resume.md) | Liste des machines et des filaments. |
-| [Changelog.md](OrcaSlicer/Changelog.md) | Nouveautés et corrections de chaque version. |
-
 ## Machines et filaments
 
 | Gamme | Modèles | Buses |
