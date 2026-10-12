@@ -2,7 +2,7 @@
 
 Ce dépôt contient les profils **OrcaSlicer** des imprimantes 3D **Namma** (gammes ANA, Lucy et EVA) : machines, profils d'impression et filaments Namma.
 
-> Les profils sont testés avec **OrcaSlicer 2.4.2**. Il faut au minimum la version **2.4.1**.
+> Les profils sont testés avec **OrcaSlicer 2.4.2**. Il faut au minimum la version **2.4.1** ([téléchargement d'OrcaSlicer](https://github.com/SoftFever/OrcaSlicer/releases)).
 > Ils remplacent les anciens profils **Namma Slicer**, qui ne sont plus maintenus.
 
 ## Machines et filaments
