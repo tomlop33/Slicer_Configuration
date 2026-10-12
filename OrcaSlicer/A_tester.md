@@ -154,7 +154,45 @@ Clés filament : `adaptive_pressure_advance` (activation), `adaptive_pressure_ad
 | Matière | Buse | Lignes du modèle (`PA,débit,accél`) | Validé sur | Date / remarque |
 |---|---|---|---|---|
 | | | | | |
-## 6. Autres points relevés (non bloquants)
+
+## 6. Rétraction (machines non EVA)
+
+**Contexte.** Sur l'ANA, l'ANA 300G et la Lucy, presque toutes les matières reprennent les réglages de la machine : 0.8 mm à 35 mm/s, saut en Z de 0.4 mm en Normal Lift, essuyage activé. Font exception le PC, le PPA CF et le PPS CF, à 1 mm en Slope Lift. Ces valeurs ne sont pas calibrées par matière.
+
+**Contraintes de la tête** (extrudeur direct LGX Pro, hotend Mosquito, buse en acier trempé) :
+- plage habituelle d'un extrudeur direct : 0.4 à 1.2 mm, à 30-45 mm/s ;
+- **ne pas dépasser 1.2 mm** : la zone de chauffe de la Mosquito est courte, et une rétraction plus longue ramène du plastique fondu dans le heatbreak, avec un risque de bouchage (surtout avec les matières chargées) ;
+- la buse en acier trempé et les buses 0.6 / 0.8 suintent un peu plus : on ajoute couramment 0.1 à 0.2 mm par rapport à la buse 0.4.
+
+**Avant de tester, deux prérequis :**
+1. **Vérifier l'essuyage** : toutes les matières essuient sur 2 mm, avec 70 % de rétraction avant essuyage. Comparer avec 1 mm **avant** d'augmenter la longueur de rétraction.
+2. **Sécher** les matières hygroscopiques (PETG, PA, PC, PVA, BVOH, Solubles) : un filament humide file quelle que soit la rétraction.
+
+**Valeurs à tester :**
+
+| Matière | Actuel | À tester | Raison |
+|---|---|---|---|
+| PETG, PETG-ESD | 0.8 mm / 35 mm/s | **1.0 mm**, 35-40 mm/s | Le PETG est la matière qui file le plus. |
+| PETG-CF, PETG-GF, PETG-GF UV | 0.8 mm / 35 mm/s | **1.0 mm**, 35 mm/s | Il file comme le PETG. Rester à 1.0 mm au plus : les fibres usent les dents de l'extrudeur. |
+| PAHT CF | 0.8 mm | **1.0 mm** | Le nylon file, surtout humide. |
+| PEEK, PEI | 0.8 mm | **1.0 mm** | Suintement à très haute température. |
+| PVA, BVOH, Soluble 90/111/150 | 0.8 mm / 35 mm/s | **1.0 mm**, 30 mm/s (**moins**) | Matières qui filent. Le PVA est cassant : baisser la vitesse. |
+| TPU | 0.8 mm / 35 mm/s | **0.4-0.5 mm**, 20-25 mm/s (**moins**) | Une matière souple se comprime au lieu de se rétracter. Trop de rétraction la fait flamber dans l'extrudeur. |
+| Granulé (tête 2 de l'ANA 300G) | 0.8 mm | selon l'extrudeur à granulés | Sur une vis, la rétraction agit peu. Jouer plutôt sur la température et l'essuyage. |
+| PC, PPA CF, PPS CF | 1.0 mm | garder 1.0 mm | Déjà dans la bonne zone. |
+| PLA, PLX, ABS, ABS-INDUS, ASA, EASY FOOD, EASY V0 | 0.8 mm | garder 0.8 mm | Adapté. |
+
+**Protocole :**
+1. Faire le flow et la pression d'avance **avant** la rétraction : une PA trop faible donne aussi des fils et des bavures.
+2. Lancer le test de rétraction d'OrcaSlicer (menu Calibration, puis « Retraction test ») de 0.4 à 1.2 mm par pas de 0.1, sur la buse 0.4 d'une ANA, en commençant par le PETG.
+3. Vérifier ensuite la valeur sur la buse 0.8 (ajouter 0.1 à 0.2 mm si nécessaire).
+4. Reporter la valeur validée dans la base `fdm_filament_<matière>`, **uniquement pour les machines non EVA**. Les profils EVA gardent leurs propres valeurs, écrites dans chaque fichier.
+
+| Matière | Buse | Essuyage retenu | Rétraction retenue (mm / mm/s) | Date / remarque |
+|---|---|---|---|---|
+| | | | | |
+
+## 7. Autres points relevés (non bloquants)
 
 - **Vitesses et accélérations des process au-dessus des limites machine** sur l'ANA 300, l'ANA 300G et la Lucy (vis à billes) :
   - déplacements à 500 mm/s pour une vitesse machine max de 150 ;

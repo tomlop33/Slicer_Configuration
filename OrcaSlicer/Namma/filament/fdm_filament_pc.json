@@ -37,6 +37,5 @@
   "filament_retraction_length": ["1"],
   "filament_z_hop": ["0.4"],
   "filament_z_hop_types": ["Slope Lift"],
-  "filament_retract_lift_enforce": ["All Surfaces"],
-  "filament_wipe_distance": ["0"]
+  "filament_retract_lift_enforce": ["All Surfaces"]
 }

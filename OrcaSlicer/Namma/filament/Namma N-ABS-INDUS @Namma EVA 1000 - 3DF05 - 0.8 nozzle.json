@@ -7,5 +7,9 @@
   "instantiation": "true",
   "default_filament_colour": ["#B71C1C"],
   "pressure_advance": ["0.02"],
-  "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.8 nozzle"]
+  "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.8 nozzle"],
+  "filament_retraction_length": ["0.5"],
+  "filament_z_hop": ["0.4"],
+  "filament_z_hop_types": ["Slope Lift"],
+  "filament_retract_lift_enforce": ["All Surfaces"]
 }
