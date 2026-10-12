@@ -1,5 +1,17 @@
 # Changelog — Profils Namma OrcaSlicer
 
+## En cours — version 01.01.02.00
+
+### Modifications
+- **Températures de buse** (première couche et couches suivantes identiques) :
+  - N-ABS : 280 °C (au lieu de 255).
+  - N-ABS-INDUS : 270 °C (au lieu de 255, hérité de l'ABS).
+  - N-PLA et N-PLX : 220 °C, plage 200-240 °C (le PLA était à 190-230 °C).
+  - N-PETG-CF : 260 °C (au lieu de 255), plage 240-270 °C inchangée.
+  - N-PETG-GF : 265 °C (au lieu de 260), plage 250-275 °C (au lieu de 250-270).
+  - N-PPA CF : 300 °C (au lieu de 290).
+  - N-PPS CF : 320 °C (au lieu de 330).
+
 ## 09/10/2026 — version 01.01.01.00
 
 Bundle : `Namma 09_10_2026.zip` (`Namma.json` + `Namma/`). Il remplace `Namma 06_10_2026.zip`.

@@ -11,7 +11,6 @@
   "filament_cost": ["20"],
   "temperature_vitrification": ["60"],
   "idle_temperature": ["190"],
-  "nozzle_temperature_range_high": ["230"],
   "filament_flow_ratio": ["0.98"],
   "enable_pressure_advance": ["1"],
   "pressure_advance": ["0.03"],
@@ -31,5 +30,6 @@
   "filament_z_hop": ["0.4"],
   "filament_z_hop_types": ["Slope Lift"],
   "filament_retract_lift_enforce": ["All Surfaces"],
-  "filament_wipe_distance": ["0"]
+  "filament_wipe_distance": ["0"],
+  "nozzle_temperature_range_low": ["200"]
 }
