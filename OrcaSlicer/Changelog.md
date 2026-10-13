@@ -3,6 +3,11 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Ventilation** :
+  - N-PEEK et N-PEI : surplombs et ponts à 40 % au lieu de 100 %, comme leur ventilation maximale.
+  - N-PETG-CF, N-PETG-GF, N-PETG-GF UV et N-PETG-ESD : alignés sur le PETG. Ventilation 10-60 % (au lieu de 35-100 %), seuil des surplombs 25 % (au lieu de 95 %), durée de couche pour la ventilation 30 s (au lieu de 60), ralentissement sous 3 s (au lieu de 8), et moins d'arrêts et de redémarrages du ventilateur. Ils reprenaient jusqu'ici les réglages de base, faits pour un PLA.
+  - N-Soluble 111 : surplombs et ponts à 60 % au lieu de 100 %.
+  - N-Soluble 150 : surplombs et ponts à 20 % au lieu de 100 %.
 - **Vitesse de rétraction et de dérétraction** (ANA, ANA 300G et Lucy ; les EVA restent à 30 mm/s) : 35 mm/s au lieu de 30 mm/s.
 - **Distance d'essuyage** (toutes les machines) : N-PLA, N-PVA, N-EASY FOOD, N-EASY V0, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-PAHT CF, N-PC et Granulé étaient à 0 mm, ce qui rendait l'essuyage inactif. Ils reprennent les 2 mm de `fdm_filament_common`, comme toutes les autres matières.
 - **Rétraction** (ANA, ANA 300G et Lucy ; les EVA ne changent pas) : N-PLA, N-PVA, N-EASY FOOD, N-EASY V0, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-PAHT CF et Granulé reprennent les réglages de la machine. La longueur passe à 0.8 mm (au lieu de 0.5 mm, ou 0.7 mm pour PLA, PVA et EASY), et le saut en Z est de 0.4 mm en Normal Lift (au lieu de Slope Lift).
