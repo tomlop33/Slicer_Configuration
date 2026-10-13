@@ -21,5 +21,11 @@
   "nozzle_temperature": ["260"],
   "hot_plate_temp_initial_layer": ["80"],
   "hot_plate_temp": ["80"],
-  "filament_flow_ratio": ["0.93"]
+  "filament_flow_ratio": ["0.93"],
+  "fan_min_speed": ["10"],
+  "fan_max_speed": ["60"],
+  "fan_cooling_layer_time": ["30"],
+  "slow_down_layer_time": ["3"],
+  "reduce_fan_stop_start_freq": ["1"],
+  "overhang_fan_threshold": ["25%"]
 }

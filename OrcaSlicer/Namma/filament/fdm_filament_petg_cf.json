@@ -21,5 +21,11 @@
   "nozzle_temperature_initial_layer": ["255"],
   "nozzle_temperature": ["255"],
   "hot_plate_temp_initial_layer": ["80"],
-  "hot_plate_temp": ["80"]
+  "hot_plate_temp": ["80"],
+  "fan_min_speed": ["10"],
+  "fan_max_speed": ["60"],
+  "fan_cooling_layer_time": ["30"],
+  "slow_down_layer_time": ["3"],
+  "reduce_fan_stop_start_freq": ["1"],
+  "overhang_fan_threshold": ["25%"]
 }

@@ -15,5 +15,6 @@
   "hot_plate_temp_initial_layer": ["95"],
   "hot_plate_temp": ["95"],
   "fan_min_speed": ["40"],
-  "fan_max_speed": ["40"]
+  "fan_max_speed": ["40"],
+  "overhang_fan_speed": ["60"]
 }
