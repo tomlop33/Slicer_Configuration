@@ -21,6 +21,7 @@
   "hot_plate_temp": ["150"],
   "fan_min_speed": ["10"],
   "fan_max_speed": ["40"],
+  "overhang_fan_speed": ["40"],
   "slow_down_min_speed": ["5"],
   "additional_cooling_fan_speed": ["70"]
 }
