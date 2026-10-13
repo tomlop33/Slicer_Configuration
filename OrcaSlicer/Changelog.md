@@ -3,6 +3,12 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Vitesses des profils Strength** :
+  - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
+  - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
+  - ANA 300 HT, ANA 300 V2 et ANA 600 (courroie) : inchangés.
+- **Température de chambre** : N-ABS, N-ABS-INDUS, N-ASA, N-PC, N-PPA CF, N-PPS CF et N-Soluble 150 passent à 60 °C (au lieu de 65 °C), en minimale comme en cible. Cela s'applique à toutes les machines, ANA 300 HT et EVA comprises, sauf là où la HT a sa propre valeur (PC, PPA CF, PPS CF, Soluble 150).
+  - ANA 300 HT : N-ABS, N-ABS-INDUS et N-ASA à 65 °C, N-PAHT CF à 75 °C (au lieu de 60 °C).
 - **Ponts épais internes** (`thick_internal_bridges`, tous les process) : désactivés. Les ponts internes sont maintenant imprimés à la hauteur de couche, comme les ponts externes.
 - **N-PC** : température de ramollissement (`temperature_vitrification`) à 140 °C au lieu de 110 °C, plus proche de la transition vitreuse réelle du PC. OrcaSlicer n'affiche plus l'avertissement « ouvrir la porte » avec le plateau à 120 °C.
 - **Ventilation** :
@@ -59,6 +65,12 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Une couleur par matière** (`default_filament_colour`), appliquée quand on choisit un filament. Les deux têtes des machines IDEX ont aussi des couleurs d'extrudeur différentes.
 
 ### Modifications
+- **Vitesses des profils Strength** :
+  - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
+  - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
+  - ANA 300 HT, ANA 300 V2 et ANA 600 (courroie) : inchangés.
+- **Température de chambre** : N-ABS, N-ABS-INDUS, N-ASA, N-PC, N-PPA CF, N-PPS CF et N-Soluble 150 passent à 60 °C (au lieu de 65 °C), en minimale comme en cible. Cela s'applique à toutes les machines, ANA 300 HT et EVA comprises, sauf là où la HT a sa propre valeur (PC, PPA CF, PPS CF, Soluble 150).
+  - ANA 300 HT : N-ABS, N-ABS-INDUS et N-ASA à 65 °C, N-PAHT CF à 75 °C (au lieu de 60 °C).
 
 #### Process (toutes machines)
 - **Jupe et bordure** : `skirt_loops` à 0, `brim_type` à `no_brim`.
