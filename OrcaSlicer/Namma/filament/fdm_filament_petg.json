@@ -30,10 +30,5 @@
   "enable_overhang_bridge_fan": ["1"],
   "overhang_fan_threshold": ["25%"],
   "internal_bridge_fan_speed": ["-1"],
-  "support_material_interface_fan_speed": ["-1"],
-  "filament_retraction_length": ["0.5"],
-  "filament_z_hop": ["0.4"],
-  "filament_z_hop_types": ["Slope Lift"],
-  "filament_retract_lift_enforce": ["All Surfaces"],
-  "filament_wipe_distance": ["0"]
+  "support_material_interface_fan_speed": ["-1"]
 }
