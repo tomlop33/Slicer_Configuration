@@ -8,6 +8,5 @@
   "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.4 nozzle"],
   "filament_retraction_length": ["0.7"],
   "filament_z_hop": ["0.4"],
-  "filament_z_hop_types": ["Slope Lift"],
   "filament_retract_lift_enforce": ["All Surfaces"]
 }

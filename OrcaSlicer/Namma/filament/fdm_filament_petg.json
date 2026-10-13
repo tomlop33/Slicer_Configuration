@@ -28,7 +28,6 @@
   "slow_down_layer_time": ["3"],
   "reduce_fan_stop_start_freq": ["1"],
   "enable_overhang_bridge_fan": ["1"],
-  "overhang_fan_threshold": ["25%"],
   "internal_bridge_fan_speed": ["-1"],
   "support_material_interface_fan_speed": ["-1"]
 }

@@ -56,5 +56,5 @@
   "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\nG92 E0",
   "machine_pause_gcode": "M400 U1\n",
   "wipe": ["1"],
-  "z_hop_types": "Normal Lift"
+  "z_hop_types": "Auto Lift"
 }

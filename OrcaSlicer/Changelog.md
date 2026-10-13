@@ -3,6 +3,8 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Refroidissement, toutes les matières** : vitesse minimale d'impression (`slow_down_min_speed`) à 5 mm/s (au lieu de 10 mm/s), et seuil de ventilation des surplombs (`overhang_fan_threshold`) à 50 % (au lieu de 25 %, 95 % ou 0 % selon la matière). Les deux valeurs sont définies une seule fois, dans `fdm_filament_common`.
+- **Type de saut en Z** (toutes les machines) : Auto Lift pour toutes les matières. Les ANA et la Lucy étaient en Normal Lift, sauf N-PC, N-PPA CF et N-PPS CF en Slope Lift. Les EVA étaient en Slope Lift pour la plupart des matières, et en Normal Lift pour N-PLX, N-PETG-CF, N-PETG-GF et N-TPU. Le type est défini une seule fois par machine (`fdm_*_common`). Avec l'arc fitting désactivé, OrcaSlicer écrit la spirale en segments G1, sans G2/G3.
 - **Vitesses des profils Strength** :
   - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
   - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
@@ -66,6 +68,8 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Une couleur par matière** (`default_filament_colour`), appliquée quand on choisit un filament. Les deux têtes des machines IDEX ont aussi des couleurs d'extrudeur différentes.
 
 ### Modifications
+- **Refroidissement, toutes les matières** : vitesse minimale d'impression (`slow_down_min_speed`) à 5 mm/s (au lieu de 10 mm/s), et seuil de ventilation des surplombs (`overhang_fan_threshold`) à 50 % (au lieu de 25 %, 95 % ou 0 % selon la matière). Les deux valeurs sont définies une seule fois, dans `fdm_filament_common`.
+- **Type de saut en Z** (toutes les machines) : Auto Lift pour toutes les matières. Les ANA et la Lucy étaient en Normal Lift, sauf N-PC, N-PPA CF et N-PPS CF en Slope Lift. Les EVA étaient en Slope Lift pour la plupart des matières, et en Normal Lift pour N-PLX, N-PETG-CF, N-PETG-GF et N-TPU. Le type est défini une seule fois par machine (`fdm_*_common`). Avec l'arc fitting désactivé, OrcaSlicer écrit la spirale en segments G1, sans G2/G3.
 - **Vitesses des profils Strength** :
   - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
   - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.

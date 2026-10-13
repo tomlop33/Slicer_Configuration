@@ -11,6 +11,5 @@
   "filament_diameter": ["2.85"],
   "filament_retraction_length": ["0.5"],
   "filament_z_hop": ["0.4"],
-  "filament_z_hop_types": ["Slope Lift"],
   "filament_retract_lift_enforce": ["All Surfaces"]
 }
