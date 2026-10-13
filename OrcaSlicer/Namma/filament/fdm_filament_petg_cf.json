@@ -18,8 +18,8 @@
   "filament_flow_ratio": ["0.95"],
   "enable_pressure_advance": ["1"],
   "pressure_advance": ["0.03"],
-  "nozzle_temperature_initial_layer": ["255"],
-  "nozzle_temperature": ["255"],
+  "nozzle_temperature_initial_layer": ["260"],
+  "nozzle_temperature": ["260"],
   "hot_plate_temp_initial_layer": ["80"],
   "hot_plate_temp": ["80"]
 }
