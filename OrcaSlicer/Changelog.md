@@ -7,6 +7,7 @@
   - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
   - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
   - ANA 300 HT, ANA 300 V2 et ANA 600 (courroie) : inchangés.
+- **Vitesses des buses 0.6, 0.8 et 1.0 sur les machines à courroie** (ANA 300 HT, ANA 300 V2, ANA 600) : le dessus passe à 100 mm/s (au lieu de 150) et le remplissage à 150 mm/s (au lieu de 100), comme en buse 0.4. Cela concerne les profils Quality 0.6 et 0.8, Standard et Strength 0.8, Standard 1.0 de l'ANA 600, et le dessus du Speed 0.6.
 - **Température de chambre** : N-ABS, N-ABS-INDUS, N-ASA, N-PC, N-PPA CF, N-PPS CF et N-Soluble 150 passent à 60 °C (au lieu de 65 °C), en minimale comme en cible. Cela s'applique à toutes les machines, ANA 300 HT et EVA comprises, sauf là où la HT a sa propre valeur (PC, PPA CF, PPS CF, Soluble 150).
   - ANA 300 HT : N-ABS, N-ABS-INDUS et N-ASA à 65 °C, N-PAHT CF à 75 °C (au lieu de 60 °C).
 - **Ponts épais internes** (`thick_internal_bridges`, tous les process) : désactivés. Les ponts internes sont maintenant imprimés à la hauteur de couche, comme les ponts externes.
@@ -69,6 +70,7 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
   - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
   - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
   - ANA 300 HT, ANA 300 V2 et ANA 600 (courroie) : inchangés.
+- **Vitesses des buses 0.6, 0.8 et 1.0 sur les machines à courroie** (ANA 300 HT, ANA 300 V2, ANA 600) : le dessus passe à 100 mm/s (au lieu de 150) et le remplissage à 150 mm/s (au lieu de 100), comme en buse 0.4. Cela concerne les profils Quality 0.6 et 0.8, Standard et Strength 0.8, Standard 1.0 de l'ANA 600, et le dessus du Speed 0.6.
 - **Température de chambre** : N-ABS, N-ABS-INDUS, N-ASA, N-PC, N-PPA CF, N-PPS CF et N-Soluble 150 passent à 60 °C (au lieu de 65 °C), en minimale comme en cible. Cela s'applique à toutes les machines, ANA 300 HT et EVA comprises, sauf là où la HT a sa propre valeur (PC, PPA CF, PPS CF, Soluble 150).
   - ANA 300 HT : N-ABS, N-ABS-INDUS et N-ASA à 65 °C, N-PAHT CF à 75 °C (au lieu de 60 °C).
 

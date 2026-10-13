@@ -4,5 +4,7 @@
   "inherits": "fdm_process_single_0.40_nozzle_1.0",
   "from": "system",
   "instantiation": "true",
-  "compatible_printers": ["Namma ANA 600 1.0 nozzle"]
+  "compatible_printers": ["Namma ANA 600 1.0 nozzle"],
+  "sparse_infill_speed": "150",
+  "top_surface_speed": "100"
 }

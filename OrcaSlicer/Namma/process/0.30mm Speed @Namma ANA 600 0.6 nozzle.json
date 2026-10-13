@@ -14,5 +14,6 @@
   "inner_wall_speed": "200",
   "internal_solid_infill_speed": "250",
   "outer_wall_speed": "100",
-  "sparse_infill_speed": "250"
+  "sparse_infill_speed": "250",
+  "top_surface_speed": "100"
 }
