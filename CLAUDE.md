@@ -1,7 +1,7 @@
 # CLAUDE.md — Slicer_Configuration (Namma)
 
 Profils OrcaSlicer des imprimantes 3D **Namma** (gammes ANA, Lucy, EVA).
-**Seul le dossier `OrcaSlicer/` est utilisé** : ne pas toucher aux autres dossiers du dépôt. Il n'y a pas de code applicatif, uniquement des profils JSON. La documentation et les messages de commit sont en **français**.
+**Seul le dossier `OrcaSlicer/` est utilisé** : ne pas toucher aux autres dossiers du dépôt. `0_Old/` contient les archives des anciens presets (zips ANA/EVA/Lucy, vidéo d'import) et le `Changelog.md` à la racine est l'ancien journal : les deux sont figés. Il n'y a pas de code applicatif, uniquement des profils JSON. La documentation et les messages de commit sont en **français**.
 
 ## Contexte
 

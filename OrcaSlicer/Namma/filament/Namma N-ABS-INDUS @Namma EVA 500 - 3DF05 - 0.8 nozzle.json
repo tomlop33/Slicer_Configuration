@@ -12,4 +12,6 @@
   "filament_z_hop": ["0.4"],
   "filament_z_hop_types": ["Slope Lift"],
   "filament_retract_lift_enforce": ["All Surfaces"]
+  "nozzle_temperature": ["270"],
+  "nozzle_temperature_initial_layer": ["270"]
 }
