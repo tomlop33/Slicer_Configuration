@@ -3,6 +3,7 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Ponts épais internes** (`thick_internal_bridges`, tous les process) : désactivés. Les ponts internes sont maintenant imprimés à la hauteur de couche, comme les ponts externes.
 - **N-PC** : température de ramollissement (`temperature_vitrification`) à 140 °C au lieu de 110 °C, plus proche de la transition vitreuse réelle du PC. OrcaSlicer n'affiche plus l'avertissement « ouvrir la porte » avec le plateau à 120 °C.
 - **Ventilation** :
   - N-PEEK et N-PEI : surplombs et ponts à 40 % au lieu de 100 %, comme leur ventilation maximale.
