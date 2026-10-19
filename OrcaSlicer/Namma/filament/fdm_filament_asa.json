@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#FB8C00"],
+  "filament_notes": ["N-ASA"],
   "filament_type": ["ASA"],
   "filament_density": ["1.07"],
   "filament_shrink": ["99.53%"],

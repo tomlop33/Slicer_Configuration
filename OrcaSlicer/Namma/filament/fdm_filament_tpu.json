@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#8E24AA"],
+  "filament_notes": ["N-TPU"],
   "filament_type": ["TPU"],
   "filament_density": ["1.15"],
   "temperature_vitrification": ["60"],

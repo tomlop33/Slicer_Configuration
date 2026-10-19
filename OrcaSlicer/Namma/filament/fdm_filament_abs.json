@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#E53935"],
+  "filament_notes": ["N-ABS"],
   "filament_type": ["ABS"],
   "filament_density": ["1.04"],
   "filament_shrink": ["99.325%"],

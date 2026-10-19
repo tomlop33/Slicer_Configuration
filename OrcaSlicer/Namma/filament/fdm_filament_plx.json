@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#3949AB"],
+  "filament_notes": ["N-PLX"],
   "filament_density": ["1.18"],
   "temperature_vitrification": ["71"],
   "idle_temperature": ["195"],

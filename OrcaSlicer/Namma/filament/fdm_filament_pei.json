@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#FFB300"],
+  "filament_notes": ["N-PEI 9085"],
   "filament_type": ["PEI"],
   "filament_max_volumetric_speed": ["10"],
   "filament_density": ["1.28"],

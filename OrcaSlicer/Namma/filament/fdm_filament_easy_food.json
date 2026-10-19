@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#00ACC1"],
+  "filament_notes": ["N-EASY Food"],
   "filament_density": ["1.325"],
   "temperature_vitrification": ["67"],
   "idle_temperature": ["195"],

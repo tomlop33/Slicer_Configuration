@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#FDD835"],
+  "filament_notes": ["N-PVA"],
   "filament_type": ["PVA"],
   "filament_soluble": ["1"],
   "filament_is_support": ["1"],

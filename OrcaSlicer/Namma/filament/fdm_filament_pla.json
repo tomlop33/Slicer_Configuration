@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#1E88E5"],
+  "filament_notes": ["N-PLA"],
   "filament_density": ["1.24"],
   "filament_shrinkage_compensation_z": ["100%"],
   "filament_cost": ["20"],

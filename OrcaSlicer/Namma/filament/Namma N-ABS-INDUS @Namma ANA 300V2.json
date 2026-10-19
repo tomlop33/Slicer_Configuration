@@ -6,6 +6,7 @@
   "filament_id": "Namma N-ABS-INDUS @Namma ANA 300V2",
   "instantiation": "true",
   "default_filament_colour": ["#B71C1C"],
+  "filament_notes": ["N-ABS INDUS"],
   "pressure_advance": ["0.04"],
   "compatible_printers": ["Namma ANA 300 V2 0.8 nozzle"],
   "nozzle_temperature": ["270"],

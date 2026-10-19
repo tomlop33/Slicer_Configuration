@@ -6,6 +6,7 @@
   "filament_id": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF09 - 2.5 nozzle",
   "instantiation": "true",
   "default_filament_colour": ["#B71C1C"],
+  "filament_notes": ["N-ABS INDUS"],
   "pressure_advance": ["0"],
   "filament_max_volumetric_speed": ["75"],
   "compatible_printers": ["Namma EVA 500 - 3DF09 - 2.5 nozzle"],

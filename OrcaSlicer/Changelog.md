@@ -3,6 +3,8 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Start G-code ANA et Lucy** : l'appel à `start_print_ANA.g` / `start_print_Lucy.g` transmet le diamètre de buse de T0 et T1 (`D` / `F`) et le filament découpé de T0 et T1 (`K` / `L`, valeur de `filament_notes`). Sur les ANA, `K` et `L` ne sont envoyés que pour les têtes utilisées. En modes Copie et Miroir, les deux têtes reçoivent la buse et le filament de T0. La Lucy reçoit seulement `D` et `K`.
+- **Notes des filaments** (`filament_notes`) : chaque matière contient le nom de son filament dans le firmware Duet (dossiers `0:/filaments/` du dépôt `01_common`), par exemple `N-ABS INDUS`, `N-PETG_CF` ou `Granule`. Ce nom servira à vérifier que le filament chargé dans la machine correspond à celui du découpage.
 - **Refroidissement, toutes les matières** : vitesse minimale d'impression (`slow_down_min_speed`) à 5 mm/s (au lieu de 10 mm/s), et seuil de ventilation des surplombs (`overhang_fan_threshold`) à 50 % (au lieu de 25 %, 95 % ou 0 % selon la matière). Les deux valeurs sont définies une seule fois, dans `fdm_filament_common`.
 - **Type de saut en Z** (toutes les machines) : Auto Lift pour toutes les matières. Les ANA et la Lucy étaient en Normal Lift, sauf N-PC, N-PPA CF et N-PPS CF en Slope Lift. Les EVA étaient en Slope Lift pour la plupart des matières, et en Normal Lift pour N-PLX, N-PETG-CF, N-PETG-GF et N-TPU. Le type est défini une seule fois par machine (`fdm_*_common`). Avec l'arc fitting désactivé, OrcaSlicer écrit la spirale en segments G1, sans G2/G3.
 - **Vitesses des profils Strength** :
@@ -68,6 +70,8 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Une couleur par matière** (`default_filament_colour`), appliquée quand on choisit un filament. Les deux têtes des machines IDEX ont aussi des couleurs d'extrudeur différentes.
 
 ### Modifications
+- **Start G-code ANA et Lucy** : l'appel à `start_print_ANA.g` / `start_print_Lucy.g` transmet le diamètre de buse de T0 et T1 (`D` / `F`) et le filament découpé de T0 et T1 (`K` / `L`, valeur de `filament_notes`). Sur les ANA, `K` et `L` ne sont envoyés que pour les têtes utilisées. En modes Copie et Miroir, les deux têtes reçoivent la buse et le filament de T0. La Lucy reçoit seulement `D` et `K`.
+- **Notes des filaments** (`filament_notes`) : chaque matière contient le nom de son filament dans le firmware Duet (dossiers `0:/filaments/` du dépôt `01_common`), par exemple `N-ABS INDUS`, `N-PETG_CF` ou `Granule`. Ce nom servira à vérifier que le filament chargé dans la machine correspond à celui du découpage.
 - **Refroidissement, toutes les matières** : vitesse minimale d'impression (`slow_down_min_speed`) à 5 mm/s (au lieu de 10 mm/s), et seuil de ventilation des surplombs (`overhang_fan_threshold`) à 50 % (au lieu de 25 %, 95 % ou 0 % selon la matière). Les deux valeurs sont définies une seule fois, dans `fdm_filament_common`.
 - **Type de saut en Z** (toutes les machines) : Auto Lift pour toutes les matières. Les ANA et la Lucy étaient en Normal Lift, sauf N-PC, N-PPA CF et N-PPS CF en Slope Lift. Les EVA étaient en Slope Lift pour la plupart des matières, et en Normal Lift pour N-PLX, N-PETG-CF, N-PETG-GF et N-TPU. Le type est défini une seule fois par machine (`fdm_*_common`). Avec l'arc fitting désactivé, OrcaSlicer écrit la spirale en segments G1, sans G2/G3.
 - **Vitesses des profils Strength** :

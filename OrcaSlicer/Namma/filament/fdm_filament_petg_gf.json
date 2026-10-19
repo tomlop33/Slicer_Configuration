@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#7CB342"],
+  "filament_notes": ["N-PETG GF"],
   "filament_type": ["PETG"],
   "filament_density": ["1.265"],
   "filament_shrink": ["99.7%"],

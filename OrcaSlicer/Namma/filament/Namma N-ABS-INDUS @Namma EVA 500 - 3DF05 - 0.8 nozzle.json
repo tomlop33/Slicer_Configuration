@@ -6,6 +6,7 @@
   "filament_id": "Namma N-ABS-INDUS @Namma EVA 500 - 3DF05 - 0.8 nozzle",
   "instantiation": "true",
   "default_filament_colour": ["#B71C1C"],
+  "filament_notes": ["N-ABS INDUS"],
   "pressure_advance": ["0.02"],
   "compatible_printers": ["Namma EVA 500 - 3DF05 - 0.8 nozzle"],
   "filament_retraction_length": ["0.5"],

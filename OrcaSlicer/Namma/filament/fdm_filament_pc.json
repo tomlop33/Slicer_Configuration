@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#90A4AE"],
+  "filament_notes": ["N-PC"],
   "filament_type": ["PC"],
   "filament_density": ["1.04"],
   "filament_shrink": ["99.325%"],
