@@ -115,7 +115,7 @@
   "internal_solid_infill_acceleration": "2500",
   "internal_solid_infill_flow_ratio": "1",
   "internal_solid_infill_line_width": "120%",
-  "internal_solid_infill_pattern": "rectilinear",
+  "internal_solid_infill_pattern": "monotonic",
   "internal_solid_infill_speed": "150",
   "ironing_angle": "0",
   "ironing_angle_fixed": "0",
