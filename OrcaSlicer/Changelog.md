@@ -45,6 +45,7 @@
   - N-PETG-GF : 265 °C (au lieu de 260), plage 250-275 °C (au lieu de 250-270).
   - N-PPA CF : 300 °C (au lieu de 290).
   - N-PPS CF : 320 °C (au lieu de 330).
+  - N-PC : 330 °C (au lieu de 280), plage 310-350 °C (au lieu de 270-290).
 
 ### Corrections
 - **Nettoyage** : 20 clés inconnues d'OrcaSlicer (reprises de Bambu Studio) retirées de `fdm_filament_common`, ainsi que la clé `version` de `fdm_process_common`. Aucun effet sur les réglages.
