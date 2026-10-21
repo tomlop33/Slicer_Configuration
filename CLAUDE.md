@@ -144,6 +144,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
 
 - Les profils sont copiés directement dans `%APPDATA%\OrcaSlicer\system\` (`Namma.json` + `Namma/`), avec OrcaSlicer fermé. Pas besoin des droits administrateur, ce qui permet de tester chaque modification tout de suite.
 - `resources\profiles\Namma\` ne contient que les `*_cover.png`. **Jamais de `Namma.json` ni de profils dans `resources` sur ce poste** : OrcaSlicer réinstallerait au démarrage la version de `resources` par-dessus celle de `system` dès que les versions diffèrent.
+- **OrcaSlicer 2.5 et plus : cache des profils.** Orca charge chaque vendor depuis `system\<Vendor>.opc`, et ce cache n'est invalidé **que par la `version` de `Namma.json`**, pas par la date des fichiers. Après chaque copie dans `system` sans changement de version, il faut donc supprimer `system\Namma.opc` (OrcaSlicer fermé). Il est reconstruit au démarrage suivant. Sinon, Orca garde les anciens profils (journal : « Namma served from its preset cache »).
 - Vignettes : l'image de la barre latérale (`Sidebar::update_printer_thumbnail`) est lue **uniquement** dans `resources\profiles\Namma\<printer_model>_cover.png`. Pour un nouveau modèle, copier son `_cover.png` dans ce dossier, sinon une icône générique s'affiche.
 - ⚠️ Incident du 06/10/2026 : un bundle 01.00.00.00 resté dans `resources` a écrasé à moitié l'installation 01.01.00.00 de `system`. OrcaSlicer a ensuite retiré 328 filaments de la liste visible de `OrcaSlicer.conf`.
 ## Git

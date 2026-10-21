@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#A1887F"],
+  "filament_notes": ["N-PEEK"],
   "filament_type": ["PEEK"],
   "filament_max_volumetric_speed": ["10"],
   "filament_density": ["1.28"],

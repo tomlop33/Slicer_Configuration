@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#37474F"],
+  "filament_notes": ["N-PAHT_CF"],
   "filament_type": ["PA-CF"],
   "filament_density": ["1.17"],
   "filament_shrink": ["99.9%"],

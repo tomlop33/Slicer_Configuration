@@ -6,6 +6,7 @@
   "from": "system",
   "instantiation": "false",
   "default_filament_colour": ["#D81B60"],
+  "filament_notes": ["N-EASY V0"],
   "filament_density": ["1.31"],
   "temperature_vitrification": ["70"],
   "idle_temperature": ["195"],

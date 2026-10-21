@@ -202,7 +202,6 @@ Clés filament : `adaptive_pressure_advance` (activation), `adaptive_pressure_ad
 - **Profils Speed des EVA** : vitesses identiques aux profils Standard (seule la hauteur de couche change). Les profils Speed de l'ANA 300, de l'ANA 300G et de la Lucy sont proches des Standard, à cause des vis à billes.
 - **EVA** : accélération max X/Y à 600 mm/s², mais accélération max en extrusion à 6 000 mm/s². C'est sans effet réel, car la limite par axe s'applique à tous les mouvements.
 - **EVA** : même rétraction (0.8 mm à 30 mm/s) et même z-hop (0.4 mm) de la buse 0.4 à la buse 3.0 (granulés).
-- **PEI** : plateau à 220 °C, au-dessus de sa température de ramollissement (181 °C). OrcaSlicer affichera l'avertissement « ouvrir la porte / retirer le capot » à chaque découpage en PEI.
 
 ## Rappel : cinématiques
 
