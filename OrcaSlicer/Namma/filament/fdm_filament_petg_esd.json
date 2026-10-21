@@ -26,5 +26,6 @@
   "fan_max_speed": ["60"],
   "fan_cooling_layer_time": ["30"],
   "slow_down_layer_time": ["3"],
-  "reduce_fan_stop_start_freq": ["1"]
+  "reduce_fan_stop_start_freq": ["1"],
+  "filament_max_volumetric_speed": ["15"]
 }

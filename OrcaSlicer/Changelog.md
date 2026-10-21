@@ -3,6 +3,7 @@
 ## En cours — version 01.01.02.00
 
 ### Modifications
+- **Débit max** (`filament_max_volumetric_speed`) : N-PETG-CF, N-PETG-GF, N-PETG-GF UV et N-PETG-ESD passent à 15 mm³/s (au lieu de 20), sur ANA, Lucy et EVA 3DF05. Les EVA 3DF09 et 3DP25 restent à 75 mm³/s.
 - **N-PEI** (ANA 300 HT) : plateau à 160 °C (au lieu de 220 °C, qui dépassait la température de ramollissement de 181 °C). La fiche technique Namma N-PEI 9085 indique une plage de 140 à 220 °C (essais réalisés à 140 °C). OrcaSlicer n'affiche plus l'avertissement « ouvrir la porte » en PEI.
   - Réglages alignés sur la fiche technique : ventilateur de pièce coupé (0 %, surplombs et ponts compris, au lieu de 10-40 %), débit max 5.4 mm³/s (au lieu de 10, soit environ 60 mm/s en buse 0.4 et couche 0.2, pour une vitesse conseillée de 30 à 60 mm/s), buse à 360 °C (au lieu de 355 °C, température des essais mécaniques).
 - **Process, tous les profils** (`fdm_process_common`) :
@@ -14,7 +15,6 @@
   - Générateur de parois Arachne : « Wall distribution count » à 2 (au lieu de 1).
   - Ponts : débit à 1.1 en externe et en interne (au lieu de 1.35), densité à 110 % en externe et en interne (au lieu de 100 %). OrcaSlicer multiplie le débit interne par le débit externe : le débit réel des ponts internes est donc de 1.21 (au lieu de 1.82).
   - Parois supplémentaires sur les surplombs (`extra_perimeters_on_overhangs`) activées.
-  - Motif du remplissage plein interne : Rectilinear (au lieu de Monotonic).
   - Ordre dans la couche (`print_order`) : « Best of all (shortest path) » (au lieu de Default). Valeur ajoutée dans OrcaSlicer 2.5 : les versions antérieures reviennent à Default.
 - **Start G-code ANA et Lucy** : l'appel à `start_print_ANA.g` / `start_print_Lucy.g` transmet le diamètre de buse de T0 et T1 (`D` / `F`) et le filament découpé de T0 et T1 (`K` / `L`, valeur de `filament_notes`). Sur les ANA, `K` et `L` ne sont envoyés que pour les têtes utilisées. En modes Copie et Miroir, les deux têtes reçoivent la buse et le filament de T0. La Lucy reçoit seulement `D` et `K`.
 - **Notes des filaments** (`filament_notes`) : chaque matière contient le nom de son filament dans le firmware Duet (dossiers `0:/filaments/` du dépôt `01_common`), par exemple `N-ABS INDUS`, `N-PETG_CF` ou `Granule`. Ce nom servira à vérifier que le filament chargé dans la machine correspond à celui du découpage.
@@ -86,30 +86,6 @@ Bundle : `Namma 06_10_2026.zip` (`Namma.json` + `Namma/`).
 - **Une couleur par matière** (`default_filament_colour`), appliquée quand on choisit un filament. Les deux têtes des machines IDEX ont aussi des couleurs d'extrudeur différentes.
 
 ### Modifications
-- **N-PEI** (ANA 300 HT) : plateau à 160 °C (au lieu de 220 °C, qui dépassait la température de ramollissement de 181 °C). La fiche technique Namma N-PEI 9085 indique une plage de 140 à 220 °C (essais réalisés à 140 °C). OrcaSlicer n'affiche plus l'avertissement « ouvrir la porte » en PEI.
-  - Réglages alignés sur la fiche technique : ventilateur de pièce coupé (0 %, surplombs et ponts compris, au lieu de 10-40 %), débit max 5.4 mm³/s (au lieu de 10, soit environ 60 mm/s en buse 0.4 et couche 0.2, pour une vitesse conseillée de 30 à 60 mm/s), buse à 360 °C (au lieu de 355 °C, température des essais mécaniques).
-- **Process, tous les profils** (`fdm_process_common`) :
-  - « Precise wall » (`precise_outer_wall`) désactivé.
-  - « Precise Z height » (`precise_z_height`) activé.
-  - « Top surface expansion » (`top_surface_expansion`) à 10 mm. Ce réglage n'existe que depuis OrcaSlicer 2.5 : les versions antérieures l'ignorent.
-  - « Align directions to model » (`align_infill_direction_to_model`) activé.
-  - Lissage du débit d'extrusion (100 mm³/s², inchangé) appliqué seulement aux parois externes et aux surplombs (`extrusion_rate_smoothing_external_perimeter_only`). Option disponible depuis OrcaSlicer 2.4.
-  - Générateur de parois Arachne : « Wall distribution count » à 2 (au lieu de 1).
-  - Ponts : débit à 1.1 en externe et en interne (au lieu de 1.35), densité à 110 % en externe et en interne (au lieu de 100 %). OrcaSlicer multiplie le débit interne par le débit externe : le débit réel des ponts internes est donc de 1.21 (au lieu de 1.82).
-  - Parois supplémentaires sur les surplombs (`extra_perimeters_on_overhangs`) activées.
-  - Motif du remplissage plein interne : Rectilinear (au lieu de Monotonic).
-  - Ordre dans la couche (`print_order`) : « Best of all (shortest path) » (au lieu de Default). Valeur ajoutée dans OrcaSlicer 2.5 : les versions antérieures reviennent à Default.
-- **Start G-code ANA et Lucy** : l'appel à `start_print_ANA.g` / `start_print_Lucy.g` transmet le diamètre de buse de T0 et T1 (`D` / `F`) et le filament découpé de T0 et T1 (`K` / `L`, valeur de `filament_notes`). Sur les ANA, `K` et `L` ne sont envoyés que pour les têtes utilisées. En modes Copie et Miroir, les deux têtes reçoivent la buse et le filament de T0. La Lucy reçoit seulement `D` et `K`.
-- **Notes des filaments** (`filament_notes`) : chaque matière contient le nom de son filament dans le firmware Duet (dossiers `0:/filaments/` du dépôt `01_common`), par exemple `N-ABS INDUS`, `N-PETG_CF` ou `Granule`. Ce nom servira à vérifier que le filament chargé dans la machine correspond à celui du découpage.
-- **Refroidissement, toutes les matières** : vitesse minimale d'impression (`slow_down_min_speed`) à 5 mm/s (au lieu de 10 mm/s), et seuil de ventilation des surplombs (`overhang_fan_threshold`) à 50 % (au lieu de 25 %, 95 % ou 0 % selon la matière). Les deux valeurs sont définies une seule fois, dans `fdm_filament_common`.
-- **Type de saut en Z** (toutes les machines) : Auto Lift pour toutes les matières. Les ANA et la Lucy étaient en Normal Lift, sauf N-PC, N-PPA CF et N-PPS CF en Slope Lift. Les EVA étaient en Slope Lift pour la plupart des matières, et en Normal Lift pour N-PLX, N-PETG-CF, N-PETG-GF et N-TPU. Le type est défini une seule fois par machine (`fdm_*_common`). Avec l'arc fitting désactivé, OrcaSlicer écrit la spirale en segments G1, sans G2/G3.
-- **Vitesses des profils Strength** :
-  - ANA 300, ANA 300G et Lucy 300 (vis à billes) : les Strength 0.6 et 0.8, et le Strength 0.4 de la Lucy, reprennent les vitesses du Standard de même buse (paroi intérieure 125 mm/s, remplissage 100, gap fill 80, dessus 85, support 80). Ils étaient plus rapides que le Standard sur le remplissage et plus lents sur les parois.
-  - EVA 500 et 1000 (buses 0.4, 0.6 et 0.8) : les Strength reprennent les vitesses du Standard (déplacements 150 mm/s au lieu de 500, remplissage 100, plein interne 100, gap fill 50, dessus 90, support 60). Ils étaient plus rapides que les profils Speed.
-  - ANA 300 HT, ANA 300 V2 et ANA 600 (courroie) : inchangés.
-- **Vitesses des buses 0.6, 0.8 et 1.0 sur les machines à courroie** (ANA 300 HT, ANA 300 V2, ANA 600) : le dessus passe à 100 mm/s (au lieu de 150) et le remplissage à 150 mm/s (au lieu de 100), comme en buse 0.4. Cela concerne les profils Quality 0.6 et 0.8, Standard et Strength 0.8, Standard 1.0 de l'ANA 600, et le dessus du Speed 0.6.
-- **Température de chambre** : N-ABS, N-ABS-INDUS, N-ASA, N-PC, N-PPA CF, N-PPS CF et N-Soluble 150 passent à 60 °C (au lieu de 65 °C), en minimale comme en cible. Cela s'applique à toutes les machines, ANA 300 HT et EVA comprises, sauf là où la HT a sa propre valeur (PC, PPA CF, PPS CF, Soluble 150).
-  - ANA 300 HT : N-ABS, N-ABS-INDUS et N-ASA à 65 °C, N-PAHT CF à 75 °C (au lieu de 60 °C).
 
 #### Process (toutes machines)
 - **Jupe et bordure** : `skirt_loops` à 0, `brim_type` à `no_brim`.
