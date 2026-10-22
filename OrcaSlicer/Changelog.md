@@ -1,6 +1,10 @@
 # Changelog — Profils Namma OrcaSlicer
 
-## En cours — version 01.01.02.00
+## 22/10/2026 — version 01.01.02.00 (modifications du 12/10 au 21/10/2026)
+
+Bundle : `Namma 22_10_2026.zip` (`Namma.json` + `Namma/`). Il remplace `Namma 09_10_2026.zip`.
+
+> Certains réglages (`top_surface_expansion`, ordre « Best of all ») n'existent que depuis **OrcaSlicer 2.5** : les versions antérieures les ignorent ou reviennent à la valeur par défaut.
 
 ### Modifications
 - **Débit max** (`filament_max_volumetric_speed`) : N-PETG-CF, N-PETG-GF, N-PETG-GF UV et N-PETG-ESD passent à 15 mm³/s (au lieu de 20), sur ANA, Lucy et EVA 3DF05. Les EVA 3DF09 et 3DP25 restent à 75 mm³/s.
@@ -49,6 +53,9 @@
 
 ### Corrections
 - **Nettoyage** : 20 clés inconnues d'OrcaSlicer (reprises de Bambu Studio) retirées de `fdm_filament_common`, ainsi que la clé `version` de `fdm_process_common`. Aucun effet sur les réglages.
+
+### Installation / à savoir
+- **Mise à jour** (version `01.01.02.00`) : même procédure que pour la version 01.01.00.00 (voir ci-dessous). Le changement de version déclenche la réinstallation automatique au démarrage.
 
 ## 09/10/2026 — version 01.01.01.00
 
