@@ -48,7 +48,6 @@
   "retract_restart_extra_toolchange": ["0"],
   "retraction_speed": ["35"],
   "deretraction_speed": ["35"],
-  "silent_mode": "0",
   "single_extruder_multi_material": "0",
   "machine_tool_change_time": "20",
   "change_filament_gcode": "T{next_extruder}\nG92 E0",

@@ -6,6 +6,5 @@
   "filament_id": "Namma N-PLX @Namma EVA 1000 - 3DF05 - 0.8 nozzle",
   "instantiation": "true",
   "pressure_advance": ["0.05"],
-  "filament_flow_ratio": ["0.98"],
   "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.8 nozzle"]
 }

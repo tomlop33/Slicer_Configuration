@@ -15,13 +15,13 @@ Valeurs actuelles (profil compatible avec chaque machine et buse ; « — » = m
 
 | Matière | ANA 300 0.4 | ANA 300 0.6 | ANA 300 0.8 | HT 0.4 | HT 0.6 | HT 0.8 | V2 0.4 | V2 0.6 | V2 0.8 | 600 0.4 | 600 0.6 | 600 0.8 | EVA 0.4 | EVA 0.6 | EVA 0.8 | EVA 1.2-3.0 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| N-ABS | 0.03 | 0.02 | 0.03 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.03 | 0.02 | 0.02 | 0 |
-| N-ABS-INDUS | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.03 | 0.02 | 0.02 | 0 |
-| N-ASA | 0.045 | 0.055 | 0.05 | 0.045 | 0.055 | 0.04 | 0.045 | 0.055 | 0.05 | 0.045 | 0.055 | 0.05 | 0.045 | 0.055 | 0.055 | 0 |
+| N-ABS | 0.02 | 0.02 | 0.03 | 0.02 | 0.04 | 0.04 | 0.02 | 0.04 | 0.04 | 0.02 | 0.04 | 0.04 | 0.03 | 0.02 | 0.02 | 0 |
+| N-ABS-INDUS | 0.025 | 0.02 | 0.055 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.03 | 0.02 | 0.02 | 0 |
+| N-ASA | 0.02 | 0.055 | 0.05 | 0.02 | 0.055 | 0.04 | 0.02 | 0.055 | 0.05 | 0.02 | 0.055 | 0.05 | 0.045 | 0.055 | 0.055 | 0 |
 | N-BVOH | 0.03 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.035 | 0.04 | 0.04 | 0.035 | — | — | — | — |
 | N-EASY FOOD | 0.03 | 0.05 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
 | N-EASY V0 | 0.03 | 0.05 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-PAHT CF | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0 |
+| N-PAHT CF | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0 |
 | N-PC | 0.035 | 0.035 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.035 | 0.035 | 0.035 | 0 |
 | N-PEEK | — | — | — | 0.04 | 0.04 | 0.04 | — | — | — | — | — | — | — | — | — | — |
 | N-PEI | — | — | — | 0.04 | 0.04 | 0.04 | — | — | — | — | — | — | — | — | — | — |
@@ -30,49 +30,47 @@ Valeurs actuelles (profil compatible avec chaque machine et buse ; « — » = m
 | N-PETG-ESD | 0.045 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
 | N-PETG-GF | 0.055 | 0.036 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.055 | 0.036 | 0.036 | 0 |
 | N-PETG-GF UV | 0.045 | 0.055 | 0.045 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-PLA | 0.03 | 0.05 | 0.05 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.03 | 0.05 | 0.05 | 0 |
-| N-PLX | 0.03 | 0.05 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.03 | 0.05 | 0.05 | 0 |
+| N-PLA | 0.04 | 0.05 | 0.05 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.03 | 0.05 | 0.05 | 0 |
+| N-PLX | 0.045 | 0.05 | 0.035 | 0.045 | 0.04 | 0.04 | 0.045 | 0.04 | 0.04 | 0.045 | 0.04 | 0.04 | 0.03 | 0.05 | 0.05 | 0 |
 | N-PPA CF | 0.04 | 0.035 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.035 | 0.035 | 0 |
 | N-PPS CF | 0.04 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.02 | 0.02 | 0 |
 | N-PVA | 0.035 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
 | N-Soluble 111 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
 | N-Soluble 150 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
 | N-Soluble 90 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
-| N-TPU | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | 0.03 | 0.02 | 0.02 | 0 |
+| N-TPU | 0 | 0.02 | 0.055 | 0 | 0.04 | 0.04 | 0 | 0.04 | 0.00 | 0 | 0.04 | 0.00 | 0.03 | 0.02 | 0.02 | 0 |
 
 **À tester** : voir le protocole de la section 4 (étape 2, pression d'avance) et la section 5 (pression d'avance adaptative, problème `M572 D0`).
 
 ## 2. Flow ratio (`filament_flow_ratio`)
 
-Seule l'ANA 300 (avec l'ANA 300G et la Lucy) a des valeurs propres par buse : par exemple ABS 0.92 en 0.4 contre 0.95 ailleurs, Soluble et TPU 0.92 / 0.95 / 1 selon la buse. Les autres machines ont une valeur unique par matière.
+Le flow ne dépend que de la **matière** (même tête sur toutes les ANA et Lucy, extrudeur calibré par machine). Il est donc défini **une seule fois par matière**, dans sa base `fdm_filament_<matière>`, et vaut la même chose sur toutes les machines et toutes les buses. Valeurs relevées le 28/10/2026 :
 
-| Matière | ANA 300 0.4 | ANA 300 0.6 | ANA 300 0.8 | HT 0.4 | HT 0.6 | HT 0.8 | V2 0.4 | V2 0.6 | V2 0.8 | 600 0.4 | 600 0.6 | 600 0.8 | EVA 0.4 | EVA 0.6 | EVA 0.8 | EVA 1.2-3.0 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| N-ABS | 0.92 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.92 | 0.95 | 0.95 | 0.95 |
-| N-ABS-INDUS | 0.92 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.92 | 0.95 | 0.95 | 0.95 |
-| N-ASA | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| N-BVOH | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-EASY FOOD | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | — | — | — | — |
-| N-EASY V0 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | — | — | — | — |
-| N-PAHT CF | 0.96 | 0.96 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.96 | 0.96 | 0.96 | 0.96 |
-| N-PC | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 |
-| N-PEEK | — | — | — | 1 | 1 | 1 | — | — | — | — | — | — | — | — | — | — |
-| N-PEI | — | — | — | 1 | 1 | 1 | — | — | — | — | — | — | — | — | — | — |
-| N-PETG | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 |
-| N-PETG-CF | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 | 0.95 |
-| N-PETG-ESD | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-PETG-GF | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 | 0.93 |
-| N-PETG-GF UV | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-PLA | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 |
-| N-PLX | 0.98 | 0.98 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0.98 | 0.98 | 0.98 | 0.98 |
-| N-PPA CF | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| N-PPS CF | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| N-PVA | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | — | — | — | — |
-| N-Soluble 111 | 0.92 | 0.95 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-Soluble 150 | 0.92 | 0.95 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-Soluble 90 | 0.92 | 0.95 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | — | — | — | — |
-| N-TPU | 0.92 | 0.95 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0.92 | 0.95 | 0.95 | 0.95 |
-
+| Matière | Flow | Défini dans | État |
+|---|---|---|---|
+| N-PLA | 1 | `fdm_filament_pla` (= `fdm_filament_common`) | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-PLX | 0.98 | `fdm_filament_plx` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-ABS | 0.98 | `fdm_filament_abs` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-ABS-INDUS | 0.97 | `fdm_filament_abs_indus` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-ASA | 0.98 | `fdm_filament_asa` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-PAHT CF | 0.94 | `fdm_filament_paht_cf` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-TPU | 1.08 | `fdm_filament_tpu` | calibré 28/10/2026 (ANA/Lucy 0.4) |
+| N-PC | 0.95 | `fdm_filament_pc` | à calibrer |
+| N-PETG | 0.95 | `fdm_filament_petg` | à calibrer |
+| N-PETG-CF | 0.95 | `fdm_filament_petg_cf` | à calibrer |
+| N-PETG-GF | 0.93 | `fdm_filament_petg_gf` | à calibrer |
+| N-PETG-GF UV | 1 | `fdm_filament_common` | à calibrer |
+| N-PETG-ESD | 1 | `fdm_filament_common` | à calibrer |
+| N-PPA CF | 1 | `fdm_filament_common` | à calibrer |
+| N-PPS CF | 0.97 | `fdm_filament_pps` | calibré 28/10/2026 |
+| N-PEEK | 0.99 | `fdm_filament_peek` | calibré 28/10/2026 |
+| N-PEI | 1 | `fdm_filament_common` | à calibrer |
+| N-BVOH | 1 | `fdm_filament_common` | à calibrer |
+| N-PVA | 0.98 | `fdm_filament_pva` | à calibrer |
+| N-EASY FOOD | 0.98 | `fdm_filament_easy_food` | à calibrer |
+| N-EASY V0 | 0.98 | `fdm_filament_easy_v0` | à calibrer |
+| N-Soluble 90 / 111 / 150 | 1 | `fdm_filament_common` | à calibrer (les surcharges 0.92 / 0.95 de l'ANA 300 0.4 / 0.6 ont été retirées le 28/10/2026) |
+| Granulé (ANA 300G, tête 2) | 0.7 | `Namma Granulé @Namma ANA 300G` | à calibrer (extrusion à vis, pas comparable aux filaments) |
 **À tester** : voir le protocole de la section 4 (étape 1, flow).
 
 ## 3. Retrait (`filament_shrink`)
@@ -126,7 +124,13 @@ Le retrait en Z (`filament_shrinkage_compensation_z`) est à 100 % partout.
 
 | Matière | Machine / buse | Flow mesuré | Pression d'avance | Retrait X | Retrait Y | Retrait retenu | Date / remarque |
 |---|---|---|---|---|---|---|---|
-| | | | | | | | |
+| N-ABS | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.02 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-ABS-INDUS | ANA et Lucy 0.4 (flow : toutes machines et buses) | 97 % | 0.025 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-ASA | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.02 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-PAHT CF | ANA et Lucy 0.4 (flow : toutes machines et buses) | 94 % | 0.025 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-PLA | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.04 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-PLX | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.045 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-TPU | ANA et Lucy 0.4 (flow : toutes machines et buses) | 108 % | 0 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
 
 Une fois une matière validée : reporter les valeurs dans sa base `fdm_filament_<matière>`, **supprimer les surcharges** de flow et de pression d'avance devenues inutiles dans les profils machine et buse (sauf les écarts mesurés), puis retirer la matière des tableaux des sections 1 et 2.
 ## 5. Pression d'avance adaptative (`adaptive_pressure_advance`)
@@ -137,8 +141,12 @@ Une fois une matière validée : reporter les valeurs dans sa base `fdm_filament
 
 Clés filament : `adaptive_pressure_advance` (activation), `adaptive_pressure_advance_model` (lignes `PA,débit mm³/s,accélération mm/s²`), `adaptive_pressure_advance_bridges` (PA sur les ponts), `adaptive_pressure_advance_overhangs` (expérimental). Garder une `pressure_advance` fixe raisonnable : elle sert de valeur de secours et au changement d'outil.
 
-**⚠️ Bloquant pour les machines à 2 têtes : `M572 D0` en dur (confirmé).** Avec RepRapFirmware, OrcaSlicer 2.4.2 envoie toujours `M572 D0 S…`. Quand la tête 2 (T1) imprime, la pression d'avance, fixe ou adaptative, est donc appliquée au **moteur de la tête 1**. Machines concernées : toutes les ANA, les EVA 3DF05, et les modes Copie/Miroir. La Lucy et les EVA 3DF09 et 3DP25 (une seule tête) ne sont pas concernées.
-- Ticket OrcaSlicer : [#16204](https://github.com/SoftFever/OrcaSlicer/issues/16204), à suivre. Retirer ce point bloquant une fois le correctif publié.
+**⚠️ Bloquant pour les machines à 2 têtes : `M572 D0` en dur (confirmé).** Avec RepRapFirmware, OrcaSlicer (2.4.2, 2.5 alpha et 2.5 beta) envoie toujours `M572 D0 S…` quand il ne précise pas de tête : au changement d'outil, pour la pression d'avance adaptative et pendant les tests de calibration. Seuls les modes IDEX/IMEX de la 2.5 indiquent la tête. Quand la tête 2 (T1) imprime, la pression d'avance, fixe ou adaptative, est donc appliquée au **moteur de la tête 1**. Machines concernées : toutes les ANA, les EVA 3DF05, et les modes Copie/Miroir. La Lucy et les EVA 3DF09 et 3DP25 (une seule tête) ne sont pas concernées.
+- Ticket OrcaSlicer : [#16204](https://github.com/OrcaSlicer/OrcaSlicer/issues/16204).
+- **Correctif proposé : PR [#16913](https://github.com/OrcaSlicer/OrcaSlicer/pull/16913)** (ouverte le 27/10/2026, **pas encore mergée**, absente de la 2.5 beta). Sans tête précisée, `M572` vise maintenant la **tête active** (`T1` → `M572 D1 S…`). Rien ne change sur les machines à une tête (`D0`) ni sur les autres firmwares.
+  - L'auteur n'a pas pu tester sur une machine Duet à deux têtes. **Test proposé sur une ANA**, avec une version qui contient la PR : découper une impression à 2 filaments et vérifier que `M572 D1 S<PA du filament 2>` suit chaque `T1` et que `M572 D0` suit chaque `T0`. Refaire le test avec la pression d'avance adaptative. Le résultat peut être posté en commentaire de la PR.
+  - **Modes Copie/Miroir : non corrigés par la PR.** OrcaSlicer y voit une seule tête et enverra seulement `M572 D0`, alors que les outils `T2`/`T3` entraînent les deux moteurs. Le firmware doit continuer à régler le moteur 1, par exemple avec `M572 D0:1 S…` dans la macro de l'outil.
+  - Une fois la PR publiée dans une version d'OrcaSlicer : retirer ce point bloquant (sauf pour les modes Copie/Miroir), supprimer le réglage de la tête 2 dans le firmware et lever la restriction de l'étape 5 ci-dessous.
 - En attendant le correctif : la pression d'avance de la tête 2 vient du firmware (`config.g`, ou macro de changement d'outil `tpost1.g` avec `M572 D1 S…`), pas des profils.
 - Contournement possible, **à tester** : dans le *Filament start G-code*, ajouter `M572 D[current_extruder] S{pressure_advance[current_extruder]}`. Cela corrigerait la valeur fixe au changement d'outil, mais pas le mode adaptatif.
 
@@ -149,7 +157,7 @@ Clés filament : `adaptive_pressure_advance` (activation), `adaptive_pressure_ad
 2. Pour chaque test, noter la PA optimale et le **débit** affiché dans l'aperçu (schéma de couleur « Débit », curseur horizontal sur les lignes du motif). La PA optimale doit **diminuer** quand le débit augmente.
 3. Écrire le modèle, une ligne par mesure (`PA,débit,accélération`), dans la base `fdm_filament_<matière>`, ou au niveau buse si les valeurs diffèrent selon la buse.
 4. Vérifier sur une machine à vis à billes que le résultat est bon, sur une pièce de test et une pièce réelle.
-5. N'activer `adaptive_pressure_advance` sur les machines à 2 têtes **qu'une fois le correctif `M572` publié**. D'ici là, l'activer seulement pour la Lucy et les EVA à une tête, ou pour des impressions sur la tête 1 uniquement.
+5. N'activer `adaptive_pressure_advance` sur les machines à 2 têtes **qu'une fois le correctif `M572` publié** (PR #16913). D'ici là, l'activer seulement pour la Lucy et les EVA à une tête, ou pour des impressions sur la tête 1 uniquement.
 
 | Matière | Buse | Lignes du modèle (`PA,débit,accél`) | Validé sur | Date / remarque |
 |---|---|---|---|---|

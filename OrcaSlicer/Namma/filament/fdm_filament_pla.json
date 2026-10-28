@@ -12,7 +12,6 @@
   "filament_cost": ["20"],
   "temperature_vitrification": ["60"],
   "idle_temperature": ["190"],
-  "filament_flow_ratio": ["0.98"],
   "enable_pressure_advance": ["1"],
   "pressure_advance": ["0.03"],
   "nozzle_temperature_initial_layer": ["220"],

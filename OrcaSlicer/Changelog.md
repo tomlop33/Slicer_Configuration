@@ -1,5 +1,33 @@
 # Changelog — Profils Namma OrcaSlicer
 
+## En cours — version 01.01.03.00
+
+### Modifications
+
+- **Flow ratio et pression d'avance calibrés en buse 0.4** (ANA 300, ANA 300G, Lucy 300, ANA 300 HT, ANA 300 V2, ANA 600 et modes Copie/Miroir) :
+
+  | Matière | Flow ratio | Pression d'avance |
+  |---|---|---|
+  | N-PLA | 1 | 0.04 |
+  | N-PLX | 0.98 | 0.045 |
+  | N-ABS | 0.98 | 0.02 |
+  | N-ABS-INDUS | 0.97 | 0.025 |
+  | N-ASA | 0.98 | 0.02 |
+  | N-PAHT CF | 0.94 | 0.025 |
+  | N-TPU | 1.08 | 0 |
+- **Flow du N-PEEK** : 0.99 (au lieu de 1), dans `fdm_filament_peek`.
+- **Flow du N-PPS CF** : 0.97 (au lieu de 1), dans `fdm_filament_pps`.
+- **Flow ratio par matière, sur toutes les machines et toutes les buses** (ANA, Lucy et EVA) : le flow ne dépend que de la matière. Les valeurs du tableau ci-dessus sont donc dans les bases `fdm_filament_<matière>`, et les surcharges par machine ou par buse sont supprimées. N-ABS-INDUS a 0.97 dans sa nouvelle base (voir ci-dessous). La pression d'avance reste par buse : les valeurs ci-dessus ne concernent que la 0.4 des ANA et de la Lucy.
+- N-EASY FOOD, N-EASY V0 et N-PVA héritent de `fdm_filament_pla` : ils gardent leur flow de 0.98, désormais écrit dans leur base.
+- **Flow des solubles** (N-Soluble 90, 111 et 150) : 1 partout. L'ANA 300 (et donc l'ANA 300G et la Lucy) était à 0.92 en buse 0.4 et à 0.95 en buse 0.6.
+
+- **End G-code des EVA** (`fdm_eva_common`) : il éteint maintenant la tête T0 (`M568 P0 A0 R0 S0`), et aussi la tête T1 sur les EVA 3DF05 (2 têtes). Il coupe ensuite le plateau et la chambre comme avant, et se termine par `M0`.
+
+### Nettoyage
+
+- **Nouvelle base `fdm_filament_abs_indus`** (hérite de `fdm_filament_abs`) : elle regroupe la couleur, la note Duet, les températures de buse (270 °C) et le flow (0.97) de N-ABS-INDUS, qui étaient répétés dans 16 profils (modèles ANA et EVA). Les réglages effectifs ne changent pas.
+- **`silent_mode` retiré** de `fdm_ana_common`, `fdm_lucy_common` et `fdm_eva_common` : OrcaSlicer 2.5 beta a supprimé cette option, et notre valeur (`0`) était celle par défaut des versions précédentes.
+
 ## 22/10/2026 — version 01.01.02.00 (modifications du 12/10 au 21/10/2026)
 
 Bundle : `Namma 22_10_2026.zip` (`Namma.json` + `Namma/`). Il remplace `Namma 09_10_2026.zip`.

@@ -6,7 +6,6 @@
   "filament_id": "Namma N-PAHT CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
   "instantiation": "true",
   "pressure_advance": ["0.04"],
-  "filament_flow_ratio": ["0.96"],
   "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.4 nozzle"],
   "filament_retraction_length": ["0.5"],
   "filament_z_hop": ["0.4"],

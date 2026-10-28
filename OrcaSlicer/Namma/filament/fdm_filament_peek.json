@@ -23,5 +23,6 @@
   "fan_min_speed": ["10"],
   "fan_max_speed": ["40"],
   "overhang_fan_speed": ["40"],
-  "additional_cooling_fan_speed": ["70"]
+  "additional_cooling_fan_speed": ["70"],
+  "filament_flow_ratio": ["0.99"]
 }

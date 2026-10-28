@@ -1,16 +1,12 @@
 {
   "type": "filament",
   "name": "Namma N-ABS-INDUS @Namma ANA 300HT",
-  "inherits": "fdm_filament_abs",
+  "inherits": "fdm_filament_abs_indus",
   "from": "system",
   "filament_id": "Namma N-ABS-INDUS @Namma ANA 300HT",
   "instantiation": "true",
-  "default_filament_colour": ["#B71C1C"],
-  "filament_notes": ["N-ABS INDUS"],
   "pressure_advance": ["0.04"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"],
-  "nozzle_temperature": ["270"],
-  "nozzle_temperature_initial_layer": ["270"],
   "chamber_temperature": ["65"],
   "chamber_minimal_temperature": ["65"]
 }
