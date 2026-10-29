@@ -5,7 +5,7 @@
   "from": "system",
   "filament_id": "Namma N-ASA @Namma EVA 500 - 3DF05 - 0.8 nozzle",
   "instantiation": "true",
-  "pressure_advance": ["0.055"],
+  "pressure_advance": ["0.01"],
   "compatible_printers": ["Namma EVA 500 - 3DF05 - 0.8 nozzle"],
   "filament_retraction_length": ["0.5"],
   "filament_z_hop": ["0.4"],

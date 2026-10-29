@@ -7,6 +7,6 @@
   "instantiation": "true",
   "chamber_temperature": ["90"],
   "chamber_minimal_temperature": ["90"],
-  "pressure_advance": ["0.04"],
+  "pressure_advance": ["0.015"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"]
 }

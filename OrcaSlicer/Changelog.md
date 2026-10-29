@@ -19,16 +19,24 @@
   | N-PETG | 0.99 | 0.03 |
   | N-PETG-CF | 0.95 | 0.03 |
   | N-PETG-GF | 0.99 | 0.04 |
+  | N-PETG-GF UV (repris du PETG-GF) | 0.99 | 0.04 |
   | N-PETG-ESD | 1.05 | 0.065 |
   | N-PEEK (ANA 300 HT) | 0.99 | 0.045 |
   | N-PEI (ANA 300 HT) | 0.96 | 0.055 |
   | N-PPA CF | 0.78 | 0.03 |
+  | N-PC | 0.95 | 0.035 |
+  | N-PVA | 0.98 | 0.035 |
+  | N-BVOH | 1 | 0.03 |
+  | N-EASY FOOD | 0.98 | 0.03 |
+  | N-EASY V0 | 0.98 | 0.03 |
+  | N-Soluble 90 / 111 / 150 | 1 | 0.03 |
 - **Flow ratio par matière, sur toutes les machines et toutes les buses** (ANA, Lucy et EVA) : le flow ne dépend que de la matière. Les valeurs du tableau ci-dessus sont donc dans les bases `fdm_filament_<matière>`, et les surcharges par machine ou par buse sont supprimées. N-ABS-INDUS a 0.97 dans sa nouvelle base (voir ci-dessous). La pression d'avance reste par buse : les valeurs ci-dessus ne concernent que la 0.4 des ANA et de la Lucy.
 - N-EASY FOOD, N-EASY V0 et N-PVA héritent de `fdm_filament_pla` : ils gardent leur flow de 0.98, désormais écrit dans leur base.
 - **Flow des solubles** (N-Soluble 90, 111 et 150) : 1 partout. L'ANA 300 (et donc l'ANA 300G et la Lucy) était à 0.92 en buse 0.4 et à 0.95 en buse 0.6.
 
 - **End G-code des EVA** (`fdm_eva_common`) : il éteint maintenant la tête T0 (`M568 P0 A0 R0 S0`), et aussi la tête T1 sur les EVA 3DF05 (2 têtes). Il coupe ensuite le plateau et la chambre comme avant, et se termine par `M0`.
-- **Ventilateur de pièce max** : 30 % (au lieu de 40) pour N-PPS CF, N-PPA CF et N-PEEK.
+- **Pression d'avance des buses 0.6 et 0.8** (ANA, Lucy et EVA 3DF05, toutes matières) : valeurs **provisoires** calculées à partir de la buse 0.4, **0.7 ×** en 0.6 et **0.5 ×** en 0.8 (par exemple N-PLA 0.04 → 0.028 et 0.02). Les anciennes valeurs (souvent 0.04, parfois plus élevées qu'en 0.4) n'étaient pas calibrées. La pression d'avance du N-TPU (0 partout) est désormais dans `fdm_filament_tpu`.
+- **Ventilateur de pièce max** : 20 % (au lieu de 40) pour N-PPS CF, N-PPA CF et N-PEEK.
 
 ### Nettoyage
 

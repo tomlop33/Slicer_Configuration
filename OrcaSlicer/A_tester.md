@@ -4,41 +4,39 @@ Ce document garde la trace des incohérences relevées par l'audit du 06/10/2026
 
 ## 1. Pression d'avance (`pressure_advance`)
 
-Il n'y a pas de logique d'ensemble :
-- Seule l'**ANA 300** (et l'ANA 300G et la Lucy, qui partagent ses filaments) a des valeurs différentes par buse. Elles **augmentent** parfois avec la buse, alors que la pression d'avance diminue normalement quand le diamètre augmente.
-- Les **HT, V2 et 600** ont presque partout 0.04, quelle que soit la buse.
-- Les **EVA grosses buses** (1.2 / 2.5 / 3.0) ont 0 pour toutes les matières.
-- Le **TPU** a 0.02 à 0.04, alors qu'il s'imprime normalement avec la pression d'avance désactivée.
-- Certaines valeurs sont écrites `0.00` et d'autres `0` (Soluble, TPU sur V2 et 600).
-
+État au 29/10/2026 :
+- **Buse 0.4 : calibrée** pour toutes les matières, même valeur sur les ANA, la Lucy et les EVA 3DF05.
+- **Buses 0.6 et 0.8 : estimations provisoires**, calculées à partir de la 0.4 : **0.6 = 0.7 × la valeur 0.4** et **0.8 = 0.5 × la valeur 0.4** (arrondi au millième). À vérifier par un test *Pressure advance* sur une machine par buse, puis à corriger ici.
+- **EVA grosses buses** (3DF09 1.2 / 2.5, 3DP25 3.0) : 0 pour toutes les matières, à tester.
+- **TPU** : 0 partout (dans `fdm_filament_tpu`).
 Valeurs actuelles (profil compatible avec chaque machine et buse ; « — » = matière non proposée) :
 
 | Matière | ANA 300 0.4 | ANA 300 0.6 | ANA 300 0.8 | HT 0.4 | HT 0.6 | HT 0.8 | V2 0.4 | V2 0.6 | V2 0.8 | 600 0.4 | 600 0.6 | 600 0.8 | EVA 0.4 | EVA 0.6 | EVA 0.8 | EVA 1.2-3.0 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| N-ABS | 0.02 | 0.02 | 0.03 | 0.02 | 0.04 | 0.04 | 0.02 | 0.04 | 0.04 | 0.02 | 0.04 | 0.04 | 0.02 | 0.02 | 0.02 | 0 |
-| N-ABS-INDUS | 0.025 | 0.02 | 0.055 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.02 | 0.02 | 0 |
-| N-ASA | 0.02 | 0.055 | 0.05 | 0.02 | 0.055 | 0.04 | 0.02 | 0.055 | 0.05 | 0.02 | 0.055 | 0.05 | 0.02 | 0.055 | 0.055 | 0 |
-| N-BVOH | 0.03 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.035 | 0.04 | 0.04 | 0.035 | — | — | — | — |
-| N-EASY FOOD | 0.03 | 0.05 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-EASY V0 | 0.03 | 0.05 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-PAHT CF | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0.025 | 0.04 | 0.04 | 0 |
-| N-PC | 0.035 | 0.035 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.035 | 0.035 | 0.035 | 0 |
-| N-PEEK | — | — | — | 0.045 | 0.04 | 0.04 | — | — | — | — | — | — | — | — | — | — |
-| N-PEI | — | — | — | 0.055 | 0.04 | 0.04 | — | — | — | — | — | — | — | — | — | — |
-| N-PETG | 0.03 | 0.04 | 0.045 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0 |
-| N-PETG-CF | 0.03 | 0.02 | 0.035 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.02 | 0.02 | 0 |
-| N-PETG-ESD | 0.065 | 0.02 | 0.035 | 0.065 | 0.04 | 0.04 | 0.065 | 0.04 | 0.04 | 0.065 | 0.04 | 0.04 | — | — | — | — |
-| N-PETG-GF | 0.04 | 0.036 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.036 | 0.036 | 0 |
-| N-PETG-GF UV | 0.045 | 0.055 | 0.045 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-PLA | 0.04 | 0.05 | 0.05 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.05 | 0.05 | 0 |
-| N-PLX | 0.045 | 0.05 | 0.035 | 0.045 | 0.04 | 0.04 | 0.045 | 0.04 | 0.04 | 0.045 | 0.04 | 0.04 | 0.045 | 0.05 | 0.05 | 0 |
-| N-PPA CF | 0.03 | 0.035 | 0.055 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.04 | 0.04 | 0.03 | 0.035 | 0.035 | 0 |
-| N-PPS CF | 0.01 | 0.02 | 0.035 | 0.01 | 0.04 | 0.04 | 0.01 | 0.04 | 0.04 | 0.01 | 0.04 | 0.04 | 0.01 | 0.02 | 0.02 | 0 |
-| N-PVA | 0.035 | 0.02 | 0.035 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | — | — | — | — |
-| N-Soluble 111 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
-| N-Soluble 150 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
-| N-Soluble 90 | 0.03 | 0.02 | 0.055 | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.00 | 0.04 | 0.04 | 0.00 | — | — | — | — |
-| N-TPU | 0 | 0.02 | 0.055 | 0 | 0.04 | 0.04 | 0 | 0.04 | 0.00 | 0 | 0.04 | 0.00 | 0 | 0.02 | 0.02 | 0 |
+| N-ABS | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0 |
+| N-ABS-INDUS | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0 |
+| N-ASA | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0.02 | 0.014 | 0.01 | 0 |
+| N-BVOH | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-EASY FOOD | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-EASY V0 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-PAHT CF | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0.025 | 0.018 | 0.013 | 0 |
+| N-PC | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0 |
+| N-PEEK | — | — | — | 0.045 | 0.032 | 0.023 | — | — | — | — | — | — | — | — | — | — |
+| N-PEI | — | — | — | 0.055 | 0.039 | 0.028 | — | — | — | — | — | — | — | — | — | — |
+| N-PETG | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0 |
+| N-PETG-CF | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0 |
+| N-PETG-ESD | 0.065 | 0.046 | 0.033 | 0.065 | 0.046 | 0.033 | 0.065 | 0.046 | 0.033 | 0.065 | 0.046 | 0.033 | — | — | — | — |
+| N-PETG-GF | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0 |
+| N-PETG-GF UV | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | — | — | — | — |
+| N-PLA | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0.04 | 0.028 | 0.02 | 0 |
+| N-PLX | 0.045 | 0.032 | 0.023 | 0.045 | 0.032 | 0.023 | 0.045 | 0.032 | 0.023 | 0.045 | 0.032 | 0.023 | 0.045 | 0.032 | 0.023 | 0 |
+| N-PPA CF | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0 |
+| N-PPS CF | 0.01 | 0.007 | 0.005 | 0.01 | 0.007 | 0.005 | 0.01 | 0.007 | 0.005 | 0.01 | 0.007 | 0.005 | 0.01 | 0.007 | 0.005 | 0 |
+| N-PVA | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | 0.035 | 0.025 | 0.018 | — | — | — | — |
+| N-Soluble 111 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-Soluble 150 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-Soluble 90 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | 0.03 | 0.021 | 0.015 | — | — | — | — |
+| N-TPU | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 **À tester** : voir le protocole de la section 4 (étape 2, pression d'avance) et la section 5 (pression d'avance adaptative, problème `M572 D0`).
 
@@ -55,21 +53,21 @@ Le flow ne dépend que de la **matière** (même tête sur toutes les ANA et Luc
 | N-ASA | 0.98 | `fdm_filament_asa` | calibré 28/10/2026 (ANA/Lucy 0.4) |
 | N-PAHT CF | 0.94 | `fdm_filament_paht_cf` | calibré 28/10/2026 (ANA/Lucy 0.4) |
 | N-TPU | 1.08 | `fdm_filament_tpu` | calibré 28/10/2026 (ANA/Lucy 0.4) |
-| N-PC | 0.95 | `fdm_filament_pc` | à calibrer |
+| N-PC | 0.95 | `fdm_filament_pc` | validé 29/10/2026 (valeur conservée) |
 | N-PETG | 0.99 | `fdm_filament_petg` | calibré 28/10/2026 |
 | N-PETG-CF | 0.95 | `fdm_filament_petg_cf` | calibré 28/10/2026 |
 | N-PETG-GF | 0.99 | `fdm_filament_petg_gf` | calibré 28/10/2026 |
-| N-PETG-GF UV | 1 | `fdm_filament_common` | à calibrer |
+| N-PETG-GF UV | 0.99 | `fdm_filament_petg_gf_uv` | repris du N-PETG-GF le 29/10/2026 |
 | N-PETG-ESD | 1.05 | `fdm_filament_petg_esd` | calibré 28/10/2026 |
 | N-PPA CF | 0.78 | `fdm_filament_ppa` | calibré 29/10/2026 (paroi mesurée 1.16 mm pour 0.8897 mm attendus) |
 | N-PPS CF | 0.97 | `fdm_filament_pps` | calibré 28/10/2026 |
 | N-PEEK | 0.99 | `fdm_filament_peek` | calibré 28/10/2026 |
 | N-PEI | 0.96 | `fdm_filament_pei` | calibré 29/10/2026 |
-| N-BVOH | 1 | `fdm_filament_common` | à calibrer |
-| N-PVA | 0.98 | `fdm_filament_pva` | à calibrer |
-| N-EASY FOOD | 0.98 | `fdm_filament_easy_food` | à calibrer |
-| N-EASY V0 | 0.98 | `fdm_filament_easy_v0` | à calibrer |
-| N-Soluble 90 / 111 / 150 | 1 | `fdm_filament_common` | à calibrer (les surcharges 0.92 / 0.95 de l'ANA 300 0.4 / 0.6 ont été retirées le 28/10/2026) |
+| N-BVOH | 1 | `fdm_filament_common` | validé 29/10/2026 (valeur conservée) |
+| N-PVA | 0.98 | `fdm_filament_pva` | validé 29/10/2026 (valeur conservée) |
+| N-EASY FOOD | 0.98 | `fdm_filament_easy_food` | validé 29/10/2026 (valeur conservée) |
+| N-EASY V0 | 0.98 | `fdm_filament_easy_v0` | validé 29/10/2026 (valeur conservée) |
+| N-Soluble 90 / 111 / 150 | 1 | `fdm_filament_common` | validé 29/10/2026 (valeur conservée) |
 | Granulé (ANA 300G, tête 2) | 0.7 | `Namma Granulé @Namma ANA 300G` | à calibrer (extrusion à vis, pas comparable aux filaments) |
 **À tester** : voir le protocole de la section 4 (étape 1, flow).
 
@@ -136,8 +134,17 @@ Le retrait en Z (`filament_shrinkage_compensation_z`) est à 100 % partout.
 | N-PETG | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 99 % | 0.03 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
 | N-PETG-CF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 95 % | 0.03 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
 | N-PETG-GF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 99 % | 0.04 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
+| N-PETG-GF UV | ANA et Lucy 0.4 (flow : toutes machines et buses) | 99 % | 0.04 | | | | 29/10/2026 : valeurs reprises du N-PETG-GF (non mesurées) |
 | N-PETG-ESD | ANA et Lucy 0.4 (flow : toutes machines et buses) | 105 % | 0.065 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
 | N-PPA CF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 78 % | 0.03 | | | | 29/10/2026 : flow dans la base (paroi 1.16 mm pour 0.8897 attendus), PA dans les profils 0.4 |
+| N-PC | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 95 % | 0.035 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-PVA | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.035 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-BVOH | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-EASY FOOD | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-EASY V0 | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-Soluble 90 | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-Soluble 111 | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
+| N-Soluble 150 | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
 | N-PEEK | ANA 300 HT 0.4 (flow : toutes buses) | 99 % | 0.045 | | | | 28/10/2026 : flow dans la base, PA dans le profil 0.4 |
 | N-PEI | ANA 300 HT 0.4 (flow : toutes buses) | 96 % | 0.055 | | | | 29/10/2026 : flow dans la base, PA dans le profil 0.4 |
 

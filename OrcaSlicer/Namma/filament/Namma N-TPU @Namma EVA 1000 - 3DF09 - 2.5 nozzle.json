@@ -5,7 +5,6 @@
   "from": "system",
   "filament_id": "Namma N-TPU @Namma EVA 1000 - 3DF09 - 2.5 nozzle",
   "instantiation": "true",
-  "pressure_advance": ["0"],
   "filament_max_volumetric_speed": ["75"],
   "compatible_printers": ["Namma EVA 1000 - 3DF09 - 2.5 nozzle"],
   "filament_diameter": ["2.85"]

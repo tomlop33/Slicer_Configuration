@@ -6,6 +6,6 @@
   "filament_id": "Namma N-PEI @Namma ANA 300HT",
   "instantiation": "true",
   "enable_pressure_advance": ["1"],
-  "pressure_advance": ["0.04"],
+  "pressure_advance": ["0.028"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"]
 }

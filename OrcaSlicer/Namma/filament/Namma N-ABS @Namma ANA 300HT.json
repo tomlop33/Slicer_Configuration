@@ -5,7 +5,7 @@
   "from": "system",
   "filament_id": "Namma N-ABS @Namma ANA 300HT",
   "instantiation": "true",
-  "pressure_advance": ["0.04"],
+  "pressure_advance": ["0.01"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"],
   "chamber_temperature": ["65"],
   "chamber_minimal_temperature": ["65"]

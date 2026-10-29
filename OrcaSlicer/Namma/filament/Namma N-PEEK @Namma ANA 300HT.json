@@ -6,6 +6,6 @@
   "filament_id": "Namma N-PEEK @Namma ANA 300HT",
   "instantiation": "true",
   "enable_pressure_advance": ["1"],
-  "pressure_advance": ["0.04"],
+  "pressure_advance": ["0.023"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"]
 }

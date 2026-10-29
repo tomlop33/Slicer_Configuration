@@ -20,5 +20,6 @@
   "additional_cooling_fan_speed": ["70"],
   "filament_max_volumetric_speed": ["3.5"],
   "enable_pressure_advance": ["1"],
-  "filament_flow_ratio": ["1.08"]
+  "filament_flow_ratio": ["1.08"],
+  "pressure_advance": ["0"]
 }

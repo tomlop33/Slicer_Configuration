@@ -5,6 +5,6 @@
   "from": "system",
   "filament_id": "Namma N-PETG @Namma ANA 300HT",
   "instantiation": "true",
-  "pressure_advance": ["0.04"],
+  "pressure_advance": ["0.015"],
   "compatible_printers": ["Namma ANA 300 HT 0.8 nozzle"]
 }
