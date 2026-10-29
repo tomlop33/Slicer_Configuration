@@ -21,7 +21,7 @@
   "hot_plate_temp_initial_layer": ["150"],
   "hot_plate_temp": ["150"],
   "fan_min_speed": ["10"],
-  "fan_max_speed": ["40"],
+  "fan_max_speed": ["30"],
   "overhang_fan_speed": ["40"],
   "additional_cooling_fan_speed": ["70"],
   "filament_flow_ratio": ["0.99"]

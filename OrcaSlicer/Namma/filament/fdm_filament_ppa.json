@@ -24,7 +24,7 @@
   "filament_max_volumetric_speed": ["10"],
   "fan_min_speed": ["0"],
   "fan_cooling_layer_time": ["30"],
-  "fan_max_speed": ["40"],
+  "fan_max_speed": ["30"],
   "slow_down_layer_time": ["3"],
   "reduce_fan_stop_start_freq": ["1"],
   "enable_overhang_bridge_fan": ["1"],
@@ -35,5 +35,6 @@
   "filament_z_hop": ["0.4"],
   "filament_retract_lift_enforce": ["All Surfaces"],
   "filament_wipe": ["1"],
-  "enable_pressure_advance": ["1"]
+  "enable_pressure_advance": ["1"],
+  "filament_flow_ratio": ["0.78"]
 }

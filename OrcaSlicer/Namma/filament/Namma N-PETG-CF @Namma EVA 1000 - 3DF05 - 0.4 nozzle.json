@@ -5,6 +5,5 @@
   "from": "system",
   "filament_id": "Namma N-PETG-CF @Namma EVA 1000 - 3DF05 - 0.4 nozzle",
   "instantiation": "true",
-  "pressure_advance": ["0.05"],
   "compatible_printers": ["Namma EVA 1000 - 3DF05 - 0.4 nozzle"]
 }

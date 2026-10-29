@@ -77,6 +77,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
   - Placeholders OrcaSlicer : `[var]` et `{expr}`. Dans le JSON, échapper `"` en `\"` et les retours à la ligne en `\n`.
 - **ANA 300G** : la tête 1 utilise du filament et la tête 2 des granulés. Il n'y a pas de mode Copie/Miroir. Le profil `Namma Granulé @Namma ANA 300G[ <buse> nozzle]` (base `fdm_filament_petg`) est le 2ᵉ élément de `default_filament_profile`. OrcaSlicer ne peut pas restreindre un filament à un seul extrudeur : les filaments ANA 300 restent sélectionnables sur les deux têtes.
 - Filament EVA 3DF09/3DP25 : diamètre **2.85 mm** (3DP25 = granulés). Les autres machines utilisent 1.75 mm.
+- **EVA 3DF05 = ANA/Lucy** pour les réglages filament : même flow (défini par matière dans les bases) et même pression d'avance par buse que les profils ANA/Lucy. Toute calibration ANA/Lucy en 0.4/0.6/0.8 s'applique aussi aux profils EVA 3DF05 de même buse.
 
 ## Process (`process/`)
 

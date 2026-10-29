@@ -4,7 +4,7 @@
 
 ### Modifications
 
-- **Flow ratio et pression d'avance calibrés en buse 0.4** (ANA 300, ANA 300G, Lucy 300, ANA 300 HT, ANA 300 V2, ANA 600 et modes Copie/Miroir) :
+- **Flow ratio et pression d'avance calibrés en buse 0.4** (ANA 300, ANA 300G, Lucy 300, ANA 300 HT, ANA 300 V2, ANA 600, modes Copie/Miroir et EVA 500/1000 3DF05) :
 
   | Matière | Flow ratio | Pression d'avance |
   |---|---|---|
@@ -15,13 +15,20 @@
   | N-ASA | 0.98 | 0.02 |
   | N-PAHT CF | 0.94 | 0.025 |
   | N-TPU | 1.08 | 0 |
-- **Flow du N-PEEK** : 0.99 (au lieu de 1), dans `fdm_filament_peek`.
-- **Flow du N-PPS CF** : 0.97 (au lieu de 1), dans `fdm_filament_pps`.
+  | N-PPS CF | 0.97 | 0.01 |
+  | N-PETG | 0.99 | 0.03 |
+  | N-PETG-CF | 0.95 | 0.03 |
+  | N-PETG-GF | 0.99 | 0.04 |
+  | N-PETG-ESD | 1.05 | 0.065 |
+  | N-PEEK (ANA 300 HT) | 0.99 | 0.045 |
+  | N-PEI (ANA 300 HT) | 0.96 | 0.055 |
+  | N-PPA CF | 0.78 | 0.03 |
 - **Flow ratio par matière, sur toutes les machines et toutes les buses** (ANA, Lucy et EVA) : le flow ne dépend que de la matière. Les valeurs du tableau ci-dessus sont donc dans les bases `fdm_filament_<matière>`, et les surcharges par machine ou par buse sont supprimées. N-ABS-INDUS a 0.97 dans sa nouvelle base (voir ci-dessous). La pression d'avance reste par buse : les valeurs ci-dessus ne concernent que la 0.4 des ANA et de la Lucy.
 - N-EASY FOOD, N-EASY V0 et N-PVA héritent de `fdm_filament_pla` : ils gardent leur flow de 0.98, désormais écrit dans leur base.
 - **Flow des solubles** (N-Soluble 90, 111 et 150) : 1 partout. L'ANA 300 (et donc l'ANA 300G et la Lucy) était à 0.92 en buse 0.4 et à 0.95 en buse 0.6.
 
 - **End G-code des EVA** (`fdm_eva_common`) : il éteint maintenant la tête T0 (`M568 P0 A0 R0 S0`), et aussi la tête T1 sur les EVA 3DF05 (2 têtes). Il coupe ensuite le plateau et la chambre comme avant, et se termine par `M0`.
+- **Ventilateur de pièce max** : 30 % (au lieu de 40) pour N-PPS CF, N-PPA CF et N-PEEK.
 
 ### Nettoyage
 
