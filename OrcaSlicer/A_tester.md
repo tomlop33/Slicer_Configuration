@@ -59,7 +59,7 @@ Le flow ne dépend que de la **matière** (même tête sur toutes les ANA et Luc
 | N-PETG-GF | 0.99 | `fdm_filament_petg_gf` | calibré 28/10/2026 |
 | N-PETG-GF UV | 0.99 | `fdm_filament_petg_gf_uv` | repris du N-PETG-GF le 29/10/2026 |
 | N-PETG-ESD | 1.05 | `fdm_filament_petg_esd` | calibré 28/10/2026 |
-| N-PPA CF | 0.78 | `fdm_filament_ppa` | calibré 29/10/2026 (paroi mesurée 1.16 mm pour 0.8897 mm attendus) |
+| N-PPA CF | 0.9 | `fdm_filament_ppa` | 30/10/2026 : 0.9 (la mesure du 29/10, paroi 1.16 mm pour 0.8897 mm, donnait 0.78) |
 | N-PPS CF | 0.97 | `fdm_filament_pps` | calibré 28/10/2026 |
 | N-PEEK | 0.99 | `fdm_filament_peek` | calibré 28/10/2026 |
 | N-PEI | 0.96 | `fdm_filament_pei` | calibré 29/10/2026 |
@@ -136,7 +136,7 @@ Le retrait en Z (`filament_shrinkage_compensation_z`) est à 100 % partout.
 | N-PETG-GF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 99 % | 0.04 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
 | N-PETG-GF UV | ANA et Lucy 0.4 (flow : toutes machines et buses) | 99 % | 0.04 | | | | 29/10/2026 : valeurs reprises du N-PETG-GF (non mesurées) |
 | N-PETG-ESD | ANA et Lucy 0.4 (flow : toutes machines et buses) | 105 % | 0.065 | | | | 28/10/2026 : flow dans la base, PA dans les profils 0.4 |
-| N-PPA CF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 78 % | 0.03 | | | | 29/10/2026 : flow dans la base (paroi 1.16 mm pour 0.8897 attendus), PA dans les profils 0.4 |
+| N-PPA CF | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 90 % | 0.03 | | | | 30/10/2026 : flow 0.9 dans la base (0.78 le 29/10), PA dans les profils 0.4 |
 | N-PC | ANA, Lucy et EVA 3DF05 0.4 (flow : toutes machines et buses) | 95 % | 0.035 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
 | N-PVA | ANA et Lucy 0.4 (flow : toutes machines et buses) | 98 % | 0.035 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
 | N-BVOH | ANA et Lucy 0.4 (flow : toutes machines et buses) | 100 % | 0.03 | | | | 29/10/2026 : flow conservé, PA dans les profils 0.4 |
