@@ -1,6 +1,8 @@
 # Changelog — Profils Namma OrcaSlicer
 
-## En cours — version 01.01.03.00
+## 02/11/2026 — version 01.01.03.00 (modifications du 22/10 au 30/10/2026)
+
+Bundle : `Namma 02_11_2026.zip` (`Namma.json` + `Namma/`). Il remplace `Namma 22_10_2026.zip`.
 
 ### Modifications
 
@@ -42,6 +44,10 @@
 
 - **Nouvelle base `fdm_filament_abs_indus`** (hérite de `fdm_filament_abs`) : elle regroupe la couleur, la note Duet, les températures de buse (270 °C) et le flow (0.97) de N-ABS-INDUS, qui étaient répétés dans 16 profils (modèles ANA et EVA). Les réglages effectifs ne changent pas.
 - **`silent_mode` retiré** de `fdm_ana_common`, `fdm_lucy_common` et `fdm_eva_common` : OrcaSlicer 2.5 beta a supprimé cette option, et notre valeur (`0`) était celle par défaut des versions précédentes.
+
+### Installation / à savoir
+- **Mise à jour** (version `01.01.03.00`) : même procédure que pour la version 01.01.00.00 (voir ci-dessous). Le changement de version déclenche la réinstallation automatique au démarrage.
+- Les pressions d'avance des buses 0.6 et 0.8 sont **provisoires** (voir `A_tester.md`).
 
 ## 22/10/2026 — version 01.01.02.00 (modifications du 12/10 au 21/10/2026)
 
