@@ -9,5 +9,6 @@
   "filament_retraction_length": ["0.7"],
   "filament_z_hop": ["0.4"],
   "filament_retract_lift_enforce": ["All Surfaces"],
-  "pressure_advance": ["0.04"]
+  "pressure_advance": ["0.04"],
+  "filament_max_volumetric_speed": ["15"]
 }

@@ -37,6 +37,7 @@
 - **End G-code des EVA** (`fdm_eva_common`) : il éteint maintenant la tête T0 (`M568 P0 A0 R0 S0`), et aussi la tête T1 sur les EVA 3DF05 (2 têtes). Il coupe ensuite le plateau et la chambre comme avant, et se termine par `M0`.
 - **Pression d'avance des buses 0.6 et 0.8** (ANA, Lucy et EVA 3DF05, toutes matières) : valeurs **provisoires** calculées à partir de la buse 0.4, **0.7 ×** en 0.6 et **0.5 ×** en 0.8 (par exemple N-PLA 0.04 → 0.028 et 0.02). Les anciennes valeurs (souvent 0.04, parfois plus élevées qu'en 0.4) n'étaient pas calibrées. La pression d'avance du N-TPU (0 partout) est désormais dans `fdm_filament_tpu`.
 - **Ventilateur de pièce max** : 20 % (au lieu de 40) pour N-PPS CF, N-PPA CF et N-PEEK.
+- **Débit volumétrique max en buse 0.4 limité à 15 mm³/s** (ANA, Lucy et EVA 3DF05) : N-PLA, N-PLX, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-EASY FOOD et N-EASY V0 passent de 20 à 15 en 0.4. Ils gardent 20 en 0.6 et 0.8. Les autres matières étaient déjà à 15 ou moins.
 
 ### Nettoyage
 
