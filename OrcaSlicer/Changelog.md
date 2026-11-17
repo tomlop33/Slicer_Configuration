@@ -2,6 +2,10 @@
 
 ## En cours — version 01.01.04.00
 
+### Nouveautés
+
+- **ANA 600 : modes Copie et Miroir** pour les buses 0.4, 0.6, 0.8 et 1.0 (8 nouvelles variantes machine, créées sur le modèle de l'ANA 300 V2). Le start G-code passe `T2` (Copie) ou `T3` (Miroir) à `start_print_ANA.g`. Zone d'impression : 295 × 600 mm en Copie et 200 × 600 mm en Miroir, d'après les décalages d'outil du firmware 600 (`G10 P2 U-300` / `G10 P3 U-600`). Tous les process et filaments de l'ANA 600 sont déclarés compatibles avec ces variantes.
+
 ### Modifications
 
 - **Débit volumétrique max en buse 0.4 limité à 15 mm³/s** (ANA, Lucy et EVA 3DF05) : N-PLA, N-PLX, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-EASY FOOD et N-EASY V0 passent de 20 à 15 en 0.4. Ils gardent 20 en 0.6 et 0.8. Les autres matières étaient déjà à 15 ou moins.

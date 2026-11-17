@@ -6,5 +6,5 @@
   "filament_id": "Namma N-EASY V0 @Namma ANA 600",
   "instantiation": "true",
   "pressure_advance": ["0.015"],
-  "compatible_printers": ["Namma ANA 600 0.8 nozzle", "Namma ANA 600 1.0 nozzle"]
+  "compatible_printers": ["Namma ANA 600 0.8 nozzle", "Namma ANA 600 0.8 nozzle - Mode Copie", "Namma ANA 600 0.8 nozzle - Mode Miroir", "Namma ANA 600 1.0 nozzle", "Namma ANA 600 1.0 nozzle - Mode Copie", "Namma ANA 600 1.0 nozzle - Mode Miroir"]
 }

@@ -25,7 +25,7 @@ OrcaSlicer/
 
 ## Règles générales des fichiers JSON
 
-1. **Le nom de fichier est égal au champ `name`** (`<name>.json`). Seule exception existante : les variantes `copy` / `miror` des ANA 300 (voir plus bas).
+1. **Le nom de fichier est égal au champ `name`** (`<name>.json`). Seule exception existante : les variantes `copy` / `miror` des ANA 300, 300 V2 et 600 (voir plus bas).
 2. **Tout fichier ajouté, renommé ou supprimé doit être répercuté dans `Namma.json`** (entrée `{ "name", "sub_path" }` dans la bonne liste). Un profil absent de l'index n'est pas chargé par OrcaSlicer.
 3. Un parent (`inherits`) doit être déclaré dans l'index **avant** ses enfants : les `fdm_*_common` en tête de liste, puis les intermédiaires, puis les profils finaux.
 4. Champs d'en-tête, dans cet ordre : `type`, `name`, `inherits`, `from`, (`setting_id` / `filament_id`), `instantiation`.
@@ -47,7 +47,7 @@ OrcaSlicer/
 ```
 fdm_ana_common   ─┐
 fdm_lucy_common  ─┼─> "<Modèle> <buse> nozzle" (type machine, instantiation true)
-fdm_eva_common   ─┘        └─> variantes "- Mode Copie" / "- Mode Miroir" (ANA 300, ANA 300 V2)
+fdm_eva_common   ─┘        └─> variantes "- Mode Copie" / "- Mode Miroir" (ANA 300, ANA 300 V2, ANA 600)
 "<Modèle>.json"  = type "machine_model" (fiche modèle, pas d'héritage)
 ```
 
@@ -69,7 +69,7 @@ Les champs sont `type: "machine_model"`, `name`, `model_id`, `nozzle_diameter` (
   - `NMEVA10003DF0912` (EVA 1000, tête 3DF09, buse 1.2), `NMEVA5003DF0912` (EVA 500), `NMANA300HT04` (ANA 300 HT), `NMANA300G04` (ANA 300G)
   - suffixe `C` = Mode Copie, `M` = Mode Miroir.
   - Le `setting_id` doit être **unique**, comme le `model_id` des machine_model (`EVA10003DF05` / `EVA5003DF05`…).
-- `printable_area` : 4 coins `"XxY"` (ex. `["0x0","300x0","300x300","0x300"]`). En Mode Copie/Miroir, la largeur est réduite à environ la moitié (`145`).
+- `printable_area` : 4 coins `"XxY"` (ex. `["0x0","300x0","300x300","0x300"]`). En Mode Copie/Miroir, la largeur est réduite selon le décalage d'outil du firmware (`G10 P2 U…` / `G10 P3 U…`) : 300 / 300 V2 → `145` en copie et `100` en miroir ; ANA 600 → `295` en copie et `200` en miroir.
 - Firmware : **RepRapFirmware** (`gcode_flavor: "reprapfirmware"`). Le G-code (start/end/pause/changement de couche/changement de filament) se définit dans les `fdm_*_common`. Seuls les modes Copie/Miroir surchargent `machine_start_gcode`.
   - Le start G-code appelle les macros de la carte : `M98 P"0:/sys/start_print_ANA.g" T[current_extruder]` (ANA), `start_print.g` (EVA/Lucy). Le Mode Copie passe `T2` et le Mode Miroir `T3`.
   - Les bases ont un `nozzle_diameter` d'**une valeur par extrudeur** : OrcaSlicer en déduit le nombre de têtes (ANA et EVA `["0.4", "0.4"]`, Lucy `["0.4"]`). Chaque variante le redéfinit avec son diamètre (1 valeur en mode Copie/Miroir et sur les EVA 3DF09/3DP25).
