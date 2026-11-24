@@ -1,15 +1,23 @@
 # Changelog — Profils Namma OrcaSlicer
 
-## En cours — version 01.01.04.00
+## 24/11/2026 — version 01.01.04.00 (modifications du 03/11 au 24/11/2026)
+
+Bundle : `Namma 24_11_2026.zip` (`Namma.json` + `Namma/`, plus le guide `Installation_profils_OrcaSlicer_NAMMA_2.0.pdf` et les notes de version clients `Nouveautés 24_11_2026.txt`). Il remplace `Namma 02_11_2026.zip`.
 
 ### Nouveautés
 
+- **Guide d'installation client** (`Installation_profils_OrcaSlicer_NAMMA_2.0.pdf`) ajouté au dépôt et livré dans le zip.
 - **ANA 600 : modes Copie et Miroir** pour les buses 0.4, 0.6, 0.8 et 1.0 (8 nouvelles variantes machine, créées sur le modèle de l'ANA 300 V2). Le start G-code passe `T2` (Copie) ou `T3` (Miroir) à `start_print_ANA.g`. Zone d'impression : 295 × 600 mm en Copie et 200 × 600 mm en Miroir, d'après les décalages d'outil du firmware 600 (`G10 P2 U-300` / `G10 P3 U-600`). Tous les process et filaments de l'ANA 600 sont déclarés compatibles avec ces variantes.
 
 ### Modifications
 
 - **Débit volumétrique max en buse 0.4 limité à 15 mm³/s** (ANA, Lucy et EVA 3DF05) : N-PLA, N-PLX, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-EASY FOOD et N-EASY V0 passent de 20 à 15 en 0.4. Ils gardent 20 en 0.6 et 0.8. Les autres matières étaient déjà à 15 ou moins.
 - **Accélérations des profils Speed de l'ANA 600** (0.24mm Speed en buse 0.4, 0.30mm Speed en buse 0.6) : limitées à 120 % de celles des profils Quality. Par défaut 3000 (au lieu de 4000), paroi externe 1800 (au lieu de 2000), paroi interne 3000 (au lieu de 5000), remplissage 4200 (au lieu de 6000), remplissage plein interne 3000 (au lieu de 6000), déplacement 6000 (au lieu de 7000) mm/s². Surface supérieure (1500) et première couche (1000) inchangées.
+
+### Installation / à savoir
+
+- **Mise à jour** (version `01.01.04.00`) : même procédure que pour la version 01.01.00.00, décrite dans le guide PDF. Le changement de version déclenche la réinstallation automatique au démarrage.
+- Les largeurs Copie / Miroir de l'ANA 600 (295 / 200 mm) restent à vérifier sur machine.
 
 ## 02/11/2026 — version 01.01.03.00 (modifications du 22/10 au 30/10/2026)
 
