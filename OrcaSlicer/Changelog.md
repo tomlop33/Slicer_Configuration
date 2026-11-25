@@ -1,6 +1,8 @@
 # Changelog — Profils Namma OrcaSlicer
 
-## En cours — version 01.01.05.00
+## 25/11/2026 — version 01.01.05.00 (modifications du 25/11/2026)
+
+Bundle : `Namma 25_11_2026.zip` (`Namma.json` + `Namma/`, plus le guide `Installation_profils_OrcaSlicer_NAMMA_2.0.pdf` et les notes de version clients `Nouveautés 25_11_2026.txt`). Il remplace `Namma 24_11_2026.zip`.
 
 ### Nouveautés
 

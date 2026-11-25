@@ -1,0 +1,33 @@
+Profils Namma pour OrcaSlicer
+Mise à jour du 25/11/2026 (version 01.01.05.00)
+=================================================
+
+QUOI DE NEUF ?
+
+- EVA 500 et EVA 1000 avec tête granulés 3DP25 : nouveaux profils granulés
+  Cinq matières sont disponibles pour imprimer en granulés :
+    - Namma N-ABS-CF Granulé (profil par défaut)
+    - Namma N-PC-ABS-GF Granulé
+    - Namma N-PLA Granulé
+    - Namma N-PETG Granulé
+    - Namma Granulé (profil générique)
+  Ils sont accompagnés d'un nouveau réglage d'impression « 1.50mm Standard »,
+  testé sur machine, qui devient le réglage par défaut de la tête 3DP25.
+
+- La température de la tête granulés se règle directement sur la machine :
+  OrcaSlicer ne la pilote plus.
+
+
+CE QUI DISPARAÎT
+
+- Les anciens profils de filament en bobine (PLA, ABS, PETG...) proposés pour
+  la tête 3DP25 sont retirés : cette tête fonctionne uniquement avec des
+  granulés. Les autres têtes des EVA ne sont pas concernées.
+
+
+INSTALLATION
+
+Fermez OrcaSlicer, puis suivez le guide « Installation_profils_OrcaSlicer_NAMMA_2.0.pdf »
+joint à ce dossier. Au prochain démarrage, OrcaSlicer détecte la nouvelle
+version et met les profils à jour tout seul. Vos profils personnels ne sont
+pas modifiés.
