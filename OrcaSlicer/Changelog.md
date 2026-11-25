@@ -1,5 +1,17 @@
 # Changelog — Profils Namma OrcaSlicer
 
+## En cours — version 01.01.05.00
+
+### Nouveautés
+
+- **EVA 500 / 1000 tête 3DP25 (granulés) : profils pellet** repris des profils de développement validés sur machine.
+  - Filaments `Namma N-ABS-CF Pellet` et `Namma N-PC-ABS-GF Pellet`. Leur base commune `fdm_filament_pellet` (GFLA028) contient : diamètre 2.85, `pellet_flow_coefficient` 0.156755, débit max 120 mm³/s, plateau 105 °C, buse à 0 (température non pilotée par le slicer), pas de pression d'avance ni de ventilation, rétraction 0.1 mm et z-hop de 2 mm en pente. Les bases matière `fdm_filament_abs_cf_pellet` (GFLA029, type ABS) et `fdm_filament_pc_abs_gf_pellet` (GFLA030, type PC) ne portent que le type et la couleur. Le PC-ABS-GF reprend donc pour l'instant la densité et la plage de température de l'ABS-CF.
+  - Process `1.50mm Standard @Namma EVA <500|1000> 3.0 nozzle` : couche de 1.5 mm, largeurs de 150 % (4.5 mm), vitesses de 50 mm/s, accélérations machine, remplissage rectiligne à 98 % et bordure de 20 mm. C'est le nouveau process par défaut des EVA 3DP25. Le N-ABS-CF Pellet devient le filament par défaut.
+
+### Suppressions
+
+- **Filaments 3DP25 en bobine supprimés** (26 profils) : N-PLA, N-PLX, N-ABS, N-ABS-INDUS, N-ASA, N-PETG, N-PETG-CF, N-PETG-GF, N-PC, N-PAHT CF, N-PPA CF, N-PPS CF et N-TPU, sur EVA 500 et EVA 1000. La tête 3DP25 n'accepte que des granulés.
+
 ## 24/11/2026 — version 01.01.04.00 (modifications du 03/11 au 24/11/2026)
 
 Bundle : `Namma 24_11_2026.zip` (`Namma.json` + `Namma/`, plus le guide `Installation_profils_OrcaSlicer_NAMMA_2.0.pdf` et les notes de version clients `Nouveautés 24_11_2026.txt`). Il remplace `Namma 02_11_2026.zip`.

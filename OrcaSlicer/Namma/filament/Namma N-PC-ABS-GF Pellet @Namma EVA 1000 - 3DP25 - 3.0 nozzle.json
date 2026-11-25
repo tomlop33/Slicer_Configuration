@@ -1,0 +1,9 @@
+{
+  "type": "filament",
+  "name": "Namma N-PC-ABS-GF Pellet @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+  "inherits": "fdm_filament_pc_abs_gf_pellet",
+  "from": "system",
+  "filament_id": "Namma N-PC-ABS-GF Pellet @Namma EVA 1000 - 3DP25 - 3.0 nozzle",
+  "instantiation": "true",
+  "compatible_printers": ["Namma EVA 1000 - 3DP25 - 3.0 nozzle"]
+}

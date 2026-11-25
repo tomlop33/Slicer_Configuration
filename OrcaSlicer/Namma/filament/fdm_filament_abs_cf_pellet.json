@@ -1,0 +1,11 @@
+{
+  "type": "filament",
+  "name": "fdm_filament_abs_cf_pellet",
+  "inherits": "fdm_filament_pellet",
+  "from": "system",
+  "filament_id": "GFLA029",
+  "instantiation": "false",
+  "default_filament_colour": ["#00FFFF"],
+  "filament_notes": ["N-ABS-CF Pellet"],
+  "filament_type": ["ABS"]
+}
