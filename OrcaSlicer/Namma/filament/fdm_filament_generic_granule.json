@@ -1,0 +1,10 @@
+{
+  "type": "filament",
+  "name": "fdm_filament_generic_granule",
+  "inherits": "fdm_filament_abs_cf_granule",
+  "from": "system",
+  "filament_id": "GFLA033",
+  "instantiation": "false",
+  "default_filament_colour": ["#FF6D00"],
+  "filament_notes": ["Granulé"]
+}

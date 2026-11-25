@@ -7,5 +7,5 @@
   "machine_tech": "FFF",
   "bed_model": "",
   "bed_texture": "",
-  "default_materials": "Namma N-ABS-CF Pellet @Namma EVA 1000 - 3DP25 - 3.0 nozzle;Namma N-PC-ABS-GF Pellet @Namma EVA 1000 - 3DP25 - 3.0 nozzle"
+  "default_materials": "Namma N-ABS-CF Granulé @Namma EVA 1000 - 3DP25 - 3.0 nozzle;Namma N-PC-ABS-GF Granulé @Namma EVA 1000 - 3DP25 - 3.0 nozzle;Namma N-PLA Granulé @Namma EVA 1000 - 3DP25 - 3.0 nozzle;Namma N-PETG Granulé @Namma EVA 1000 - 3DP25 - 3.0 nozzle;Namma Granulé @Namma EVA 1000 - 3DP25 - 3.0 nozzle"
 }

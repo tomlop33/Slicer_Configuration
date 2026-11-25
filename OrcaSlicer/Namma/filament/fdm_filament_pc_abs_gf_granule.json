@@ -1,11 +1,11 @@
 {
   "type": "filament",
-  "name": "fdm_filament_pc_abs_gf_pellet",
-  "inherits": "fdm_filament_pellet",
+  "name": "fdm_filament_pc_abs_gf_granule",
+  "inherits": "fdm_filament_abs_cf_granule",
   "from": "system",
   "filament_id": "GFLA030",
   "instantiation": "false",
   "default_filament_colour": ["#BCAAA4"],
-  "filament_notes": ["N-PC-ABS-GF Pellet"],
+  "filament_notes": ["N-PC-ABS-GF Granulé"],
   "filament_type": ["PC"]
 }

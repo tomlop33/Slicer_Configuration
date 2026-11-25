@@ -56,5 +56,4 @@
 - Namma N-EASY FOOD
 - Namma N-EASY V0
 - Namma Granulé (ANA 300G uniquement, tête granulés)
-- Namma N-ABS-CF Pellet (EVA 500 / 1000 tête 3DP25 uniquement, granulés)
-- Namma N-PC-ABS-GF Pellet (EVA 500 / 1000 tête 3DP25 uniquement, granulés)
+- Granulés pour EVA 500 / 1000 tête 3DP25 uniquement : Namma N-ABS-CF Granulé, Namma N-PC-ABS-GF Granulé, Namma N-PLA Granulé, Namma N-PETG Granulé, Namma Granulé (générique)
